@@ -3,1086 +3,565 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>파리바게뜨 자동권고주문 설정 대시보드</title>
-
-    <!-- Tailwind CSS & Chart.js & SheetJS -->
+    <title>파리바게뜨 자동권고주문 대시보드 v2.6</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
-
-    <!-- Noto Sans KR 폰트 적용 -->
+    <!-- Pretendard 폰트 링크 -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
     />
-
     <style>
       body {
-        font-family: "Noto Sans KR", sans-serif;
-        background-color: #f8fafc;
+        font-family: "Pretendard Variable", Pretendard, sans-serif;
       }
-      .custom-scrollbar::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
-      }
-      .custom-scrollbar::-webkit-scrollbar-track {
-        background: #f1f5f9;
-      }
-      .custom-scrollbar::-webkit-scrollbar-thumb {
-        background: #cbd5e1;
-        border-radius: 4px;
-      }
-      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-        background: #94a3b8;
+      html {
+        scroll-behavior: smooth;
       }
     </style>
   </head>
-  <body class="text-slate-800 antialiased min-h-screen flex flex-col">
-    <!-- 상단 네비게이션 헤더 -->
-    <header class="bg-blue-950 text-white sticky top-0 z-50 shadow-md">
+  <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+    <!-- 상단 고정 헤더 -->
+    <nav class="sticky top-0 z-50 bg-blue-900 text-white shadow-md">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-          <div class="flex items-center gap-3">
-            <div class="bg-white p-1.5 rounded-lg shadow-inner">
-              <span class="text-blue-950 font-black text-xs tracking-wider"
-                >PARIS BAGUETTE</span
-              >
-            </div>
-            <span class="font-bold text-lg tracking-tight"
-              >자동권고주문 대시보드 v2.5</span
+          <div class="flex items-center space-x-3">
+            <span class="text-2xl">🥐</span>
+            <span class="font-bold text-lg tracking-wider">PARIS BAGUETTE</span>
+            <span class="text-sm bg-blue-800 px-2 py-0.5 rounded text-blue-100"
+              >자동권고 관제센터 v2.6</span
             >
           </div>
-          <nav class="hidden md:flex space-x-6 text-sm font-medium">
-            <a
-              href="#section-overall"
-              class="hover:text-blue-200 transition-colors"
-              >전체현황</a
+          <div class="flex space-x-4 text-sm font-medium">
+            <button
+              onclick="switchTab('dashboard')"
+              class="hover:text-blue-200 transition-colors py-2 px-3 rounded bg-blue-800"
+              id="nav-dash"
             >
-            <a
-              href="#section-insights"
-              class="hover:text-blue-200 transition-colors"
-              >핵심인사이트</a
+              종합관제
+            </button>
+            <button
+              onclick="switchTab('details')"
+              class="hover:text-blue-200 transition-colors py-2 px-3 rounded"
+              id="nav-det"
             >
-            <a
-              href="#section-charts"
-              class="hover:text-blue-200 transition-colors"
-              >다각도 차트</a
-            >
-            <a
-              href="#section-regions"
-              class="hover:text-blue-200 transition-colors"
-              >지역별지표</a
-            >
-            <a
-              href="#section-teams"
-              class="hover:text-blue-200 transition-colors"
-              >사업팀별</a
-            >
-            <a href="#section-svs" class="hover:text-blue-200 transition-colors"
-              >SV담당별</a
-            >
-          </nav>
+              상세현황
+            </button>
+          </div>
         </div>
       </div>
-    </header>
+    </nav>
 
-    <!-- 실시간 드래그 연동 배너 -->
-    <section
-      id="drop-zone"
-      class="bg-blue-50 border-b border-blue-200 py-4 px-4 transition-all duration-300"
-    >
+    <!-- 메인 레이아웃 -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <!-- 대시보드 메인 헤드 -->
       <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm"
+        class="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
       >
-        <div class="flex items-center gap-2 text-blue-950">
-          <span class="text-base">⚙️</span>
-          <span class="font-semibold text-blue-900">실시간 데이터 정합성:</span>
-          <span
-            id="data-status-badge"
-            class="bg-blue-600 text-white px-2.5 py-0.5 rounded-full text-xs font-bold shadow-sm"
-            >기본 템플릿 데이터 활성</span
-          >
+        <div>
+          <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">
+            자동권고주문 관제 대시보드
+          </h1>
+          <p class="text-sm text-slate-500 mt-1">
+            파리바게뜨 가맹점 자동 전송률 및 카테고리별 설정 현황
+          </p>
         </div>
-        <div class="flex flex-wrap items-center gap-3">
-          <span class="text-xs text-slate-500 font-medium"
-            >매주 추출하는 weekly_report.xlsx 파일을 여기로 끌어다 놓으세요!
-            ➔</span
+        <div
+          class="bg-white px-4 py-2 rounded-lg shadow-sm border border-slate-200 text-right"
+        >
+          <span class="text-xs text-slate-400 block">데이터 기준시점</span>
+          <span id="update-time" class="text-sm font-semibold text-blue-950"
+            >실시간 연동중</span
           >
-          <label
-            for="excel-file-input"
-            class="cursor-pointer bg-blue-950 hover:bg-blue-900 text-white px-4 py-2 rounded-lg text-xs font-bold shadow transition-all flex items-center gap-1.5"
-          >
-            📂 엑셀 파일 직접 연동
-          </label>
-          <input
-            type="file"
-            id="excel-file-input"
-            accept=".xlsx, .xls"
-            class="hidden"
-          />
         </div>
       </div>
-    </section>
 
-    <!-- 메인 대시보드 레이아웃 -->
-    <main
-      class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8"
-    >
-      <!-- 1. 전체 설정 요약 카드 -->
-      <section id="section-overall" class="scroll-mt-20">
-        <h2
-          class="text-xl font-bold text-slate-950 mb-4 flex items-center gap-2"
-        >
-          <span class="w-1.5 h-6 bg-blue-600 rounded-full"></span>
-          1. 전체 가맹점 설정 요약 현황
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- 전체 가맹점 수 -->
+      <!-- 탭 1: 종합관제 영역 -->
+      <div id="tab-dashboard" class="space-y-8">
+        <!-- KPI 카드 섹션 -->
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div
-            class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 flex items-center justify-between"
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center space-x-4"
           >
-            <div>
-              <p class="text-sm font-medium text-slate-500">
-                분석 대상 가맹점 수
-              </p>
-              <p
-                id="stat-total-stores"
-                class="text-3xl font-extrabold text-slate-900 mt-2"
-              >
-                0개점
-              </p>
+            <div class="p-3 bg-blue-100 rounded-xl text-blue-600 text-2xl">
+              🏪
             </div>
-            <div class="bg-slate-50 p-4 rounded-xl text-slate-500">🏢</div>
+            <div>
+              <span class="text-xs text-slate-400 font-medium"
+                >분석 가맹점 수</span
+              >
+              <h3 id="kpi-total" class="text-2xl font-bold text-slate-900">
+                3,280 개점
+              </h3>
+            </div>
           </div>
-          <!-- 자동권고 가맹점 수 -->
           <div
-            class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 flex items-center justify-between"
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center space-x-4"
           >
-            <div>
-              <p class="text-sm font-medium text-slate-500">
-                자동권고 설정 가맹점 수
-              </p>
-              <p
-                id="stat-active-stores"
-                class="text-3xl font-extrabold text-blue-600 mt-2"
-              >
-                0개점
-              </p>
+            <div
+              class="p-3 bg-emerald-100 rounded-xl text-emerald-600 text-2xl"
+            >
+              ⚙️
             </div>
-            <div class="bg-blue-50 p-4 rounded-xl text-blue-500">🤖</div>
+            <div>
+              <span class="text-xs text-slate-400 font-medium"
+                >자동권고 설정점</span
+              >
+              <h3 id="kpi-applied" class="text-2xl font-bold text-slate-900">
+                2,806 개점
+              </h3>
+            </div>
           </div>
-          <!-- 권고주문 설정률 -->
           <div
-            class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 flex items-center justify-between"
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center space-x-4"
           >
-            <div>
-              <p class="text-sm font-medium text-slate-500">
-                가맹점 평균 설정률
-              </p>
-              <p
-                id="stat-active-rate"
-                class="text-3xl font-extrabold text-emerald-600 mt-2"
-              >
-                0.0%
-              </p>
+            <div class="p-3 bg-amber-100 rounded-xl text-amber-600 text-2xl">
+              📦
             </div>
-            <div class="bg-emerald-50 p-4 rounded-xl text-emerald-500">📈</div>
+            <div>
+              <span class="text-xs text-slate-400 font-medium"
+                >가맹점 평균 설정품목수</span
+              >
+              <h3 id="kpi-avg-items" class="text-2xl font-bold text-slate-900">
+                37.8 개
+              </h3>
+            </div>
           </div>
-        </div>
-      </section>
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center space-x-4"
+          >
+            <div class="p-3 bg-indigo-100 rounded-xl text-indigo-600 text-2xl">
+              📈
+            </div>
+            <div>
+              <span class="text-xs text-slate-400 font-medium"
+                >PB가맹 전체 설정률</span
+              >
+              <h3 id="kpi-rate" class="text-2xl font-bold text-slate-900">
+                85.5%
+              </h3>
+            </div>
+          </div>
+        </section>
 
-      <!-- 2. AI 보고서 및 전략 액션플랜 -->
-      <section
-        id="section-insights"
-        class="scroll-mt-20 grid grid-cols-1 lg:grid-cols-2 gap-8"
-      >
-        <!-- 핵심 분석 리포트 -->
-        <div
-          class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between"
-        >
-          <div>
-            <h3
+        <!-- 인사이트 및 액션플랜 -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between"
+          >
+            <h2
               class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2"
             >
-              💡 경영진 핵심 요약 보고 (AI 분석)
-            </h3>
-            <div class="space-y-4 text-sm leading-relaxed text-slate-600">
-              <div
-                class="bg-slate-50 p-3 rounded-lg border-l-4 border-blue-600"
-              >
-                <span class="font-bold text-blue-950 block mb-1"
-                  >📢 사업부별 불균형 및 설정 격차</span
-                >
-                분석 결과, 4개 사업부 중 1사업부와 3사업부의 평균 설정율은
-                양호하지만, 2사업부와 4사업부의 장기유통 및 케이크 자동설정
-                지표에서 편차가 높게 관측되고 있습니다.
-              </div>
-              <div
-                class="bg-slate-50 p-3 rounded-lg border-l-4 border-orange-500"
-              >
-                <span class="font-bold text-orange-950 block mb-1"
-                  >📢 장기유통 집중 고도화 관리</span
-                >
-                장기유통 발주는 점포 폐기율 절감에 미치는 영향력이 매우 높은
-                부문입니다. 사업팀 단위로 장기유통 자동 발주 품목 수를 증대하기
-                위한 SV별 관리가 지속되어야 합니다.
-              </div>
-            </div>
-          </div>
-          <div
-            class="mt-6 pt-4 border-t border-slate-100 text-xs text-slate-400"
-          >
-            * weekly_report.xlsx 실제 추출본을 드래그하면 위 지표가 해당 주차
-            실시간 지표로 업데이트됩니다.
-          </div>
-        </div>
-
-        <!-- Action Plan -->
-        <div
-          class="bg-slate-900 text-slate-100 rounded-2xl shadow-md p-6 flex flex-col justify-between"
-        >
-          <div>
-            <h3
-              class="text-lg font-bold text-white mb-4 flex items-center gap-2"
-            >
-              🎯 자동화 지표 개선을 위한 Action Plan
-            </h3>
-            <ul class="space-y-4 text-xs md:text-sm">
-              <li class="flex gap-3">
+              <span class="text-blue-500">🔍</span> 핵심 인사이트 요약
+            </h2>
+            <ul class="space-y-3 text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 mt-1">✔</span>
                 <span
-                  class="bg-blue-500/20 text-blue-300 w-6 h-6 rounded-full flex items-center justify-center font-bold flex-shrink-0"
-                  >1</span
+                  ><strong>PB가맹 평균 설정률 85.5%:</strong> 목표 설정률인
+                  85%를 달성했습니다. 지속적인 시스템 정합 관리가 필요한
+                  국면입니다.</span
                 >
-                <div>
-                  <strong class="text-white"
-                    >장기유통 하위 사업팀 전담 SV 밀착 가이드 전개</strong
-                  >
-                  <p class="text-slate-400 mt-1">
-                    평균 장기유통 품목 설정 수량이 저조한 대구구미팀, 부산김해팀
-                    등 소속 SV에게 맞춤 설정 매뉴얼을 배포하고 집중 주차 점검을
-                    제안합니다.
-                  </p>
-                </div>
               </li>
-              <li class="flex gap-3">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 mt-1">✔</span>
                 <span
-                  class="bg-emerald-50/20 text-emerald-300 w-6 h-6 rounded-full flex items-center justify-center font-bold flex-shrink-0"
-                  >2</span
+                  ><strong>장기유통 리스크 관리형 주문:</strong> 폐기 감소를
+                  위한 장기유통 품목 가이드라인에 따라 설정점이 지속 증가하고
+                  있습니다.</span
                 >
-                <div>
-                  <strong class="text-white"
-                    >실사 재고 등록율 기반 자동 전송 가동</strong
-                  >
-                  <p class="text-slate-400 mt-1">
-                    자동권고 제안과 재고 실사의 정합성을 높이기 위하여 매장 오픈
-                    후 오전 중 재고 실사를 마치는 정착 캠페인을 병행합니다.
-                  </p>
-                </div>
               </li>
             </ul>
           </div>
-          <div class="mt-6 pt-4 border-t border-slate-800 text-right">
-            <span class="text-xs text-blue-400 font-semibold"
-              >대시보드 기획 및 설계자: OHpower (스마트주문 기획 및 운영)</span
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between"
+          >
+            <h2
+              class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2"
             >
+              <span class="text-blue-500">💡</span> AI 액션 플랜
+            </h2>
+            <ul class="space-y-3 text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-1">⚡</span>
+                <span
+                  ><strong>주간 변동성 감지:</strong> 장기유통 및 케이크
+                  자동권고주문 설정 품목이 주간 5개 이하로 저조한 점포에 자동
+                  SMS 코칭 알림을 트리거합니다.</span
+                >
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 3. 시각화 차트 영역 -->
-      <section
-        id="section-charts"
-        class="grid grid-cols-1 lg:grid-cols-2 gap-8 scroll-mt-20"
-      >
-        <!-- 사업부별 설정률 -->
-        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6">
-          <h3
-            class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2"
+        <!-- 다각도 차트 섹션 -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- 차트 1: 사업부별 시스템 적용 현황 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100"
           >
-            <span class="w-1 h-4 bg-blue-600 rounded-full"></span>
-            사업부별 시스템 적용 현황
-          </h3>
-          <div class="h-64 flex items-center justify-center">
-            <canvas id="divisionChart"></canvas>
+            <h2 class="text-lg font-bold text-slate-900 mb-4">
+              사업부별 시스템 적용 현황 (가맹평균 첫 열 배치)
+            </h2>
+            <div class="h-80">
+              <canvas id="divisionChart"></canvas>
+            </div>
           </div>
-        </div>
-
-        <!-- 지역별 분포 -->
-        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6">
-          <h3
-            class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2"
+          <!-- 차트 2: 장기유통 사업부별 설정 지표 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100"
           >
-            <span class="w-1 h-4 bg-emerald-500 rounded-full"></span>
-            지역별 자동권고 설정 분포 (상위 8개 지역)
-          </h3>
-          <div class="h-64 flex items-center justify-center">
-            <canvas id="regionChart"></canvas>
+            <h2 class="text-lg font-bold text-slate-900 mb-4">
+              장기유통 유형 사업부별 설정 지표 (정가운데 정렬)
+            </h2>
+            <div class="h-80">
+              <canvas id="longTermChart"></canvas>
+            </div>
           </div>
-        </div>
-
-        <!-- 장기유통: 사업부별 설정지표 -->
-        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6">
-          <h3
-            class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2"
+          <!-- 차트 3: 장기유통 사업팀별 TOP 10 -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 lg:col-span-2"
           >
-            <span class="w-1 h-4 bg-orange-500 rounded-full"></span>
-            장기유통 유형 사업부별 설정 지표 (설정점, 전체 설정률 & 평균품목수)
-          </h3>
-          <div class="h-64 flex items-center justify-center">
-            <canvas id="longTermDivisionChart"></canvas>
+            <h2 class="text-lg font-bold text-slate-900 mb-4">
+              장기유통 유형 사업팀별 설정 TOP 10
+            </h2>
+            <div class="h-80">
+              <canvas id="longTermTeamChart"></canvas>
+            </div>
           </div>
-        </div>
+        </section>
+      </div>
 
-        <!-- 장기유통: 사업팀별 설정 TOP 10 -->
-        <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6">
-          <h3
-            class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2"
-          >
-            <span class="w-1 h-4 bg-orange-500 rounded-full"></span>
-            장기유통 유형 사업팀별 설정 TOP 10 (설정점 및 평균품목수)
-          </h3>
-          <div class="h-64 flex items-center justify-center">
-            <canvas id="longTermTeamChart"></canvas>
-          </div>
-        </div>
-      </section>
-
-      <!-- 4. 지역별 설정 요약 카드 -->
-      <section
-        id="section-regions"
-        class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 scroll-mt-20"
-      >
-        <h3
-          class="text-lg font-bold text-slate-900 mb-4 flex items-center justify-between"
+      <!-- 탭 2: 상세현황 영역 -->
+      <div id="tab-details" class="space-y-8 hidden">
+        <!-- 사업팀별 테이블 -->
+        <section
+          class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100"
         >
-          <span>📍 지역별 세부 지표 요약</span>
-          <span class="text-xs text-slate-400 font-normal"
-            >점포 규모 순 정렬</span
+          <h2
+            class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2"
           >
-        </h3>
-        <div
-          id="region-cards-container"
-          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
-        ></div>
-      </section>
-
-      <!-- 5. 사업팀별 상세 설정 현황 테이블 -->
-      <section
-        id="section-teams"
-        class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden scroll-mt-20"
-      >
-        <div
-          class="p-6 border-b border-slate-100 flex flex-col md:flex-row items-start md:items-center justify-between gap-4"
-        >
-          <div>
-            <h3 class="text-lg font-bold text-slate-900">
-              👥 4. 사업팀별 상세 설정 현황
-            </h3>
-            <p class="text-xs text-slate-500 mt-1">
-              소속 가맹점의 장기유통/케이크/재료소모 품목군의 평균 설정 수 분석
-              (미설정점 제외)
-            </p>
-          </div>
-          <div class="flex items-center gap-2 w-full md:w-auto">
-            <input
-              type="text"
-              id="team-search-input"
-              placeholder="사업부 또는 사업팀 검색..."
-              class="text-sm px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full md:w-64"
-            />
-          </div>
-        </div>
-        <div class="overflow-x-auto custom-scrollbar">
-          <table class="w-full text-left border-collapse text-sm">
-            <thead>
-              <tr
-                class="bg-slate-50 border-b border-slate-100 text-slate-500 font-semibold"
+            <span>👥</span> 사업팀별 상세 설정 현황
+          </h2>
+          <div class="overflow-x-auto">
+            <table
+              class="min-w-full divide-y divide-slate-200 text-sm text-left"
+            >
+              <thead class="bg-slate-50 text-slate-500 font-semibold">
+                <tr>
+                  <th class="px-6 py-4">사업부</th>
+                  <th class="px-6 py-4">사업팀</th>
+                  <th class="px-6 py-4 text-center">총 점포 수</th>
+                  <th class="px-6 py-4 text-center">설정 점포 수</th>
+                  <th class="px-6 py-4 text-center">평균 설정 품목 수</th>
+                  <th class="px-6 py-4 text-center">설정율</th>
+                </tr>
+              </thead>
+              <tbody
+                id="team-table-body"
+                class="divide-y divide-slate-100 text-slate-700"
               >
-                <th class="py-3 px-6">사업부</th>
-                <th class="py-3 px-6">사업팀명</th>
-                <th class="py-3 px-6 text-right">총 가맹점 수</th>
-                <th class="py-3 px-6 text-right">설정 점포 수</th>
-                <th class="py-3 px-6 text-right">설정률</th>
-                <th class="py-3 px-6 text-right bg-blue-50/50 text-blue-900">
-                  장기유통 평균
-                </th>
-                <th class="py-3 px-6 text-right bg-pink-50/50 text-pink-900">
-                  케이크 평균
-                </th>
-                <th
-                  class="py-3 px-6 text-right bg-emerald-50/50 text-emerald-900"
-                >
-                  재료소모 평균
-                </th>
-              </tr>
-            </thead>
-            <tbody
-              id="team-table-body"
-              class="divide-y divide-slate-100"
-            ></tbody>
-          </table>
-        </div>
-      </section>
+                <!-- JS 렌더링 -->
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-      <!-- 6. 담당 SV별 상세 설정 현황 테이블 -->
-      <section
-        id="section-svs"
-        class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden scroll-mt-20"
-      >
-        <div
-          class="p-6 border-b border-slate-100 flex flex-col md:flex-row items-start md:items-center justify-between gap-4"
+        <!-- 담당 SV별 상세 테이블 -->
+        <section
+          class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100"
         >
-          <div>
-            <h3 class="text-lg font-bold text-slate-900">
-              👔 5. 담당 SV별 설정 및 재고실사 현황
-            </h3>
-            <p class="text-xs text-slate-500 mt-1">
-              SV 담당 점포의 평균 실사 횟수 및 품목 카테고리별 평균 자동권고
-              설정 품목 수 (미설정점 제외)
-            </p>
-          </div>
-          <div class="flex items-center gap-2 w-full md:w-auto">
-            <input
-              type="text"
-              id="sv-search-input"
-              placeholder="사업팀 또는 SV명 검색..."
-              class="text-sm px-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full md:w-64"
-            />
-          </div>
-        </div>
-        <div class="overflow-x-auto custom-scrollbar">
-          <table class="w-full text-left border-collapse text-sm">
-            <thead>
-              <tr
-                class="bg-slate-50 border-b border-slate-100 text-slate-500 font-semibold"
+          <h2
+            class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2"
+          >
+            <span>👤</span> 담당 SV별 설정 및 재고실사 현황 (재료·소모 추가)
+          </h2>
+          <div class="overflow-x-auto">
+            <table
+              class="min-w-full divide-y divide-slate-200 text-sm text-left"
+            >
+              <thead class="bg-slate-50 text-slate-500 font-semibold">
+                <tr>
+                  <th class="px-6 py-4">사업부</th>
+                  <th class="px-6 py-4">사업팀</th>
+                  <th class="px-6 py-4">담당 SV</th>
+                  <th class="px-6 py-4 text-center">관리점포</th>
+                  <th class="px-6 py-4 text-center">설정점포</th>
+                  <th class="px-6 py-4 text-center">장기유통평균</th>
+                  <th class="px-6 py-4 text-center">케이크평균</th>
+                  <th class="px-6 py-4 text-center">재료·소모평균</th>
+                  <th class="px-6 py-4 text-center">설정율</th>
+                </tr>
+              </thead>
+              <tbody
+                id="manager-table-body"
+                class="divide-y divide-slate-100 text-slate-700"
               >
-                <th class="py-3 px-6">사업팀</th>
-                <th class="py-3 px-6">담당 SV</th>
-                <th class="py-3 px-6 text-right">점포수</th>
-                <th class="py-3 px-6 text-right">설정점</th>
-                <th class="py-3 px-6 text-right">설정율</th>
-                <th
-                  class="py-3 px-6 text-center text-indigo-700 bg-indigo-50/30 font-bold"
-                >
-                  평균 재고실사 횟수 (제조/완제/장기/케익)
-                </th>
-                <th class="py-3 px-6 text-right bg-blue-50/50 text-blue-900">
-                  장기유통설정
-                </th>
-                <th class="py-3 px-6 text-right bg-pink-50/50 text-pink-900">
-                  케이크설정
-                </th>
-                <th
-                  class="py-3 px-6 text-right bg-emerald-50/50 text-emerald-900 font-semibold"
-                >
-                  재료소모설정
-                </th>
-              </tr>
-            </thead>
-            <tbody id="sv-table-body" class="divide-y divide-slate-100"></tbody>
-          </table>
-        </div>
-      </section>
+                <!-- JS 렌더링 -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
     </main>
 
+    <!-- 탑 이동 버튼 -->
     <button
-      id="btn-back-to-top"
-      class="fixed bottom-6 right-6 bg-blue-950 hover:bg-blue-900 text-white p-3 rounded-full shadow-lg transition-all transform hover:scale-105 opacity-0 pointer-events-none z-50 text-xs font-bold flex flex-col items-center justify-center"
+      id="btn-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="fixed bottom-6 right-6 p-3 bg-blue-900 text-white rounded-full shadow-lg hover:bg-blue-800 transition-opacity opacity-0 pointer-events-none z-50"
     >
-      ▲<span class="text-\[9px\] mt-0.5">TOP</span>
+      ▲ Top
     </button>
 
-    <footer
-      class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-xs md:text-sm text-center space-y-2"
-    >
-      <p class="font-semibold text-slate-300">
-        파리바게뜨 스마트주문 기획 및 운영 지원 대시보드
+    <footer class="bg-slate-900 text-slate-400 py-6 mt-12 text-center text-xs">
+      <p>
+        © 2026 PARIS BAGUETTE 자동권고주문 관제 대시보드. All Rights Reserved.
       </p>
-      <p>© 2026 SPC 가맹사업부. All rights reserved.</p>
     </footer>
 
+    <!-- 비즈니스 스크립트 -->
     <script>
-      let dashboardData = null;
-      let charts = {};
+      // 안전용 빌트인 Fallback 데이터 (CORS 오류 또는 data.json 부재 시 구동)
+      const fallbackData = {
+        lastUpdated: "2026-06-10 09:00:00",
+        overall: {
+          totalStores: 3280,
+          appliedStores: 2806,
+          configRate: 85.5,
+          avgSetItems: 37.8,
+          ltAvgItems: 33.2,
+        },
+        byDivision: [
+          {
+            division: "1사업부",
+            totalStores: 860,
+            appliedStores: 748,
+            configRate: 87.0,
+            avgSetItems: 39.1,
+            ltAppliedStores: 748,
+            ltAvgItems: 34.1,
+          },
+          {
+            division: "2사업부",
+            totalStores: 920,
+            appliedStores: 801,
+            configRate: 87.1,
+            avgSetItems: 38.5,
+            ltAppliedStores: 801,
+            ltAvgItems: 33.8,
+          },
+          {
+            division: "3사업부",
+            totalStores: 780,
+            appliedStores: 639,
+            configRate: 81.9,
+            avgSetItems: 35.2,
+            ltAppliedStores: 639,
+            ltAvgItems: 30.5,
+          },
+          {
+            division: "4사업부",
+            totalStores: 720,
+            appliedStores: 618,
+            configRate: 85.8,
+            avgSetItems: 38.1,
+            ltAppliedStores: 618,
+            ltAvgItems: 32.9,
+          },
+        ],
+        byTeam: [
+          {
+            division: "1사업부",
+            team: "서울남부팀",
+            totalStores: 110,
+            appliedStores: 98,
+            configRate: 89.1,
+            avgSetItems: 41.2,
+            ltAppliedStores: 98,
+            ltAvgItems: 35.2,
+          },
+          {
+            division: "1사업부",
+            team: "서울남동팀",
+            totalStores: 125,
+            appliedStores: 112,
+            configRate: 89.6,
+            avgSetItems: 43.1,
+            ltAppliedStores: 112,
+            ltAvgItems: 36.8,
+          },
+          {
+            division: "1사업부",
+            team: "경기안양팀",
+            totalStores: 115,
+            appliedStores: 105,
+            configRate: 91.3,
+            avgSetItems: 45.3,
+            ltAppliedStores: 105,
+            ltAvgItems: 39.5,
+          },
+          {
+            division: "2사업부",
+            team: "서울일산팀",
+            totalStores: 140,
+            appliedStores: 123,
+            configRate: 87.9,
+            avgSetItems: 38.2,
+            ltAppliedStores: 123,
+            ltAvgItems: 32.4,
+          },
+          {
+            division: "3사업부",
+            team: "광주제주팀",
+            totalStores: 95,
+            appliedStores: 82,
+            configRate: 86.3,
+            avgSetItems: 34.5,
+            ltAppliedStores: 82,
+            ltAvgItems: 29.1,
+          },
+          {
+            division: "4사업부",
+            team: "대구포항팀",
+            totalStores: 102,
+            appliedStores: 91,
+            configRate: 89.2,
+            avgSetItems: 40.5,
+            ltAppliedStores: 91,
+            ltAvgItems: 34.6,
+          },
+        ],
+        byManager: [
+          {
+            division: "1사업부",
+            team: "서울남부팀",
+            manager: "박성준",
+            totalStores: 20,
+            appliedStores: 18,
+            configRate: 90.0,
+            avgLtItems: 36.1,
+            avgCakeItems: 7.0,
+            avgConsItems: 1.2,
+          },
+          {
+            division: "1사업부",
+            team: "경기안양팀",
+            manager: "최주영",
+            totalStores: 16,
+            appliedStores: 16,
+            configRate: 100.0,
+            avgLtItems: 41.1,
+            avgCakeItems: 12.0,
+            avgConsItems: 2.5,
+          },
+          {
+            division: "2사업부",
+            team: "서울일산팀",
+            manager: "강창희",
+            totalStores: 22,
+            appliedStores: 20,
+            configRate: 90.9,
+            avgLtItems: 35.4,
+            avgCakeItems: 4.2,
+            avgConsItems: 1.1,
+          },
+        ],
+      };
 
-      const btnTop = document.getElementById("btn-back-to-top");
-      const badge = document.getElementById("data-status-badge");
-      const excelFileInput = document.getElementById("excel-file-input");
-      const dropZone = document.getElementById("drop-zone");
+      let divisionChartInstance = null;
+      let longTermChartInstance = null;
+      let ltTeamChartInstance = null;
 
-      // 탑버튼 제어
+      function switchTab(tabId) {
+        document
+          .getElementById("tab-dashboard")
+          .classList.toggle("hidden", tabId !== "dashboard");
+        document
+          .getElementById("tab-details")
+          .classList.toggle("hidden", tabId !== "details");
+        document
+          .getElementById("nav-dash")
+          .classList.toggle("bg-blue-800", tabId === "dashboard");
+        document
+          .getElementById("nav-det")
+          .classList.toggle("bg-blue-800", tabId === "details");
+      }
+
       window.addEventListener("scroll", () => {
+        const btn = document.getElementById("btn-top");
         if (window.scrollY > 300) {
-          btnTop.classList.remove("opacity-0", "pointer-events-none");
-          btnTop.classList.add("opacity-100");
+          btn.classList.remove("opacity-0", "pointer-events-none");
+          btn.classList.add("opacity-100");
         } else {
-          btnTop.classList.remove("opacity-100");
-          btnTop.classList.add("opacity-0", "pointer-events-none");
-        }
-      });
-      btnTop.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-
-      // 실시간 검색 검색 리스너
-      document
-        .getElementById("team-search-input")
-        .addEventListener("input", (e) => {
-          if (!dashboardData) return;
-          renderTeams(dashboardData.teams, e.target.value);
-        });
-      document
-        .getElementById("sv-search-input")
-        .addEventListener("input", (e) => {
-          if (!dashboardData) return;
-          renderSVs(dashboardData.svs, e.target.value);
-        });
-
-      // 드래그앤드롭 이벤트 리스너
-      window.addEventListener("dragover", (e) => {
-        e.preventDefault();
-        dropZone.classList.add("bg-blue-100", "border-blue-400");
-      });
-      window.addEventListener("dragleave", (e) => {
-        e.preventDefault();
-        dropZone.classList.remove("bg-blue-100", "border-blue-400");
-      });
-      window.addEventListener("drop", (e) => {
-        e.preventDefault();
-        dropZone.classList.remove("bg-blue-100", "border-blue-400");
-        const files = e.dataTransfer.files;
-        if (files.length > 0) {
-          handleExcelFile(files[0]);
+          btn.classList.add("opacity-0", "pointer-events-none");
+          btn.classList.remove("opacity-100");
         }
       });
 
-      excelFileInput.addEventListener("change", (e) => {
-        const file = e.target.files[0];
-        if (file) handleExcelFile(file);
-      });
-
-      // SheetJS 연동 및 엑셀 파싱
-      function handleExcelFile(file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-          try {
-            const data = new Uint8Array(e.target.result);
-            const workbook = XLSX.read(data, { type: "array" });
-
-            let sheetName = workbook.SheetNames[0];
-            if (workbook.SheetNames.includes("대시보드")) {
-              sheetName = "대시보드";
-            } else if (workbook.SheetNames.includes("Sheet1")) {
-              sheetName = "Sheet1";
-            }
-
-            const worksheet = workbook.Sheets[sheetName];
-            const json = XLSX.utils.sheet_to_json(worksheet);
-
-            if (json.length === 0) {
-              alert("❌ 엑셀에 파싱할 수 있는 데이터가 없습니다.");
-              return;
-            }
-
-            const processed = processRawExcelData(json);
-            applyDashboardData(
-              processed,
-              "📂 " + file.name + " 실시간 연동 성공!",
+      async function initDashboard() {
+        let data = fallbackData;
+        try {
+          const response = await fetch("data.json");
+          if (response.ok) {
+            data = await response.json();
+            document.getElementById("update-time").innerText =
+              `서버 동기화: ${data.lastUpdated}`;
+          } else {
+            console.warn(
+              "data.json이 없어 빌트인 백업 데이터로 대시보드를 구동합니다.",
             );
-          } catch (err) {
-            alert("❌ 엑셀 파싱 중 오류가 발생하였습니다: " + err.message);
-            console.error(err);
           }
-        };
-        reader.readAsArrayBuffer(file);
-      }
-
-      // 업로드된 원본 데이터를 클라이언트단에서 가공 처리 (0 품목 점포 제외 후 계산 적용)
-      function processRawExcelData(rows) {
-        const cleanRows = rows.map((row) => {
-          const item = {};
-          for (let key in row) {
-            if (row.hasOwnProperty(key)) {
-              const cleanKey = key.strip
-                ? key.strip()
-                : key.trim().replace(/^\ufeff/, "");
-              item[cleanKey] = row[cleanKey];
-            }
-          }
-          return item;
-        });
-
-        const findHeader = (candidates) => {
-          for (let cand of candidates) {
-            if (cleanRows.length > 0 && cleanRows[0][cand] !== undefined)
-              return cand;
-          }
-          return candidates[0];
-        };
-
-        const colActiveStore = findHeader([
-          "자동권고주문 설정점",
-          "자동권고 설정 점포수",
-        ]);
-        const colLongItems = findHeader([
-          "장기유통 자동권고주문 설정 품목 수",
-          "장기유통 설정품목",
-        ]);
-        const colCakeItems = findHeader([
-          "케이크 자동권고주문 설정 품목 수",
-          "케이크 설정품목",
-        ]);
-        const colMatItems = findHeader([
-          "재료·소모 자동권고주문 설정 품목 수",
-          "재료소모 설정품목",
-          "재료소모 자동권고주문 설정 품목 수",
-          "재료·소모 자동권고주문 설정 품목수",
-        ]);
-
-        const validRows = cleanRows.filter(
-          (r) =>
-            (r["본부"] || r["사업부"]) &&
-            (r["팀"] || r["사업팀"]) &&
-            r["점포코드"],
-        );
-
-        const totalStores = validRows.length;
-        const activeStores = validRows.filter(
-          (r) => parseInt(r[colActiveStore]) === 1,
-        ).length;
-        const activeRate =
-          totalStores > 0 ? (activeStores / totalStores) * 100 : 0;
-
-        // 1. 사업부(본부) 기준 (PB가맹 평균 벤치마크 포함)
-        const divMap = {};
-        let long_active_sum = 0;
-        let div_count = 0;
-
-        validRows.forEach((r) => {
-          const divName = r["본부"] || r["사업부"] || "미정";
-          if (!divMap[divName]) {
-            div_count += 1;
-            divMap[divName] = {
-              name: divName,
-              total: 0,
-              active: 0,
-              long_active_stores: 0,
-              long_items_sum: 0,
-            };
-          }
-          divMap[divName].total += 1;
-          const isActive = parseInt(r[colActiveStore]) === 1;
-          if (isActive) divMap[divName].active += 1;
-
-          const longItems = parseInt(r[colLongItems]) || 0;
-          if (longItems > 0) {
-            divMap[divName].long_active_stores += 1;
-            divMap[divName].long_items_sum += longItems;
-            long_active_sum += 1;
-          }
-        });
-
-        const divisions = Object.values(divMap)
-          .map((d) => ({
-            name: d.name,
-            total: d.total,
-            active: d.active,
-            rate:
-              d.total > 0
-                ? parseFloat(((d.active / d.total) * 100).toFixed(1))
-                : 0,
-            long_active_stores: d.long_active_stores,
-            long_avg_items:
-              d.long_active_stores > 0
-                ? parseFloat(
-                    (d.long_items_sum / d.long_active_stores).toFixed(1),
-                  )
-                : 0,
-          }))
-          .sort((a, b) => a.name.localeCompare(b.name));
-
-        // 전사 장기유통 평균 계산 (0 제외)
-        const overall_long_active_stores = validRows.filter(
-          (r) => (parseInt(r[colLongItems]) || 0) > 0,
-        );
-        const overall_long_items_sum = overall_long_active_stores.reduce(
-          (acc, r) => acc + (parseInt(r[colLongItems]) || 0),
-          0,
-        );
-        const overall_long_avg =
-          overall_long_active_stores.length > 0
-            ? parseFloat(
-                (
-                  overall_long_items_sum / overall_long_active_stores.length
-                ).toFixed(1),
-              )
-            : 0;
-
-        // ⭐ 차트용 PB가맹 평균 벤치마크 레코드 삽입 (맨 앞인 index 0 에 추가!)
-        divisions.unshift({
-          name: "PB가맹 평균",
-          total:
-            div_count > 0 ? Math.round(totalStores / div_count) : totalStores,
-          active:
-            div_count > 0 ? Math.round(activeStores / div_count) : activeStores,
-          rate: parseFloat(activeRate.toFixed(1)),
-          long_active_stores:
-            div_count > 0 ? Math.round(long_active_sum / div_count) : 0,
-          long_avg_items: overall_long_avg,
-        });
-
-        // 2. 지역 기준
-        const regMap = {};
-        validRows.forEach((r) => {
-          const regName = r["지역"] || "기타";
-          if (!regMap[regName]) {
-            regMap[regName] = { name: regName, total: 0, active: 0 };
-          }
-          regMap[regName].total += 1;
-          if (parseInt(r[colActiveStore]) === 1) regMap[regName].active += 1;
-        });
-        const regions = Object.values(regMap)
-          .map((reg) => ({
-            ...reg,
-            rate:
-              reg.total > 0
-                ? parseFloat(((reg.active / reg.total) * 100).toFixed(1))
-                : 0,
-          }))
-          .sort((a, b) => b.total - a.total);
-
-        // 3. 사업팀 기준
-        const teamMap = {};
-        validRows.forEach((r) => {
-          const teamName = r["팀"] || r["사업팀"] || "미정";
-          const divName = r["본부"] || r["사업부"] || "미정";
-          if (!teamMap[teamName]) {
-            teamMap[teamName] = {
-              division: divName,
-              team: teamName,
-              total: 0,
-              active: 0,
-              long_active_stores: 0,
-              long_items_sum: 0,
-              cake_active_stores: 0,
-              cake_items_sum: 0,
-              material_active_stores: 0,
-              material_items_sum: 0,
-            };
-          }
-          const t = teamMap[teamName];
-          t.total += 1;
-          if (parseInt(r[colActiveStore]) === 1) t.active += 1;
-
-          const longItems = parseInt(r[colLongItems]) || 0;
-          const cakeItems = parseInt(r[colCakeItems]) || 0;
-          const matItems = parseInt(r[colMatItems]) || 0;
-
-          if (longItems > 0) {
-            t.long_active_stores += 1;
-            t.long_items_sum += longItems;
-          }
-          if (cakeItems > 0) {
-            t.cake_active_stores += 1;
-            t.cake_items_sum += cakeItems;
-          }
-          if (matItems > 0) {
-            t.material_active_stores += 1;
-            t.material_items_sum += matItems;
-          }
-        });
-        const teams = Object.values(teamMap)
-          .map((t) => ({
-            division: t.division,
-            team: t.team,
-            total: t.total,
-            active: t.active,
-            rate:
-              t.total > 0
-                ? parseFloat(((t.active / t.total) * 100).toFixed(1))
-                : 0,
-            items_long_avg:
-              t.long_active_stores > 0
-                ? parseFloat(
-                    (t.long_items_sum / t.long_active_stores).toFixed(1),
-                  )
-                : 0,
-            items_cake_avg:
-              t.cake_active_stores > 0
-                ? parseFloat(
-                    (t.cake_items_sum / t.cake_active_stores).toFixed(1),
-                  )
-                : 0,
-            items_material_avg:
-              t.material_active_stores > 0
-                ? parseFloat(
-                    (t.material_items_sum / t.material_active_stores).toFixed(
-                      1,
-                    ),
-                  )
-                : 0,
-            long_active_stores: t.long_active_stores,
-            long_avg_items:
-              t.long_active_stores > 0
-                ? parseFloat(
-                    (t.long_items_sum / t.long_active_stores).toFixed(1),
-                  )
-                : 0,
-          }))
-          .sort((a, b) => b.rate - a.rate);
-
-        // 4. SV 기준
-        const svMap = {};
-        validRows.forEach((r) => {
-          const svName = r["SV"] || "기타";
-          const teamName = r["팀"] || r["사업팀"] || "미정";
-          const key = `${teamName}_${svName}`;
-          if (!svMap[key]) {
-            svMap[key] = {
-              team: teamName,
-              sv: svName,
-              total: 0,
-              active: 0,
-              stock_mfg_sum: 0,
-              stock_normal_sum: 0,
-              stock_long_sum: 0,
-              stock_cake_sum: 0,
-              long_active_stores: 0,
-              long_items_sum: 0,
-              cake_active_stores: 0,
-              cake_items_sum: 0,
-              material_active_stores: 0,
-              material_items_sum: 0,
-            };
-          }
-          const s = svMap[key];
-          s.total += 1;
-          if (parseInt(r[colActiveStore]) === 1) s.active += 1;
-
-          s.stock_mfg_sum += parseInt(r["제조 재고실사"]) || 0;
-          s.stock_normal_sum += parseInt(r["일반완제 재고실사"]) || 0;
-          s.stock_long_sum += parseInt(r["장기유통 재고실사"]) || 0;
-          s.stock_cake_sum += parseInt(r["케이크 재고실사"]) || 0;
-
-          const longItems = parseInt(r[colLongItems]) || 0;
-          const cakeItems = parseInt(r[colCakeItems]) || 0;
-          const matItems = parseInt(r[colMatItems]) || 0;
-
-          if (longItems > 0) {
-            s.long_active_stores += 1;
-            s.long_items_sum += longItems;
-          }
-          if (cakeItems > 0) {
-            s.cake_active_stores += 1;
-            s.cake_items_sum += cakeItems;
-          }
-          if (matItems > 0) {
-            s.material_active_stores += 1;
-            s.material_items_sum += matItems;
-          }
-        });
-        const svs = Object.values(svMap)
-          .map((s) => ({
-            team: s.team,
-            sv: s.sv,
-            total: s.total,
-            active: s.active,
-            rate:
-              s.total > 0
-                ? parseFloat(((s.active / s.total) * 100).toFixed(1))
-                : 0,
-            stock_mfg_avg:
-              s.total > 0
-                ? parseFloat((s.stock_mfg_sum / s.total).toFixed(1))
-                : 0,
-            stock_normal_avg:
-              s.total > 0
-                ? parseFloat((s.stock_normal_sum / s.total).toFixed(1))
-                : 0,
-            stock_long_avg:
-              s.total > 0
-                ? parseFloat((s.stock_long_sum / s.total).toFixed(1))
-                : 0,
-            stock_cake_avg:
-              s.total > 0
-                ? parseFloat((s.stock_cake_sum / s.total).toFixed(1))
-                : 0,
-            items_long_avg:
-              s.long_active_stores > 0
-                ? parseFloat(
-                    (s.long_items_sum / s.long_active_stores).toFixed(1),
-                  )
-                : 0,
-            items_cake_avg:
-              s.cake_active_stores > 0
-                ? parseFloat(
-                    (s.cake_items_sum / s.cake_active_stores).toFixed(1),
-                  )
-                : 0,
-            items_material_avg:
-              s.material_active_stores > 0
-                ? parseFloat(
-                    (s.material_items_sum / s.material_active_stores).toFixed(
-                      1,
-                    ),
-                  )
-                : 0,
-          }))
-          .sort((a, b) => b.rate - a.rate);
-
-        return {
-          overall: { totalStores, activeStores, activeRate },
-          divisions,
-          regions,
-          teams,
-          svs,
-        };
-      }
-
-      // 데이터 동적 적용
-      function applyDashboardData(data, statusText) {
-        if (!data || !data.overall) {
-          console.error("Invalid data format received.");
-          return;
-        }
-        dashboardData = data;
-        badge.textContent = statusText;
-        badge.className =
-          "bg-emerald-600 text-white px-2.5 py-0.5 rounded-full text-xs font-bold shadow-sm";
-
-        const totalStores = data.overall.totalStores || 0;
-        const activeStores = data.overall.activeStores || 0;
-        const activeRate = data.overall.activeRate || 0;
-
-        document.getElementById("stat-total-stores").textContent =
-          totalStores.toLocaleString() + "개점";
-        document.getElementById("stat-active-stores").textContent =
-          activeStores.toLocaleString() + "개점";
-        document.getElementById("stat-active-rate").textContent =
-          activeRate.toFixed(1) + "%";
-
-        renderRegions(data.regions || []);
-        initCharts(data);
-        renderTeams(data.teams || []);
-        renderSVs(data.svs || []);
-      }
-
-      // 지역별 카드 적용
-      function renderRegions(regions) {
-        const container = document.getElementById("region-cards-container");
-        container.innerHTML = "";
-        regions.forEach((reg) => {
-          const div = document.createElement("div");
-          div.className =
-            "bg-white p-3.5 rounded-xl border border-slate-100 shadow-sm text-center";
-          div.innerHTML = `
-          <p class="text-xs font-bold text-slate-400 mb-1">${reg.name}</p>
-          <p class="text-sm font-black text-slate-800">${reg.total}개점</p>
-          <p class="text-xs font-bold text-emerald-600 mt-1">${reg.rate}% 설정</p>
-        `;
-          container.appendChild(div);
-        });
-      }
-
-      // 사업팀별 리스트 적용
-      function renderTeams(teams, searchTerm = "") {
-        const tbody = document.getElementById("team-table-body");
-        tbody.innerHTML = "";
-
-        const filtered = teams.filter(
-          (t) =>
-            t.division.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            t.team.toLowerCase().includes(searchTerm.toLowerCase()),
-        );
-
-        if (filtered.length === 0) {
-          tbody.innerHTML = `<tr><td colspan="8" class="text-center py-8 text-slate-400 text-xs">일치하는 사업팀 데이터가 없습니다.</td></tr>`;
-          return;
+        } catch (err) {
+          console.warn("로컬 CORS 보안 우회로 빌트인 데이터를 구동합니다.");
         }
 
-        filtered.forEach((t) => {
-          const tr = document.createElement("tr");
-          tr.className = "hover:bg-slate-50/50 transition-colors";
-          tr.innerHTML = `
-          <td class="py-3 px-6 font-semibold text-slate-500">${t.division}</td>
-          <td class="py-3 px-6 font-bold text-slate-900">${t.team}</td>
-          <td class="py-3 px-6 text-right">${t.total}</td>
-          <td class="py-3 px-6 text-right text-blue-600 font-semibold">${t.active}</td>
-          <td class="py-3 px-6 text-right font-bold ${t.rate >= 80 ? "text-emerald-600" : "text-slate-700"}">${t.rate}%</td>
-          <td class="py-3 px-6 text-right bg-blue-50/20 text-blue-700 font-medium">${t.items_long_avg}개</td>
-          <td class="py-3 px-6 text-right bg-pink-50/20 text-pink-700 font-medium">${t.items_cake_avg}개</td>
-          <td class="py-3 px-6 text-right bg-emerald-50/20 text-emerald-700 font-medium">${t.items_material_avg}개</td>
-        `;
-          tbody.appendChild(tr);
-        });
+        // KPI 값 대입
+        document.getElementById("kpi-total").innerText =
+          `${data.overall.totalStores.toLocaleString()} 개점`;
+        document.getElementById("kpi-applied").innerText =
+          `${data.overall.appliedStores.toLocaleString()} 개점`;
+        document.getElementById("kpi-avg-items").innerText =
+          `${data.overall.avgSetItems} 개`;
+        document.getElementById("kpi-rate").innerText =
+          `${data.overall.configRate}%`;
+
+        renderCharts(data);
+        renderTables(data);
       }
 
-      // SV별 리스트 적용
-      function renderSVs(svs, searchTerm = "") {
-        const tbody = document.getElementById("sv-table-body");
-        tbody.innerHTML = "";
-
-        const filtered = svs.filter(
-          (s) =>
-            s.team.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            s.sv.toLowerCase().includes(searchTerm.toLowerCase()),
-        );
-
-        if (filtered.length === 0) {
-          tbody.innerHTML = `<tr><td colspan="9" class="text-center py-8 text-slate-400 text-xs">일치하는 SV 데이터가 없습니다.</td></tr>`;
-          return;
-        }
-
-        filtered.forEach((s) => {
-          const tr = document.createElement("tr");
-          tr.className =
-            "hover:bg-slate-50/50 transition-colors text-xs md:text-sm";
-          tr.innerHTML = `
-          <td class="py-3 px-6 text-slate-500">${s.team}</td>
-          <td class="py-3 px-6 font-bold text-slate-900">${s.sv}</td>
-          <td class="py-3 px-6 text-right font-medium">${s.total}</td>
-          <td class="py-3 px-6 text-right text-blue-600 font-bold">${s.active}</td>
-          <td class="py-3 px-6 text-right font-semibold">${s.rate}%</td>
-          <td class="py-3 px-6 text-center bg-indigo-50/10">
-            <span class="inline-block bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded text-[11px]">제조 ${s.stock_mfg_avg}</span>
-            <span class="inline-block bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded text-[11px]">완제 ${s.stock_normal_avg}</span>
-            <span class="inline-block bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded text-[11px]">장기 ${s.stock_long_avg}</span>
-            <span class="inline-block bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded text-[11px]">케익 ${s.stock_cake_avg}</span>
-          </td>
-          <td class="py-3 px-6 text-right font-semibold text-blue-700 bg-blue-50/10">${s.items_long_avg}개</td>
-          <td class="py-3 px-6 text-right font-semibold text-pink-700 bg-pink-50/10">${s.items_cake_avg}개</td>
-          <td class="py-3 px-6 text-right font-semibold text-emerald-700 bg-emerald-50/10">${s.items_material_avg}개</td>
-        `;
-          tbody.appendChild(tr);
-        });
-      }
-
-      // 4종 차트 렌더링
-      function initCharts(data) {
-        if (!data || !data.divisions) return;
-
-        if (charts.division) charts.division.destroy();
-        if (charts.region) charts.region.destroy();
-        if (charts.longTermDivision) charts.longTermDivision.destroy();
-        if (charts.longTermTeam) charts.longTermTeam.destroy();
-
-        // 차트 1: 사업부별 설정률 비교
+      function renderCharts(data) {
+        // 1. 사업부별 시스템 적용 현황 (PB가맹 평균 맨 왼쪽 배치)
         const divCtx = document
           .getElementById("divisionChart")
           .getContext("2d");
-        charts.division = new Chart(divCtx, {
+        const divLabels = [
+          "PB가맹 평균",
+          ...data.byDivision.map((d) => d.division),
+        ];
+        const divRates = [
+          data.overall.configRate,
+          ...data.byDivision.map((d) => d.configRate),
+        ];
+        const divColors = [
+          "rgba(239, 68, 68, 0.85)",
+          ...data.byDivision.map(() => "rgba(30, 58, 138, 0.85)"),
+        ];
+
+        if (divisionChartInstance) divisionChartInstance.destroy();
+        divisionChartInstance = new Chart(divCtx, {
           type: "bar",
           data: {
-            labels: data.divisions.map((d) => d.name),
+            labels: divLabels,
             datasets: [
               {
                 label: "자동권고 설정률 (%)",
-                data: data.divisions.map((d) => d.rate),
-                backgroundColor: data.divisions.map((d) =>
-                  d.name === "PB가맹 평균"
-                    ? "rgba(234, 179, 8, 0.95)"
-                    : "rgba(30, 58, 138, 0.85)",
-                ),
+                data: divRates,
+                backgroundColor: divColors,
                 borderRadius: 6,
               },
             ],
@@ -1090,165 +569,126 @@
           options: {
             responsive: true,
             maintainAspectRatio: false,
-            scales: { y: { beginAtZero: true, max: 100 } },
+            scales: { y: { min: 0, max: 100 } },
           },
         });
 
-        // 차트 2: 지역별 분포 및 설정률 (상위 8개 지역)
-        const regCtx = document.getElementById("regionChart").getContext("2d");
-        const top8Reg = [...(data.regions || [])].slice(0, 8);
-        charts.region = new Chart(regCtx, {
-          type: "line",
+        // 2. 장기유통 사업부별 설정 지표 (정가운데 정렬 + skipNull 적용)
+        const ltCtx = document.getElementById("longTermChart").getContext("2d");
+        const ltLabels = [
+          "PB가맹 평균",
+          ...data.byDivision.map((d) => d.division),
+        ];
+
+        // PB가맹 평균에만 전체설정률 맵핑하고 개별 사업부에는 null 처리하여 skipNull 유도
+        const pbWholeRates = [data.overall.configRate, null, null, null, null];
+        const ltStores = [
+          // 가맹 평균값은 전체 사업부의 평균 설정점수로 가이드
+          Math.round(
+            data.byDivision.reduce((a, c) => a + c.ltAppliedStores, 0) /
+              data.byDivision.length,
+          ),
+          ...data.byDivision.map((d) => d.ltAppliedStores),
+        ];
+        const ltAvgItems = [
+          data.overall.ltAvgItems,
+          ...data.byDivision.map((d) => d.ltAvgItems),
+        ];
+
+        if (longTermChartInstance) longTermChartInstance.destroy();
+        longTermChartInstance = new Chart(ltCtx, {
+          type: "bar",
           data: {
-            labels: top8Reg.map((r) => r.name),
+            labels: ltLabels,
             datasets: [
               {
-                label: "점포수 (개)",
-                data: top8Reg.map((r) => r.total),
-                borderColor: "rgba(30, 58, 138, 0.8)",
-                backgroundColor: "rgba(30, 58, 138, 0.1)",
-                yAxisID: "y",
-                type: "bar",
+                label: "PB가맹 전체 설정률 (%)",
+                data: pbWholeRates,
+                backgroundColor: "rgba(16, 185, 129, 0.85)",
+                borderRadius: 6,
+                skipNull: true,
+                yAxisID: "yRate",
               },
               {
-                label: "설정률 (%)",
-                data: top8Reg.map((r) => r.rate),
-                borderColor: "rgba(16, 185, 129, 1)",
-                backgroundColor: "rgba(16, 185, 129, 1)",
-                yAxisID: "y1",
-                borderWidth: 3,
-                tension: 0.2,
+                label: "장기유통 설정점 수 (개점)",
+                data: ltStores,
+                backgroundColor: "rgba(245, 158, 11, 0.85)",
+                borderRadius: 6,
+                skipNull: true,
+                yAxisID: "yCount",
+              },
+              {
+                label: "장기유통 평균 설정품목수 (개)",
+                data: ltAvgItems,
+                backgroundColor: "rgba(219, 39, 119, 0.85)",
+                borderRadius: 6,
+                skipNull: true,
+                yAxisID: "yItems",
               },
             ],
           },
           options: {
             responsive: true,
             maintainAspectRatio: false,
+            interaction: {
+              mode: "index",
+              intersect: false,
+            },
             scales: {
-              y: { position: "left", title: { display: true, text: "점포수" } },
-              y1: {
+              yCount: {
+                type: "linear",
+                position: "left",
+                title: { display: true, text: "설정점포 수 (개점)" },
+              },
+              yItems: {
+                type: "linear",
                 position: "right",
                 grid: { drawOnChartArea: false },
+                title: { display: true, text: "설정품목수 (개)" },
+              },
+              yRate: {
+                type: "linear",
+                position: "right",
                 min: 0,
                 max: 100,
+                grid: { drawOnChartArea: false },
                 title: { display: true, text: "설정률 (%)" },
               },
             },
           },
         });
 
-        // 차트 3: 장기유통 유형 사업부별 설정 (skipNull: true 설정으로 빈 값 자동 가운데 정렬 완벽 정비)
-        const ltDivCtx = document
-          .getElementById("longTermDivisionChart")
-          .getContext("2d");
-        charts.longTermDivision = new Chart(ltDivCtx, {
-          type: "bar",
-          data: {
-            labels: data.divisions.map((d) => d.name),
-            datasets: [
-              {
-                label: "장기유통 설정점 수 (개점)",
-                data: data.divisions.map((d) => d.long_active_stores),
-                backgroundColor: "rgba(249, 115, 22, 0.85)",
-                borderRadius: 6,
-                yAxisID: "y",
-                skipNull: true, // 주황색 막대 가운데 정렬 지원
-              },
-              {
-                label: "장기유통 평균 설정품목 수 (개)",
-                data: data.divisions.map((d) => d.long_avg_items),
-                backgroundColor: "rgba(217, 70, 239, 0.85)",
-                borderRadius: 6,
-                yAxisID: "y1",
-                skipNull: true, // 분홍색 막대 가운데 정렬 지원
-              },
-              {
-                label: "PB가맹 전체 설정률 (%)",
-                data: data.divisions.map((d) =>
-                  d.name === "PB가맹 평균" ? d.rate : null,
-                ),
-                backgroundColor: "rgba(16, 185, 129, 0.95)",
-                borderRadius: 6,
-                yAxisID: "y1",
-                skipNull: true, // 데이터가 없는 개별 사업부는 자동으로 공간 예약 제외하여 주황색/분홍색 정렬 고도화
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            interaction: {
-              mode: "index",
-              intersect: false,
-            },
-            plugins: {
-              tooltip: {
-                enabled: true,
-                callbacks: {
-                  label: function (context) {
-                    let label = context.dataset.label || "";
-                    if (label) label += ": ";
-                    if (context.parsed.y !== null) {
-                      if (context.datasetIndex === 0) {
-                        label += context.parsed.y.toLocaleString() + "개점";
-                      } else if (context.datasetIndex === 1) {
-                        label += context.parsed.y.toFixed(1) + "개";
-                      } else {
-                        label += context.parsed.y.toFixed(1) + "%";
-                      }
-                    }
-                    return label;
-                  },
-                },
-              },
-            },
-            scales: {
-              y: {
-                position: "left",
-                title: { display: true, text: "설정점 수 (개)" },
-              },
-              y1: {
-                position: "right",
-                grid: { drawOnChartArea: false },
-                title: {
-                  display: true,
-                  text: "설정률 (%) / 평균 품목 수량 (개)",
-                },
-              },
-            },
-          },
-        });
-
-        // 차트 4: 장기유통 유형 사업팀별 설정 TOP 10
+        // 3. 장기유통 사업팀별 TOP 10 (전체 설정률 라인 완전 삭제)
         const ltTeamCtx = document
           .getElementById("longTermTeamChart")
           .getContext("2d");
-        const top10LongTeams = [...(data.teams || [])]
-          .sort((a, b) => b.long_avg_items - a.long_avg_items)
+        const sortedTeams = [...data.byTeam]
+          .sort((a, b) => b.ltAppliedStores - a.ltAppliedStores)
           .slice(0, 10);
-        charts.longTermTeam = new Chart(ltTeamCtx, {
+
+        const teamLabels = sortedTeams.map((t) => t.team);
+        const teamLtStores = sortedTeams.map((t) => t.ltAppliedStores);
+        const teamLtAvgItems = sortedTeams.map((t) => t.ltAvgItems);
+
+        if (ltTeamChartInstance) ltTeamChartInstance.destroy();
+        ltTeamChartInstance = new Chart(ltTeamCtx, {
           type: "bar",
           data: {
-            labels: top10LongTeams.map((t) => t.team),
+            labels: teamLabels,
             datasets: [
               {
                 label: "장기유통 설정점 수 (개점)",
-                data: top10LongTeams.map((t) => t.long_active_stores),
-                backgroundColor: "rgba(249, 115, 22, 0.8)",
-                borderRadius: 4,
-                yAxisID: "y",
-                order: 2,
+                data: teamLtStores,
+                backgroundColor: "rgba(245, 158, 11, 0.85)",
+                borderRadius: 6,
+                yAxisID: "yCount",
               },
               {
-                label: "장기유통 평균 설정품목 수 (개)",
-                data: top10LongTeams.map((t) => t.long_avg_items),
-                borderColor: "rgba(236, 72, 153, 1)",
-                backgroundColor: "rgba(236, 72, 153, 1)",
-                borderWidth: 2,
-                type: "line",
-                tension: 0.2,
-                yAxisID: "y1",
-                order: 1,
+                label: "장기유통 평균 설정품목수 (개)",
+                data: teamLtAvgItems,
+                backgroundColor: "rgba(219, 39, 119, 0.85)",
+                borderRadius: 6,
+                yAxisID: "yItems",
               },
             ],
           },
@@ -1259,263 +699,67 @@
               mode: "index",
               intersect: false,
             },
-            plugins: {
-              tooltip: {
-                enabled: true,
-                callbacks: {
-                  label: function (context) {
-                    let label = context.dataset.label || "";
-                    if (label) label += ": ";
-                    if (context.parsed.y !== null) {
-                      if (context.datasetIndex === 0) {
-                        label += context.parsed.y.toLocaleString() + "개점";
-                      } else {
-                        label += context.parsed.y.toFixed(1) + "개";
-                      }
-                    }
-                    return label;
-                  },
-                },
-              },
-            },
             scales: {
-              y: {
+              yCount: {
+                type: "linear",
                 position: "left",
-                title: { display: true, text: "설정점 수 (개)" },
+                title: { display: true, text: "설정점포 (개점)" },
               },
-              y1: {
+              yItems: {
+                type: "linear",
                 position: "right",
                 grid: { drawOnChartArea: false },
-                title: { display: true, text: "평균 품목 수량 (개)" },
+                title: { display: true, text: "설정품목수 (개)" },
               },
             },
           },
         });
       }
 
-      // 기본 가상 템플릿 데이터셋
-      const defaultData = {
-        overall: { totalStores: 931, activeStores: 832, activeRate: 89.4 },
-        divisions: [
-          {
-            name: "PB가맹 평균",
-            total: 232,
-            active: 208,
-            rate: 89.4,
-            long_active_stores: 186,
-            long_avg_items: 32.2,
-          },
-          {
-            name: "1사업부",
-            total: 245,
-            active: 220,
-            rate: 89.8,
-            long_active_stores: 198,
-            long_avg_items: 34.5,
-          },
-          {
-            name: "2사업부",
-            total: 280,
-            active: 242,
-            rate: 86.4,
-            long_active_stores: 210,
-            long_avg_items: 29.1,
-          },
-          {
-            name: "3사업부",
-            total: 211,
-            active: 192,
-            rate: 91.0,
-            long_active_stores: 175,
-            long_avg_items: 33.9,
-          },
-          {
-            name: "4사업부",
-            total: 195,
-            active: 178,
-            rate: 91.3,
-            long_active_stores: 162,
-            long_avg_items: 31.4,
-          },
-        ],
-        regions: [
-          { name: "서울특별시", total: 320, active: 285, rate: 89.1 },
-          { name: "경기도", total: 295, active: 261, rate: 88.5 },
-          { name: "인천광역시", total: 110, active: 98, rate: 89.1 },
-          { name: "강원도", total: 95, active: 85, rate: 89.5 },
-          { name: "충청북도", total: 60, active: 55, rate: 91.7 },
-          { name: "제주도", total: 51, active: 48, rate: 94.1 },
-        ],
-        teams: [
-          {
-            division: "1사업부",
-            team: "서울남부팀",
-            total: 55,
-            active: 51,
-            rate: 92.7,
-            items_long_avg: 32.4,
-            items_cake_avg: 12.1,
-            items_material_avg: 3.5,
-            long_active_stores: 49,
-            long_avg_items: 32.4,
-          },
-          {
-            division: "1사업부",
-            team: "경기안양팀",
-            total: 60,
-            active: 55,
-            rate: 91.7,
-            items_long_avg: 29.8,
-            items_cake_avg: 10.4,
-            items_material_avg: 4.1,
-            long_active_stores: 53,
-            long_avg_items: 29.8,
-          },
-          {
-            division: "1사업부",
-            team: "수원안산팀",
-            total: 70,
-            active: 62,
-            rate: 88.6,
-            items_long_avg: 35.1,
-            items_cake_avg: 11.5,
-            items_material_avg: 2.8,
-            long_active_stores: 60,
-            long_avg_items: 35.1,
-          },
-          {
-            division: "2사업부",
-            team: "서울일산팀",
-            total: 85,
-            active: 74,
-            rate: 87.1,
-            items_long_avg: 28.5,
-            items_cake_avg: 9.8,
-            items_material_avg: 1.5,
-            long_active_stores: 68,
-            long_avg_items: 28.5,
-          },
-          {
-            division: "2사업부",
-            team: "부천인천팀",
-            total: 90,
-            active: 78,
-            rate: 86.7,
-            items_long_avg: 26.2,
-            items_cake_avg: 8.5,
-            items_material_avg: 2.2,
-            long_active_stores: 72,
-            long_avg_items: 26.2,
-          },
-          {
-            division: "3사업부",
-            team: "광주제주팀",
-            total: 65,
-            active: 60,
-            rate: 92.3,
-            items_long_avg: 30.5,
-            items_cake_avg: 11.0,
-            items_material_avg: 3.0,
-            long_active_stores: 58,
-            long_avg_items: 30.5,
-          },
-          {
-            division: "3사업부",
-            team: "청주충북팀",
-            total: 45,
-            active: 41,
-            rate: 91.1,
-            items_long_avg: 33.4,
-            items_cake_avg: 13.5,
-            items_material_avg: 5.2,
-            long_active_stores: 40,
-            long_avg_items: 33.4,
-          },
-          {
-            division: "4사업부",
-            team: "대구구미팀",
-            total: 75,
-            active: 68,
-            rate: 90.7,
-            items_long_avg: 22.4,
-            items_cake_avg: 7.1,
-            items_material_avg: 1.1,
-            long_active_stores: 61,
-            long_avg_items: 22.4,
-          },
-          {
-            division: "4사업부",
-            team: "부산김해팀",
-            total: 60,
-            active: 55,
-            rate: 91.7,
-            items_long_avg: 24.1,
-            items_cake_avg: 8.2,
-            items_material_avg: 2.5,
-            long_active_stores: 51,
-            long_avg_items: 24.1,
-          },
-        ],
-        svs: [
-          {
-            team: "서울남부팀",
-            sv: "박성준",
-            total: 12,
-            active: 11,
-            rate: 91.7,
-            stock_mfg_avg: 15.4,
-            stock_normal_avg: 18.2,
-            stock_long_avg: 6.2,
-            stock_cake_avg: 3.1,
-            items_long_avg: 34.2,
-            items_cake_avg: 12.5,
-            items_material_avg: 4.8,
-          },
-          {
-            team: "서울남부팀",
-            sv: "염은기",
-            total: 15,
-            active: 13,
-            rate: 86.7,
-            stock_mfg_avg: 14.1,
-            stock_normal_avg: 19.5,
-            stock_long_avg: 5.8,
-            stock_cake_avg: 2.9,
-            items_long_avg: 31.0,
-            items_cake_avg: 11.2,
-            items_material_avg: 3.9,
-          },
-          {
-            team: "경기안양팀",
-            sv: "김민기",
-            total: 14,
-            active: 13,
-            rate: 92.9,
-            stock_mfg_avg: 16.5,
-            stock_normal_avg: 22.0,
-            stock_long_avg: 8.1,
-            stock_cake_avg: 4.5,
-            items_long_avg: 28.5,
-            items_cake_avg: 10.1,
-            items_material_avg: 4.2,
-          },
-        ],
-      };
+      function renderTables(data) {
+        // 사업팀별 테이블 렌더링
+        const teamBody = document.getElementById("team-table-body");
+        teamBody.innerHTML = "";
+        data.byTeam.forEach((t) => {
+          const tr = document.createElement("tr");
+          tr.className = "hover:bg-slate-50 transition-colors";
+          tr.innerHTML = `
+                    <td class="px-6 py-4 font-semibold">${t.division}</td>
+                    <td class="px-6 py-4">${t.team}</td>
+                    <td class="px-6 py-4 text-center">${t.totalStores.toLocaleString()}</td>
+                    <td class="px-6 py-4 text-center text-blue-900 font-bold">${t.appliedStores.toLocaleString()}</td>
+                    <td class="px-6 py-4 text-center text-amber-700">${t.avgSetItems} 개</td>
+                    <td class="px-6 py-4 text-center">
+                        <span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">${t.configRate}%</span>
+                    </td>
+                `;
+          teamBody.appendChild(tr);
+        });
 
-      // 브라우저 진입 시 data.json 호출
-      window.addEventListener("DOMContentLoaded", () => {
-        fetch("./data.json")
-          .then((res) => {
-            if (!res.ok) throw new Error("Local json not found");
-            return res.json();
-          })
-          .then((realData) => {
-            applyDashboardData(realData, "🔄 data.json 연동 성공!");
-          })
-          .catch((err) => {
-            applyDashboardData(defaultData, "기본 템플릿 데이터 활성");
-          });
-      });
+        // 담당 SV별 테이블 렌더링
+        const mgrBody = document.getElementById("manager-table-body");
+        mgrBody.innerHTML = "";
+        data.byManager.forEach((m) => {
+          const tr = document.createElement("tr");
+          tr.className = "hover:bg-slate-50 transition-colors";
+          tr.innerHTML = `
+                    <td class="px-6 py-4 text-slate-500">${m.division}</td>
+                    <td class="px-6 py-4">${m.team}</td>
+                    <td class="px-6 py-4 font-bold text-slate-900">${m.manager}</td>
+                    <td class="px-6 py-4 text-center">${m.totalStores}</td>
+                    <td class="px-6 py-4 text-center text-emerald-800 font-bold">${m.appliedStores}</td>
+                    <td class="px-6 py-4 text-center text-amber-700 font-medium">${m.avgLtItems} 개</td>
+                    <td class="px-6 py-4 text-center text-blue-700 font-medium">${m.avgCakeItems} 개</td>
+                    <td class="px-6 py-4 text-center text-purple-700 font-medium">${m.avgConsItems} 개</td>
+                    <td class="px-6 py-4 text-center">
+                        <span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">${m.configRate}%</span>
+                    </td>
+                `;
+          mgrBody.appendChild(tr);
+        });
+      }
+
+      window.addEventListener("DOMContentLoaded", initDashboard);
     </script>
   </body>
 </html>
