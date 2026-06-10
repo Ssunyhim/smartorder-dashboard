@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>파리바게뜨 자동권고주문 대시보드 v2.6</title>
+    <title>파리바게뜨 자동권고주문 대시보드 v2.7</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Chart.js CDN -->
@@ -33,7 +33,7 @@
             <span class="text-2xl">🥐</span>
             <span class="font-bold text-lg tracking-wider">PARIS BAGUETTE</span>
             <span class="text-sm bg-blue-800 px-2 py-0.5 rounded text-blue-100"
-              >자동권고 관제센터 v2.6</span
+              >자동권고 관제센터 v2.7</span
             >
           </div>
           <div class="flex space-x-2 text-sm font-medium">
@@ -220,7 +220,7 @@
             class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100"
           >
             <h3 class="text-lg font-bold text-slate-900 mb-4">
-              사업부별 시스템 적용 현황 (PB가맹 평균 맨 왼쪽 배치)
+              사업부별 시스템 적용 현황 (PB가맹 평균 맨 왼쪽 배치 완료)
             </h3>
             <div class="h-80">
               <canvas id="divisionChart"></canvas>
@@ -251,7 +251,7 @@
         </div>
       </section>
 
-      <!-- 3. 지역별지표 요약 카드 (총점수 및 설정점수 완벽 표시) -->
+      <!-- 3. 지역별지표 요약 카드 -->
       <section id="section-regions" class="space-y-6 scroll-mt-20">
         <h2 class="text-xl font-bold text-slate-950 flex items-center gap-2">
           <span class="text-blue-900">📍</span> 3. 지역별 세부 지표 요약
@@ -276,12 +276,20 @@
             >
               <thead class="bg-slate-50 text-slate-500 font-semibold">
                 <tr>
-                  <th class="px-6 py-4">사업부</th>
-                  <th class="px-6 py-4">사업팀</th>
-                  <th class="px-6 py-4 text-center">총 점포 수</th>
-                  <th class="px-6 py-4 text-center">설정 점포 수</th>
-                  <th class="px-6 py-4 text-center">평균 설정 품목 수</th>
-                  <th class="px-6 py-4 text-center">설정율</th>
+                  <th class="px-4 py-3.5 whitespace-nowrap">사업부</th>
+                  <th class="px-4 py-3.5 whitespace-nowrap">사업팀</th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
+                    총 점포 수
+                  </th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
+                    설정 점포 수
+                  </th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
+                    평균 설정 품목 수
+                  </th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
+                    설정율
+                  </th>
                 </tr>
               </thead>
               <tbody
@@ -295,7 +303,7 @@
         </div>
       </section>
 
-      <!-- 5. SV담당별 설정 및 실사 -->
+      <!-- 5. SV담당별 설정 및 실사 (whitespace-nowrap 적용으로 줄바꿈 제거 완료) -->
       <section id="section-managers" class="space-y-6 scroll-mt-20">
         <h2 class="text-xl font-bold text-slate-950 flex items-center gap-2">
           <span class="text-blue-900">👤</span> 5. 담당 SV별 설정 및 재고실사
@@ -308,18 +316,30 @@
             >
               <thead class="bg-slate-50 text-slate-500 font-semibold">
                 <tr>
-                  <th class="px-6 py-4">사업부</th>
-                  <th class="px-6 py-4">사업팀</th>
-                  <th class="px-6 py-4">담당 SV</th>
-                  <th class="px-6 py-4 text-center">관리점포</th>
-                  <th class="px-6 py-4 text-center">설정점포</th>
-                  <th class="px-6 py-4 text-center">
+                  <th class="px-4 py-3.5 whitespace-nowrap">사업부</th>
+                  <th class="px-4 py-3.5 whitespace-nowrap">사업팀</th>
+                  <th class="px-4 py-3.5 whitespace-nowrap">담당 SV</th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
+                    관리점포
+                  </th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
+                    설정점포
+                  </th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
                     평균 실사 (제조/완제/장기/케익)
                   </th>
-                  <th class="px-6 py-4 text-center">장기유통설정</th>
-                  <th class="px-6 py-4 text-center">케이크설정</th>
-                  <th class="px-6 py-4 text-center">재료·소모설정</th>
-                  <th class="px-6 py-4 text-center">설정율</th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
+                    장기유통설정
+                  </th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
+                    케이크설정
+                  </th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
+                    재료·소모설정
+                  </th>
+                  <th class="px-4 py-3.5 whitespace-nowrap text-center">
+                    설정율
+                  </th>
                 </tr>
               </thead>
               <tbody
@@ -635,7 +655,7 @@
       }
 
       function renderCharts(data) {
-        // 차트 1. 사업부별 시스템 적용 현황 (PB가맹 평균 맨 왼쪽 배치 완료)
+        // 차트 1. 사업부별 시스템 적용 현황
         const divCtx = document
           .getElementById("divisionChart")
           .getContext("2d");
@@ -673,16 +693,12 @@
           },
         });
 
-        // 차트 2. 장기유통 사업부별 설정 지표 (평균은 맨 왼쪽에 정가운데 밸런스 정렬, 개별 사업부 평균값 제거)
+        // 차트 2. 장기유통 사업부별 설정 지표
         const ltCtx = document.getElementById("longTermChart").getContext("2d");
-
-        // PB가맹 평균을 첫 번째 축으로 삼고, 개별 사업부에서 불필요한 라인 중첩 및 평균값 핀을 완벽히 제거
         const ltLabels = [
           "PB가맹 평균",
           ...data.byDivision.map((d) => d.division),
         ];
-
-        // PB가맹 평균 열에만 해당 지표를 채우고 개별 사업부 열은 null을 대입해 skipNull 처리
         const pbWholeRates = [data.overall.configRate, null, null, null, null];
         const ltStores = [
           Math.round(
@@ -759,7 +775,7 @@
           },
         });
 
-        // 차트 3. 장기유통 사업팀별 TOP 10 (꺾은선 라인 완벽 제거)
+        // 차트 3. 장기유통 사업팀별 TOP 10
         const ltTeamCtx = document
           .getElementById("longTermTeamChart")
           .getContext("2d");
@@ -817,7 +833,7 @@
         });
       }
 
-      // 3. 지역별 세부 지표 카드 렌더러 (설정점/총점포수 동시 표기 적용)
+      // 3. 지역별 세부 지표 카드 렌더러
       function renderRegionCards(regions) {
         const container = document.getElementById("region-cards-container");
         container.innerHTML = "";
@@ -830,12 +846,12 @@
           card.className =
             "bg-white p-5 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-200 hover:shadow-md transition-all flex flex-col justify-between items-center text-center";
           card.innerHTML = `
-                    <span class="text-xs text-slate-500 font-bold tracking-wider block mb-1">${r.region}</span>
+                    <span class="text-xs text-slate-500 font-bold tracking-wider block mb-1 whitespace-nowrap">${r.region}</span>
                     <div class="my-2">
                         <span class="text-2xl font-extrabold text-blue-900">${r.configRate}%</span>
-                        <span class="text-[10px] text-emerald-600 font-bold block mt-0.5">설정율</span>
+                        <span class="text-[10px] text-emerald-600 font-bold block mt-0.5 whitespace-nowrap">설정율</span>
                     </div>
-                    <div class="text-[11px] text-slate-600 font-medium border-t border-slate-100 pt-2.5 w-full flex justify-between px-1 mt-1">
+                    <div class="text-[11px] text-slate-600 font-medium border-t border-slate-100 pt-2.5 w-full flex justify-between px-1 mt-1 whitespace-nowrap">
                         <span>설정: <strong class="text-blue-900 font-bold">${r.appliedStores}점</strong></span>
                         <span>총: <strong class="text-slate-900 font-bold">${r.totalStores}점</strong></span>
                     </div>
@@ -852,42 +868,42 @@
           const tr = document.createElement("tr");
           tr.className = "hover:bg-slate-50 transition-colors";
           tr.innerHTML = `
-                    <td class="px-6 py-4 font-semibold">${t.division}</td>
-                    <td class="px-6 py-4">${t.team}</td>
-                    <td class="px-6 py-4 text-center">${t.totalStores.toLocaleString()}</td>
-                    <td class="px-6 py-4 text-center text-blue-900 font-bold">${t.appliedStores.toLocaleString()}</td>
-                    <td class="px-6 py-4 text-center text-amber-700">${t.avgSetItems} 개</td>
-                    <td class="px-6 py-4 text-center">
+                    <td class="px-4 py-3.5 whitespace-nowrap font-semibold">${t.division}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap">${t.team}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap text-center">${t.totalStores.toLocaleString()}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap text-center text-blue-900 font-bold">${t.appliedStores.toLocaleString()}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap text-center text-amber-700">${t.avgSetItems} 개</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap text-center">
                         <span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">${t.configRate}%</span>
                     </td>
                 `;
           teamBody.appendChild(tr);
         });
 
-        // 담당 SV별 테이블 렌더링
+        // 담당 SV별 테이블 렌더링 (whitespace-nowrap 전면 적용)
         const mgrBody = document.getElementById("manager-table-body");
         mgrBody.innerHTML = "";
         data.byManager.forEach((m) => {
           const tr = document.createElement("tr");
           tr.className = "hover:bg-slate-50 transition-colors";
           tr.innerHTML = `
-                    <td class="px-6 py-4 text-slate-500">${m.division}</td>
-                    <td class="px-6 py-4">${m.team}</td>
-                    <td class="px-6 py-4 font-bold text-slate-900">${m.manager}</td>
-                    <td class="px-6 py-4 text-center">${m.totalStores}</td>
-                    <td class="px-6 py-4 text-center text-emerald-800 font-bold">${m.appliedStores}</td>
-                    <td class="px-6 py-4">
+                    <td class="px-4 py-3.5 whitespace-nowrap text-slate-500">${m.division}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap">${m.team}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap font-bold text-slate-900">${m.manager}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap text-center">${m.totalStores}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap text-center text-emerald-800 font-bold">${m.appliedStores}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap">
                         <div class="flex flex-wrap gap-1 justify-center text-[10px]">
-                            <span class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded">제조 ${m.audits.mfg}</span>
-                            <span class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded">완제 ${m.audits.prod}</span>
-                            <span class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded">장기 ${m.audits.lt}</span>
-                            <span class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded">케익 ${m.audits.cake}</span>
+                            <span class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded whitespace-nowrap">제조 ${m.audits.mfg}</span>
+                            <span class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded whitespace-nowrap">완제 ${m.audits.prod}</span>
+                            <span class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded whitespace-nowrap">장기 ${m.audits.lt}</span>
+                            <span class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded whitespace-nowrap">케익 ${m.audits.cake}</span>
                         </div>
                     </td>
-                    <td class="px-6 py-4 text-center text-amber-700 font-semibold">${m.avgLtItems} 개</td>
-                    <td class="px-6 py-4 text-center text-blue-700 font-semibold">${m.avgCakeItems} 개</td>
-                    <td class="px-6 py-4 text-center text-purple-700 font-semibold">${m.avgConsItems} 개</td>
-                    <td class="px-6 py-4 text-center">
+                    <td class="px-4 py-3.5 whitespace-nowrap text-center text-amber-700 font-semibold">${m.avgLtItems} 개</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap text-center text-blue-700 font-semibold">${m.avgCakeItems} 개</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap text-center text-purple-700 font-semibold">${m.avgConsItems} 개</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap text-center">
                         <span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">${m.configRate}%</span>
                     </td>
                 `;
