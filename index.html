@@ -19,7 +19,7 @@
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
                     <span class="text-xl font-black tracking-wider text-white mr-4">PARIS BAGUETTE</span>
-                    <h1 class="text-sm font-medium text-blue-200 border-l border-blue-700 pl-4 hidden sm:block">자동권고 관제 대시보드 v7.1</h1>
+                    <h1 class="text-sm font-medium text-blue-200 border-l border-blue-700 pl-4 hidden sm:block">자동권고 관제 대시보드 v7.2</h1>
                 </div>
                 <nav class="hidden md:flex space-x-6 text-sm font-medium">
                     <a href="#total-status" class="hover:text-amber-300 transition">전체현황</a>
@@ -119,7 +119,7 @@
             <div id="region-details-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
         </section>
 
-        <!-- 5. 사업팀별 세부 지표 요약 (신호등 신규 적용!) -->
+        <!-- 5. 사업팀별 세부 지표 요약 (신호등 4단계 정밀 분기 적용!) -->
         <section id="team-details" class="mb-10">
             <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="w-2 h-5 bg-blue-600 mr-3"></span>4. 사업팀별 세부 지표 요약</h2>
             <div id="team-details-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
@@ -339,16 +339,20 @@
                     return;
                 }
                 container.innerHTML = team_details.map(team => {
-                    // 신호등 조건 분기 (우수: 90%이상 Green, 보통: 75%이상 Yellow, 나쁨: 75%미만 Red)
+                    // 세분화된 4단계 신호등 조건 분기 (최우수: 92%이상, 우수: 85%이상, 보통: 78%이상, 개선필요: 78%미만)
                     let statusColor = 'bg-red-500';
                     let statusBg = 'bg-red-50 text-red-700 border-red-200';
                     let statusLabel = '개선필요';
-                    
-                    if (team.config_rate >= 90) {
-                        statusColor = 'bg-green-500 animate-pulse';
+
+                    if (team.config_rate >= 92) {
+                        statusColor = 'bg-emerald-500 animate-pulse';
+                        statusBg = 'bg-emerald-50 text-emerald-700 border-emerald-200';
+                        statusLabel = '최우수';
+                    } else if (team.config_rate >= 85) {
+                        statusColor = 'bg-green-500';
                         statusBg = 'bg-green-50 text-green-700 border-green-200';
                         statusLabel = '우수';
-                    } else if (team.config_rate >= 75) {
+                    } else if (team.config_rate >= 78) {
                         statusColor = 'bg-amber-400';
                         statusBg = 'bg-amber-50 text-amber-700 border-amber-200';
                         statusLabel = '보통';
@@ -395,14 +399,17 @@
                     return;
                 }
                 tableBody.innerHTML = sv_summary.map(sv => {
-                    // 담당 SV 테이블 행 단위 신호등 조건 분기
+                    // 담당 SV 테이블 행 단위 신호등 조건 분기 (동일한 92% / 85% / 78% 정밀 분기 적용!)
                     let statusColor = 'bg-red-500';
                     let statusTextClass = 'text-red-600';
-                    
-                    if (sv.config_rate >= 90) {
+
+                    if (sv.config_rate >= 92) {
+                        statusColor = 'bg-emerald-500';
+                        statusTextClass = 'text-emerald-600';
+                    } else if (sv.config_rate >= 85) {
                         statusColor = 'bg-green-500';
-                        statusTextClass = 'text-green-700';
-                    } else if (sv.config_rate >= 75) {
+                        statusTextClass = 'text-green-600';
+                    } else if (sv.config_rate >= 78) {
                         statusColor = 'bg-amber-400';
                         statusTextClass = 'text-amber-600';
                     }
