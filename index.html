@@ -14,7 +14,6 @@
 </head>
 <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
 
-    <!-- Header (상단 로고 타이포그래피 처리) -->
     <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -33,7 +32,6 @@
     </header>
 
     <main class="flex-grow container mx-auto p-4 sm:p-6 lg:p-8">
-        <!-- 상태 관리 및 동기화 -->
         <div class="bg-white p-4 rounded-lg shadow-sm mb-8 border border-slate-200">
              <div class="flex items-center justify-between">
                 <p class="text-lg font-semibold text-slate-700">실시간 가맹사업부 설정 대시보드 및 AI 인사이트 보고</p>
@@ -44,32 +42,59 @@
             </div>
         </div>
 
-        <!-- 1. 전체 가맹점 설정 요약 현황 -->
         <section id="total-status" class="mb-10">
             <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="w-2 h-5 bg-blue-600 mr-3"></span>1. 전체 가맹점 설정 요약 현황</h2>
-            <div id="summary-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Javascript will render cards here -->
-            </div>
+            <div id="summary-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
         </section>
 
-        <!-- 2. 경영진 핵심 요약 보고 및 개선 Plan -->
+        <!-- 2. 경영진 보고 & Action Plan (핵심 키 메시지 불렛화 완벽 반영) -->
         <section id="insight" class="mb-10">
              <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                <!-- 경영진 핵심 요약 보고 -->
                 <div class="lg:col-span-3 bg-white p-6 rounded-lg shadow-sm border border-slate-200">
                     <h3 class="font-bold text-lg mb-4 flex items-center"><span class="w-2 h-5 bg-amber-500 mr-3"></span>경영진 핵심 요약 보고 (AI 분석)</h3>
-                    <div class="space-y-4 text-slate-600">
-                        <p>✓ <span class="font-semibold">사업부별 설정률 불균형 완화 필요:</span> 1사업부와 4사업부의 평균 설정률은 양호하지만, 2사업부와 3사업부의 장기유통 및 케이크 자동설정 지표가 평균에 미달하여 본사 차원의 밀착 및 중점 관리가 요구됩니다.</p>
-                        <p>✓ <span class="font-semibold">장기유통 품목 설정률 관리:</span> 점포 재고 효율화의 핵심인 장기유통 품목 설정률이 낮은 하위 그룹(광주제주팀 등)의 담당 SV에 대해 교육 가이드라인과 우수 사례 공유가 수반되어야 합니다.</p>
-                    </div>
+                    <ul class="space-y-4 text-slate-600 text-sm list-none pl-0">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2 font-bold">✓</span>
+                            <div>
+                                <span class="font-bold text-slate-800 block">사업부별 설정률 불균형 해소 시급</span>
+                                <span class="text-xs text-slate-500 block mt-0.5">· 1·4사업부 평균 설정률 우수 수준 유지</span>
+                                <span class="text-xs text-slate-500 block">· 2·3사업부 장기유통 및 케이크 자동설정 지표 평균 미달 (중점 케어 필수)</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2 font-bold">✓</span>
+                            <div>
+                                <span class="font-bold text-slate-800 block">장기유통 품목 설정률 편차 관리</span>
+                                <span class="text-xs text-slate-500 block mt-0.5">· 점포 재고 효율화의 핵심 지표로서 조직 간 격차 심화</span>
+                                <span class="text-xs text-slate-500 block">· 하위 그룹(광주제주팀 등) 소속 SV 교육 지원 및 우수 가이드라인 공유 수반</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+                <!-- Action Plan -->
                 <div class="lg:col-span-2 bg-slate-800 p-6 rounded-lg shadow-sm text-white">
                     <h3 class="font-bold text-lg mb-4 flex items-center"><span class="w-2 h-5 bg-cyan-400 mr-3"></span>자동화 지표 개선을 위한 Action Plan</h3>
-                     <ol class="space-y-3 text-sm list-decimal list-inside">
-                        <li><span class="font-semibold">장기유통 하위 사업팀 SV 밀착 가이드 전개:</span> 수치가 현저히 낮은 부서 담당 SV들을 대상으로 본사 전용 자동권고 가이드라인과 템플릿 배포 및 모니터링 주기를 단축 시행합니다.</li>
-                        <li><span class="font-semibold">2,3사업부 케이크 자동 설정 집중 개선:</span> 사업부별 편차를 극복하기 위해 케이크 자동 권고 로직 세미나 및 1:1 현장 기술 교육을 지원해 점주님들의 우려와 설정 장벽을 조기에 제거합니다.</li>
-                    </ol>
+                    <ul class="space-y-4 text-sm list-none pl-0">
+                        <li class="flex items-start">
+                            <span class="bg-cyan-500 text-slate-950 font-bold rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2.5 shrink-0 mt-0.5">1</span>
+                            <div>
+                                <span class="font-bold text-cyan-300 block">하위 사업팀 SV 밀착 집중 케어</span>
+                                <span class="text-xs text-slate-300 block mt-0.5">· 광주제주팀 등 저조 부서 대상 전용 자동권고 가이드라인 배포</span>
+                                <span class="text-xs text-slate-300 block">· 주간 단위 모니터링 주기를 한시적 단축 가동</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-cyan-500 text-slate-950 font-bold rounded-full w-5 h-5 flex items-center justify-center text-xs mr-2.5 shrink-0 mt-0.5">2</span>
+                            <div>
+                                <span class="font-bold text-cyan-300 block">2·3사업부 케이크 자동설정 기술 교육</span>
+                                <span class="text-xs text-slate-300 block mt-0.5">· 자동 권고 로직 세미나 개설 및 1:1 밀착 현장 기술 지원</span>
+                                <span class="text-xs text-slate-300 block">· 점주 우려 및 설정 진입 장벽을 조기에 제거하여 편차 완화</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+             </div>
         </section>
 
         <!-- 3. 다각도 분석 차트 (1행 2열 분할 레이아웃) -->
@@ -90,9 +115,7 @@
         <!-- 4. 지역별 세부 지표 요약 (누락되던 데이터 완벽 바인딩) -->
         <section id="region-details" class="mb-10">
             <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="w-2 h-5 bg-blue-600 mr-3"></span>3. 지역별 세부 지표 요약</h2>
-            <div id="region-details-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                <!-- Region detail cards will be populated here -->
-            </div>
+            <div id="region-details-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
         </section>
 
         <!-- 5. 담당 SV별 설정 현황 -->
@@ -100,7 +123,6 @@
             <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mb-4 border-b border-slate-100 pb-4">
                     <h2 class="text-2xl font-bold flex items-center text-slate-850"><span class="w-2 h-5 bg-blue-600 mr-3"></span>4. 담당 SV별 설정 현황</h2>
-                    <!-- 실시간 SV 검색 엔진 탑재 -->
                     <div class="relative w-full sm:w-80">
                         <input type="text" id="sv-search" oninput="dataManager.filterSvTable(this.value)" placeholder="SV명, 팀명 또는 사업부 검색..." class="w-full px-4 py-2 text-sm border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     </div>
@@ -118,9 +140,7 @@
                                 <th class="px-6 py-4 text-center">유형별 평균 품목 수</th>
                             </tr>
                         </thead>
-                        <tbody id="sv-table-body">
-                            <!-- SV data rows will be inserted here -->
-                        </tbody>
+                        <tbody id="sv-table-body"></tbody>
                     </table>
                 </div>
             </div>
@@ -133,7 +153,7 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
+    <!-- TOP 이동 버튼 탑재 완료 -->
     <button id="top-btn" class="fixed bottom-6 right-6 bg-blue-800 hover:bg-blue-950 text-white font-bold py-3 px-5 rounded-full shadow-lg transition-all duration-300 opacity-0 pointer-events-none z-50 flex items-center justify-center text-xs">
         ▲ TOP
     </button>
@@ -153,7 +173,6 @@
                     console.error(e);
                     document.getElementById('last-updated').textContent = `데이터 생성 필요 (data.json 누락)`;
 
-                    // 대시보드 경고 알림 바인딩
                     const mainContainer = document.querySelector('main');
                     const warningBanner = document.createElement('div');
                     warningBanner.className = "bg-red-50 border-l-4 border-red-500 p-4 mb-6 rounded shadow-sm";
@@ -206,7 +225,7 @@
                  const labels = ['PB가맹 평균', '1사업부', '2사업부', '3사업부', '4사업부'];
                  const rates = labels.map(l => data[l]?.rate || 0);
                  const colors = rates.map((rate, i) => {
-                     if (i === 0) return 'rgba(245, 158, 11, 0.9)'; // PB가맹 평균 노란색 기둥 강조
+                     if (i === 0) return 'rgba(245, 158, 11, 0.9)';
                      return rate < (data['PB가맹 평균']?.rate || 0) ? 'rgba(239, 68, 68, 0.8)' : 'rgba(59, 130, 246, 0.8)';
                  });
                  this.renderChart('departmentChart', {
@@ -319,6 +338,7 @@
                         <td class="px-6 py-4 text-center text-slate-700">${sv.managed_stores}</td>
                         <td class="px-6 py-4 text-center font-semibold text-blue-700">${sv.configured_stores}</td>
                         <td class="px-6 py-4 text-center font-bold text-green-700">${sv.config_rate}%</td>
+                        <!-- 유형별 평균 품목 수 정렬 개선 완료 -->
                         <td class="px-6 py-4 text-center">
                             <div class="flex flex-wrap justify-center gap-1.5">
                                 ${Object.entries(sv.avg_items).map(([k, v]) => `
@@ -343,7 +363,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             dataManager.init();
 
-            // TOP 스크롤 처리
             const topBtn = document.getElementById('top-btn');
             window.onscroll = () => {
                 if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
