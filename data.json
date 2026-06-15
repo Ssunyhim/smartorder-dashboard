@@ -44,6 +44,110 @@
             "avg_items": 28.7
         }
     },
+    "region_details": [
+        {
+            "region": "경기도",
+            "total_stores": 894,
+            "configured_stores": 780,
+            "config_rate": 87.2
+        },
+        {
+            "region": "서울특별시",
+            "total_stores": 608,
+            "configured_stores": 527,
+            "config_rate": 86.7
+        },
+        {
+            "region": "인천광역시",
+            "total_stores": 208,
+            "configured_stores": 183,
+            "config_rate": 88.0
+        },
+        {
+            "region": "부산광역시",
+            "total_stores": 184,
+            "configured_stores": 159,
+            "config_rate": 86.4
+        },
+        {
+            "region": "경상남도",
+            "total_stores": 183,
+            "configured_stores": 159,
+            "config_rate": 86.9
+        },
+        {
+            "region": "대구광역시",
+            "total_stores": 152,
+            "configured_stores": 131,
+            "config_rate": 86.2
+        },
+        {
+            "region": "충청남도",
+            "total_stores": 141,
+            "configured_stores": 113,
+            "config_rate": 80.1
+        },
+        {
+            "region": "경상북도",
+            "total_stores": 140,
+            "configured_stores": 120,
+            "config_rate": 85.7
+        },
+        {
+            "region": "전라남도",
+            "total_stores": 112,
+            "configured_stores": 90,
+            "config_rate": 80.4
+        },
+        {
+            "region": "전라북도",
+            "total_stores": 112,
+            "configured_stores": 95,
+            "config_rate": 84.8
+        },
+        {
+            "region": "충청북도",
+            "total_stores": 112,
+            "configured_stores": 93,
+            "config_rate": 83.0
+        },
+        {
+            "region": "강원도",
+            "total_stores": 104,
+            "configured_stores": 86,
+            "config_rate": 82.7
+        },
+        {
+            "region": "광주광역시",
+            "total_stores": 97,
+            "configured_stores": 80,
+            "config_rate": 82.5
+        },
+        {
+            "region": "대전시",
+            "total_stores": 92,
+            "configured_stores": 76,
+            "config_rate": 82.6
+        },
+        {
+            "region": "울산광역시",
+            "total_stores": 69,
+            "configured_stores": 54,
+            "config_rate": 78.3
+        },
+        {
+            "region": "제주도",
+            "total_stores": 50,
+            "configured_stores": 36,
+            "config_rate": 72.0
+        },
+        {
+            "region": "세종시",
+            "total_stores": 23,
+            "configured_stores": 18,
+            "config_rate": 78.3
+        }
+    ],
     "sv_summary": [
         {
             "department": "1사업부",
@@ -1865,109 +1969,5 @@
             }
         }
     ],
-    "region_details": [
-        {
-            "region": "경기도",
-            "total_stores": 894,
-            "configured_stores": 780,
-            "config_rate": 87.2
-        },
-        {
-            "region": "서울특별시",
-            "total_stores": 608,
-            "configured_stores": 527,
-            "config_rate": 86.7
-        },
-        {
-            "region": "인천광역시",
-            "total_stores": 208,
-            "configured_stores": 183,
-            "config_rate": 88.0
-        },
-        {
-            "region": "부산광역시",
-            "total_stores": 184,
-            "configured_stores": 159,
-            "config_rate": 86.4
-        },
-        {
-            "region": "경상남도",
-            "total_stores": 183,
-            "configured_stores": 159,
-            "config_rate": 86.9
-        },
-        {
-            "region": "대구광역시",
-            "total_stores": 152,
-            "configured_stores": 131,
-            "config_rate": 86.2
-        },
-        {
-            "region": "충청남도",
-            "total_stores": 141,
-            "configured_stores": 113,
-            "config_rate": 80.1
-        },
-        {
-            "region": "경상북도",
-            "total_stores": 140,
-            "configured_stores": 120,
-            "config_rate": 85.7
-        },
-        {
-            "region": "전라남도",
-            "total_stores": 112,
-            "configured_stores": 90,
-            "config_rate": 80.4
-        },
-        {
-            "region": "전라북도",
-            "total_stores": 112,
-            "configured_stores": 95,
-            "config_rate": 84.8
-        },
-        {
-            "region": "충청북도",
-            "total_stores": 112,
-            "configured_stores": 93,
-            "config_rate": 83.0
-        },
-        {
-            "region": "강원도",
-            "total_stores": 104,
-            "configured_stores": 86,
-            "config_rate": 82.7
-        },
-        {
-            "region": "광주광역시",
-            "total_stores": 97,
-            "configured_stores": 80,
-            "config_rate": 82.5
-        },
-        {
-            "region": "대전시",
-            "total_stores": 92,
-            "configured_stores": 76,
-            "config_rate": 82.6
-        },
-        {
-            "region": "울산광역시",
-            "total_stores": 69,
-            "configured_stores": 54,
-            "config_rate": 78.3
-        },
-        {
-            "region": "제주도",
-            "total_stores": 50,
-            "configured_stores": 36,
-            "config_rate": 72.0
-        },
-        {
-            "region": "세종시",
-            "total_stores": 23,
-            "configured_stores": 18,
-            "config_rate": 78.3
-        }
-    ],
-    "last_updated": "2026-06-15 16:27:44"
+    "last_updated": "2026-06-15 16:48:25"
 }
