@@ -1,1969 +1,2851 @@
 {
-    "summary": {
-        "total_stores": 3281,
-        "configured_stores": 2800,
-        "config_rate": 85.3
+    "lastUpdated": "2026-06-15 11:26:43",
+    "overall": {
+        "totalStores": 3281,
+        "appliedStores": 2800,
+        "configRate": 85.3,
+        "avgSetItems": 31.4,
+        "ltAvgItems": 29.1
     },
-    "department_summary": {
-        "1사업부": {
-            "total": 927,
-            "configured": 807,
-            "rate": 87.1
-        },
-        "2사업부": {
-            "total": 887,
-            "configured": 769,
-            "rate": 86.7
-        },
-        "3사업부": {
-            "total": 739,
-            "configured": 601,
-            "rate": 81.3
-        },
-        "4사업부": {
-            "total": 728,
-            "configured": 623,
-            "rate": 85.6
-        },
-        "PB가맹 평균": {
-            "total": 3281,
-            "configured": 2800,
-            "rate": 85.3
-        }
-    },
-    "region_distribution": {
-        "labels": [
-            "1사업부",
-            "2사업부",
-            "3사업부",
-            "4사업부"
-        ],
-        "total_stores": [
-            927,
-            887,
-            739,
-            728
-        ],
-        "config_rate": [
-            87.1,
-            86.7,
-            81.3,
-            85.6
-        ]
-    },
-    "long_term_by_department": {
-        "1사업부": {
-            "configured_stores": 785,
-            "avg_items": 27.2
-        },
-        "2사업부": {
-            "configured_stores": 751,
-            "avg_items": 26.8
-        },
-        "3사업부": {
-            "configured_stores": 590,
-            "avg_items": 20.6
-        },
-        "4사업부": {
-            "configured_stores": 604,
-            "avg_items": 23.8
-        },
-        "PB가맹 평균": {
-            "configured_stores": 2730,
-            "avg_items": 24.9
-        }
-    },
-    "long_term_by_team_top10": [
+    "byDivision": [
         {
-            "team": "수원안산팀",
-            "configured_stores": 121,
-            "avg_items": 30.4
+            "division": "1사업부",
+            "totalStores": 927,
+            "appliedStores": 807,
+            "configRate": 87.1,
+            "avgSetItems": 35.0,
+            "ltAppliedStores": 785,
+            "ltAvgItems": 31.3
         },
         {
-            "team": "대구포항팀",
-            "configured_stores": 119,
-            "avg_items": 29.4
+            "division": "2사업부",
+            "totalStores": 887,
+            "appliedStores": 769,
+            "configRate": 86.7,
+            "avgSetItems": 33.3,
+            "ltAppliedStores": 751,
+            "ltAvgItems": 30.9
         },
         {
-            "team": "경기안양팀",
-            "configured_stores": 110,
-            "avg_items": 28.8
+            "division": "3사업부",
+            "totalStores": 739,
+            "appliedStores": 601,
+            "configRate": 81.3,
+            "avgSetItems": 26.4,
+            "ltAppliedStores": 590,
+            "ltAvgItems": 25.3
         },
         {
-            "team": "서울북부팀",
-            "configured_stores": 136,
-            "avg_items": 27.9
-        },
-        {
-            "team": "용인원주팀",
-            "configured_stores": 126,
-            "avg_items": 27.7
-        },
-        {
-            "team": "부천인천팀",
-            "configured_stores": 114,
-            "avg_items": 27.7
-        },
-        {
-            "team": "인천김포팀",
-            "configured_stores": 126,
-            "avg_items": 27.3
-        },
-        {
-            "team": "서울일산팀",
-            "configured_stores": 124,
-            "avg_items": 26.9
-        },
-        {
-            "team": "서울남부팀",
-            "configured_stores": 102,
-            "avg_items": 26.8
-        },
-        {
-            "team": "서울중부팀",
-            "configured_stores": 116,
-            "avg_items": 25.9
+            "division": "4사업부",
+            "totalStores": 728,
+            "appliedStores": 623,
+            "configRate": 85.6,
+            "avgSetItems": 29.1,
+            "ltAppliedStores": 604,
+            "ltAvgItems": 27.9
         }
     ],
-    "sv_summary": [
+    "byTeam": [
         {
-            "department": "1사업부",
+            "division": "1사업부",
             "team": "경기안양팀",
-            "sv": "김미영",
-            "managed_stores": 22,
-            "configured_stores": 18,
-            "config_rate": 81.8,
-            "avg_items": {
-                "장기": 25.6,
-                "케익": 0.5,
-                "재료": 0.5
-            }
+            "totalStores": 126,
+            "appliedStores": 113,
+            "configRate": 89.7,
+            "avgSetItems": 33.7,
+            "ltAppliedStores": 110,
+            "ltAvgItems": 32.1
         },
         {
-            "department": "1사업부",
-            "team": "경기안양팀",
-            "sv": "김민기",
-            "managed_stores": 22,
-            "configured_stores": 21,
-            "config_rate": 95.5,
-            "avg_items": {
-                "장기": 31.0,
-                "재료": 1.0
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "경기안양팀",
-            "sv": "주지홍",
-            "managed_stores": 22,
-            "configured_stores": 19,
-            "config_rate": 86.4,
-            "avg_items": {
-                "장기": 27.0,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "경기안양팀",
-            "sv": "차재훈",
-            "managed_stores": 22,
-            "configured_stores": 21,
-            "config_rate": 95.5,
-            "avg_items": {
-                "장기": 29.9,
-                "케익": 0.8,
-                "재료": 0.9
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "경기안양팀",
-            "sv": "최주영",
-            "managed_stores": 16,
-            "configured_stores": 16,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 33.7,
-                "케익": 0.4,
-                "재료": 0.9
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "경기안양팀",
-            "sv": "홍순철",
-            "managed_stores": 22,
-            "configured_stores": 18,
-            "config_rate": 81.8,
-            "avg_items": {
-                "장기": 26.9,
-                "케익": 2.4,
-                "재료": 0.7
-            }
-        },
-        {
-            "department": "1사업부",
+            "division": "1사업부",
             "team": "경기화성팀",
-            "sv": "김영주",
-            "managed_stores": 23,
-            "configured_stores": 21,
-            "config_rate": 91.3,
-            "avg_items": {
-                "장기": 18.0,
-                "케익": 1.3,
-                "재료": 7.6
-            }
+            "totalStores": 131,
+            "appliedStores": 114,
+            "configRate": 87.0,
+            "avgSetItems": 38.9,
+            "ltAppliedStores": 111,
+            "ltAvgItems": 29.5
         },
         {
-            "department": "1사업부",
-            "team": "경기화성팀",
-            "sv": "김태우",
-            "managed_stores": 23,
-            "configured_stores": 22,
-            "config_rate": 95.7,
-            "avg_items": {
-                "장기": 16.8,
-                "케익": 0.7,
-                "재료": 4.0
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "경기화성팀",
-            "sv": "김태진",
-            "managed_stores": 23,
-            "configured_stores": 13,
-            "config_rate": 56.5,
-            "avg_items": {
-                "장기": 18.5,
-                "케익": 1.0,
-                "재료": 6.9
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "경기화성팀",
-            "sv": "남다진",
-            "managed_stores": 16,
-            "configured_stores": 16,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 41.0,
-                "재료": 15.5
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "경기화성팀",
-            "sv": "홍영두",
-            "managed_stores": 24,
-            "configured_stores": 23,
-            "config_rate": 95.8,
-            "avg_items": {
-                "장기": 36.2,
-                "케익": 0.1,
-                "재료": 6.1
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "경기화성팀",
-            "sv": "황선욱",
-            "managed_stores": 22,
-            "configured_stores": 19,
-            "config_rate": 86.4,
-            "avg_items": {
-                "장기": 28.0,
-                "케익": 1.3,
-                "재료": 6.6
-            }
-        },
-        {
-            "department": "1사업부",
+            "division": "1사업부",
             "team": "서울남동팀",
-            "sv": "김의겸",
-            "managed_stores": 23,
-            "configured_stores": 21,
-            "config_rate": 91.3,
-            "avg_items": {
-                "장기": 24.7,
-                "케익": 0.3,
-                "재료": 0.8
-            }
+            "totalStores": 129,
+            "appliedStores": 109,
+            "configRate": 84.5,
+            "avgSetItems": 34.5,
+            "ltAppliedStores": 104,
+            "ltAvgItems": 29.9
         },
         {
-            "department": "1사업부",
-            "team": "서울남동팀",
-            "sv": "김지현",
-            "managed_stores": 24,
-            "configured_stores": 18,
-            "config_rate": 75.0,
-            "avg_items": {
-                "장기": 24.5,
-                "케익": 0.9
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울남동팀",
-            "sv": "송재훈",
-            "managed_stores": 22,
-            "configured_stores": 17,
-            "config_rate": 77.3,
-            "avg_items": {
-                "장기": 8.7,
-                "케익": 1.7,
-                "재료": 2.2
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울남동팀",
-            "sv": "왕대선",
-            "managed_stores": 22,
-            "configured_stores": 21,
-            "config_rate": 95.5,
-            "avg_items": {
-                "장기": 26.2,
-                "케익": 4.9,
-                "재료": 0.1
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울남동팀",
-            "sv": "이동희",
-            "managed_stores": 16,
-            "configured_stores": 16,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 68.9,
-                "케익": 4.1,
-                "재료": 11.6
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울남동팀",
-            "sv": "이호원",
-            "managed_stores": 22,
-            "configured_stores": 16,
-            "config_rate": 72.7,
-            "avg_items": {
-                "장기": 10.7
-            }
-        },
-        {
-            "department": "1사업부",
+            "division": "1사업부",
             "team": "서울남부팀",
-            "sv": "박성준",
-            "managed_stores": 20,
-            "configured_stores": 18,
-            "config_rate": 90.0,
-            "avg_items": {
-                "장기": 16.9,
-                "케익": 0.4
-            }
+            "totalStores": 120,
+            "appliedStores": 104,
+            "configRate": 86.7,
+            "avgSetItems": 36.0,
+            "ltAppliedStores": 102,
+            "ltAvgItems": 31.0
         },
         {
-            "department": "1사업부",
-            "team": "서울남부팀",
-            "sv": "손훈락",
-            "managed_stores": 16,
-            "configured_stores": 14,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 33.1,
-                "케익": 2.4,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울남부팀",
-            "sv": "염은기",
-            "managed_stores": 19,
-            "configured_stores": 13,
-            "config_rate": 68.4,
-            "avg_items": {
-                "장기": 18.1,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울남부팀",
-            "sv": "이왕진",
-            "managed_stores": 22,
-            "configured_stores": 22,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 33.9,
-                "케익": 0.9,
-                "재료": 17.0
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울남부팀",
-            "sv": "조재덕",
-            "managed_stores": 22,
-            "configured_stores": 17,
-            "config_rate": 77.3,
-            "avg_items": {
-                "장기": 29.8,
-                "케익": 1.0,
-                "재료": 1.1
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울남부팀",
-            "sv": "황대출",
-            "managed_stores": 21,
-            "configured_stores": 20,
-            "config_rate": 95.2,
-            "avg_items": {
-                "장기": 28.9,
-                "재료": 1.1
-            }
-        },
-        {
-            "department": "1사업부",
+            "division": "1사업부",
             "team": "서울서부팀",
-            "sv": "강태환",
-            "managed_stores": 23,
-            "configured_stores": 21,
-            "config_rate": 91.3,
-            "avg_items": {
-                "장기": 25.0,
-                "케익": 1.4,
-                "재료": 0.3
-            }
+            "totalStores": 134,
+            "appliedStores": 115,
+            "configRate": 85.8,
+            "avgSetItems": 31.3,
+            "ltAppliedStores": 111,
+            "ltAvgItems": 30.0
         },
         {
-            "department": "1사업부",
-            "team": "서울서부팀",
-            "sv": "김덕수",
-            "managed_stores": 17,
-            "configured_stores": 16,
-            "config_rate": 94.1,
-            "avg_items": {
-                "장기": 41.6,
-                "재료": 0.9
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울서부팀",
-            "sv": "백승환",
-            "managed_stores": 23,
-            "configured_stores": 18,
-            "config_rate": 78.3,
-            "avg_items": {
-                "장기": 17.1,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울서부팀",
-            "sv": "이길재",
-            "managed_stores": 22,
-            "configured_stores": 19,
-            "config_rate": 86.4,
-            "avg_items": {
-                "장기": 28.5,
-                "재료": 0.8
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울서부팀",
-            "sv": "임태민",
-            "managed_stores": 25,
-            "configured_stores": 22,
-            "config_rate": 88.0,
-            "avg_items": {
-                "장기": 30.8,
-                "케익": 0.9,
-                "재료": 1.3
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "서울서부팀",
-            "sv": "정진균",
-            "managed_stores": 24,
-            "configured_stores": 19,
-            "config_rate": 79.2,
-            "avg_items": {
-                "장기": 15.8,
-                "재료": 0.6
-            }
-        },
-        {
-            "department": "1사업부",
+            "division": "1사업부",
             "team": "수원안산팀",
-            "sv": "구다정",
-            "managed_stores": 24,
-            "configured_stores": 23,
-            "config_rate": 95.8,
-            "avg_items": {
-                "장기": 32.4,
-                "케익": 0.6,
-                "재료": 2.1
-            }
+            "totalStores": 135,
+            "appliedStores": 123,
+            "configRate": 91.1,
+            "avgSetItems": 35.5,
+            "ltAppliedStores": 121,
+            "ltAvgItems": 33.4
         },
         {
-            "department": "1사업부",
-            "team": "수원안산팀",
-            "sv": "김광균",
-            "managed_stores": 24,
-            "configured_stores": 20,
-            "config_rate": 83.3,
-            "avg_items": {
-                "장기": 25.7,
-                "재료": 1.0
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "수원안산팀",
-            "sv": "김동근",
-            "managed_stores": 24,
-            "configured_stores": 21,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 26.0,
-                "케익": 1.1,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "수원안산팀",
-            "sv": "윤달선",
-            "managed_stores": 16,
-            "configured_stores": 16,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 40.4,
-                "케익": 2.0,
-                "재료": 1.4
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "수원안산팀",
-            "sv": "이우태",
-            "managed_stores": 23,
-            "configured_stores": 22,
-            "config_rate": 95.7,
-            "avg_items": {
-                "장기": 28.1,
-                "재료": 1.0
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "수원안산팀",
-            "sv": "전도민",
-            "managed_stores": 24,
-            "configured_stores": 21,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 33.1,
-                "케익": 1.1,
-                "재료": 1.3
-            }
-        },
-        {
-            "department": "1사업부",
+            "division": "1사업부",
             "team": "용인원주팀",
-            "sv": "김윤기",
-            "managed_stores": 22,
-            "configured_stores": 22,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 30.1,
-                "재료": 0.4
-            }
+            "totalStores": 152,
+            "appliedStores": 129,
+            "configRate": 84.9,
+            "avgSetItems": 35.1,
+            "ltAppliedStores": 126,
+            "ltAvgItems": 32.6
         },
         {
-            "department": "1사업부",
-            "team": "용인원주팀",
-            "sv": "박계완",
-            "managed_stores": 23,
-            "configured_stores": 17,
-            "config_rate": 73.9,
-            "avg_items": {
-                "장기": 32.6,
-                "재료": 0.5
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "용인원주팀",
-            "sv": "박성철",
-            "managed_stores": 16,
-            "configured_stores": 14,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 38.5,
-                "케익": 4.6,
-                "재료": 1.8
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "용인원주팀",
-            "sv": "손현희",
-            "managed_stores": 24,
-            "configured_stores": 23,
-            "config_rate": 95.8,
-            "avg_items": {
-                "장기": 27.6,
-                "케익": 0.5,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "용인원주팀",
-            "sv": "이용직",
-            "managed_stores": 22,
-            "configured_stores": 16,
-            "config_rate": 72.7,
-            "avg_items": {
-                "장기": 21.1,
-                "케익": 0.3,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "용인원주팀",
-            "sv": "장동건",
-            "managed_stores": 22,
-            "configured_stores": 18,
-            "config_rate": 81.8,
-            "avg_items": {
-                "장기": 25.0,
-                "재료": 0.2
-            }
-        },
-        {
-            "department": "1사업부",
-            "team": "용인원주팀",
-            "sv": "하재영",
-            "managed_stores": 23,
-            "configured_stores": 19,
-            "config_rate": 82.6,
-            "avg_items": {
-                "장기": 22.0,
-                "케익": 0.9,
-                "재료": 5.9
-            }
-        },
-        {
-            "department": "2사업부",
+            "division": "2사업부",
             "team": "부천인천팀",
-            "sv": "김효창",
-            "managed_stores": 19,
-            "configured_stores": 16,
-            "config_rate": 84.2,
-            "avg_items": {
-                "장기": 40.1,
-                "케익": 1.1,
-                "재료": 0.8
-            }
+            "totalStores": 136,
+            "appliedStores": 114,
+            "configRate": 83.8,
+            "avgSetItems": 35.4,
+            "ltAppliedStores": 114,
+            "ltAvgItems": 33.0
         },
         {
-            "department": "2사업부",
-            "team": "부천인천팀",
-            "sv": "박종민",
-            "managed_stores": 16,
-            "configured_stores": 15,
-            "config_rate": 93.8,
-            "avg_items": {
-                "장기": 51.6,
-                "케익": 2.7,
-                "재료": 5.5
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "부천인천팀",
-            "sv": "방민수",
-            "managed_stores": 20,
-            "configured_stores": 17,
-            "config_rate": 85.0,
-            "avg_items": {
-                "장기": 22.0,
-                "케익": 0.7,
-                "재료": 0.6
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "부천인천팀",
-            "sv": "이지인",
-            "managed_stores": 20,
-            "configured_stores": 17,
-            "config_rate": 85.0,
-            "avg_items": {
-                "장기": 20.0,
-                "재료": 0.9
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "부천인천팀",
-            "sv": "이철순",
-            "managed_stores": 20,
-            "configured_stores": 15,
-            "config_rate": 75.0,
-            "avg_items": {
-                "장기": 28.2,
-                "케익": 0.4,
-                "재료": 0.6
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "부천인천팀",
-            "sv": "이태영",
-            "managed_stores": 20,
-            "configured_stores": 16,
-            "config_rate": 80.0,
-            "avg_items": {
-                "장기": 16.2,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "부천인천팀",
-            "sv": "임형수",
-            "managed_stores": 21,
-            "configured_stores": 18,
-            "config_rate": 85.7,
-            "avg_items": {
-                "장기": 21.5,
-                "케익": 0.4,
-                "재료": 1.1
-            }
-        },
-        {
-            "department": "2사업부",
+            "division": "2사업부",
             "team": "서울동북팀",
-            "sv": "구희성",
-            "managed_stores": 25,
-            "configured_stores": 21,
-            "config_rate": 84.0,
-            "avg_items": {
-                "장기": 26.9,
-                "케익": 0.2,
-                "재료": 0.3
-            }
+            "totalStores": 163,
+            "appliedStores": 137,
+            "configRate": 84.0,
+            "avgSetItems": 31.6,
+            "ltAppliedStores": 135,
+            "ltAvgItems": 29.8
         },
         {
-            "department": "2사업부",
-            "team": "서울동북팀",
-            "sv": "김홍수",
-            "managed_stores": 22,
-            "configured_stores": 20,
-            "config_rate": 90.9,
-            "avg_items": {
-                "장기": 26.5,
-                "케익": 0.8,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울동북팀",
-            "sv": "류한묵",
-            "managed_stores": 16,
-            "configured_stores": 14,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 30.1,
-                "케익": 0.4,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울동북팀",
-            "sv": "박인규",
-            "managed_stores": 26,
-            "configured_stores": 22,
-            "config_rate": 84.6,
-            "avg_items": {
-                "장기": 23.9,
-                "케익": 1.7,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울동북팀",
-            "sv": "박한나",
-            "managed_stores": 24,
-            "configured_stores": 21,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 24.6,
-                "재료": 1.2
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울동북팀",
-            "sv": "임영웅",
-            "managed_stores": 24,
-            "configured_stores": 21,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 25.1,
-                "케익": 0.7,
-                "재료": 0.7
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울동북팀",
-            "sv": "장영조",
-            "managed_stores": 26,
-            "configured_stores": 18,
-            "config_rate": 69.2,
-            "avg_items": {
-                "장기": 20.7,
-                "케익": 1.0,
-                "재료": 1.6
-            }
-        },
-        {
-            "department": "2사업부",
+            "division": "2사업부",
             "team": "서울북부팀",
-            "sv": "김경래",
-            "managed_stores": 22,
-            "configured_stores": 19,
-            "config_rate": 86.4,
-            "avg_items": {
-                "장기": 20.2,
-                "재료": 0.6
-            }
+            "totalStores": 157,
+            "appliedStores": 139,
+            "configRate": 88.5,
+            "avgSetItems": 33.6,
+            "ltAppliedStores": 136,
+            "ltAvgItems": 31.5
         },
         {
-            "department": "2사업부",
-            "team": "서울북부팀",
-            "sv": "김상준",
-            "managed_stores": 23,
-            "configured_stores": 20,
-            "config_rate": 87.0,
-            "avg_items": {
-                "장기": 22.4,
-                "케익": 0.8,
-                "재료": 0.7
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울북부팀",
-            "sv": "문경섭",
-            "managed_stores": 25,
-            "configured_stores": 22,
-            "config_rate": 88.0,
-            "avg_items": {
-                "장기": 28.2,
-                "케익": 2.0,
-                "재료": 2.5
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울북부팀",
-            "sv": "선정우",
-            "managed_stores": 25,
-            "configured_stores": 23,
-            "config_rate": 92.0,
-            "avg_items": {
-                "장기": 33.6,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울북부팀",
-            "sv": "윤지현",
-            "managed_stores": 22,
-            "configured_stores": 17,
-            "config_rate": 77.3,
-            "avg_items": {
-                "장기": 32.8,
-                "케익": 2.7,
-                "재료": 1.1
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울북부팀",
-            "sv": "이종성",
-            "managed_stores": 24,
-            "configured_stores": 22,
-            "config_rate": 91.7,
-            "avg_items": {
-                "장기": 22.8,
-                "재료": 0.6
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울북부팀",
-            "sv": "조영훈",
-            "managed_stores": 16,
-            "configured_stores": 16,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 38.2,
-                "케익": 0.6,
-                "재료": 1.0
-            }
-        },
-        {
-            "department": "2사업부",
+            "division": "2사업부",
             "team": "서울일산팀",
-            "sv": "강창희",
-            "managed_stores": 23,
-            "configured_stores": 21,
-            "config_rate": 91.3,
-            "avg_items": {
-                "장기": 23.1,
-                "케익": 2.0,
-                "재료": 3.7
-            }
+            "totalStores": 147,
+            "appliedStores": 129,
+            "configRate": 87.8,
+            "avgSetItems": 33.3,
+            "ltAppliedStores": 124,
+            "ltAvgItems": 30.7
         },
         {
-            "department": "2사업부",
-            "team": "서울일산팀",
-            "sv": "김정석",
-            "managed_stores": 21,
-            "configured_stores": 18,
-            "config_rate": 85.7,
-            "avg_items": {
-                "장기": 20.5,
-                "케익": 0.6,
-                "재료": 0.8
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울일산팀",
-            "sv": "문소라",
-            "managed_stores": 22,
-            "configured_stores": 18,
-            "config_rate": 81.8,
-            "avg_items": {
-                "장기": 25.3,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울일산팀",
-            "sv": "박세현",
-            "managed_stores": 22,
-            "configured_stores": 18,
-            "config_rate": 81.8,
-            "avg_items": {
-                "장기": 31.5,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울일산팀",
-            "sv": "유화영",
-            "managed_stores": 16,
-            "configured_stores": 16,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 34.3,
-                "재료": 1.2
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울일산팀",
-            "sv": "이태한",
-            "managed_stores": 21,
-            "configured_stores": 18,
-            "config_rate": 85.7,
-            "avg_items": {
-                "장기": 24.4,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울일산팀",
-            "sv": "이태현",
-            "managed_stores": 22,
-            "configured_stores": 20,
-            "config_rate": 90.9,
-            "avg_items": {
-                "장기": 31.3,
-                "케익": 0.1,
-                "재료": 6.0
-            }
-        },
-        {
-            "department": "2사업부",
+            "division": "2사업부",
             "team": "서울중부팀",
-            "sv": "김귀영",
-            "managed_stores": 22,
-            "configured_stores": 17,
-            "config_rate": 77.3,
-            "avg_items": {
-                "장기": 22.4,
-                "재료": 3.4
-            }
+            "totalStores": 141,
+            "appliedStores": 122,
+            "configRate": 86.5,
+            "avgSetItems": 33.2,
+            "ltAppliedStores": 116,
+            "ltAvgItems": 29.9
         },
         {
-            "department": "2사업부",
-            "team": "서울중부팀",
-            "sv": "김세진",
-            "managed_stores": 26,
-            "configured_stores": 23,
-            "config_rate": 88.5,
-            "avg_items": {
-                "장기": 20.7,
-                "재료": 1.5
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울중부팀",
-            "sv": "손용은",
-            "managed_stores": 24,
-            "configured_stores": 22,
-            "config_rate": 91.7,
-            "avg_items": {
-                "장기": 23.0,
-                "케익": 1.8,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울중부팀",
-            "sv": "이홍석",
-            "managed_stores": 25,
-            "configured_stores": 21,
-            "config_rate": 84.0,
-            "avg_items": {
-                "장기": 25.2,
-                "케익": 2.0,
-                "재료": 4.1
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울중부팀",
-            "sv": "이희성",
-            "managed_stores": 24,
-            "configured_stores": 20,
-            "config_rate": 83.3,
-            "avg_items": {
-                "장기": 22.5,
-                "케익": 1.2,
-                "재료": 0.7
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "서울중부팀",
-            "sv": "최우진",
-            "managed_stores": 20,
-            "configured_stores": 19,
-            "config_rate": 95.0,
-            "avg_items": {
-                "장기": 45.0,
-                "케익": 0.5,
-                "재료": 1.2
-            }
-        },
-        {
-            "department": "2사업부",
+            "division": "2사업부",
             "team": "인천김포팀",
-            "sv": "곽상혁",
-            "managed_stores": 20,
-            "configured_stores": 20,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 35.0,
-                "케익": 1.2,
-                "재료": 0.8
-            }
+            "totalStores": 143,
+            "appliedStores": 128,
+            "configRate": 89.5,
+            "avgSetItems": 32.8,
+            "ltAppliedStores": 126,
+            "ltAvgItems": 30.5
         },
         {
-            "department": "2사업부",
-            "team": "인천김포팀",
-            "sv": "김현오",
-            "managed_stores": 26,
-            "configured_stores": 24,
-            "config_rate": 92.3,
-            "avg_items": {
-                "장기": 32.8,
-                "케익": 2.5,
-                "재료": 0.7
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "인천김포팀",
-            "sv": "신희승",
-            "managed_stores": 23,
-            "configured_stores": 20,
-            "config_rate": 87.0,
-            "avg_items": {
-                "장기": 22.3,
-                "케익": 2.3,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "인천김포팀",
-            "sv": "염동관",
-            "managed_stores": 25,
-            "configured_stores": 21,
-            "config_rate": 84.0,
-            "avg_items": {
-                "장기": 24.0,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "인천김포팀",
-            "sv": "이원우",
-            "managed_stores": 24,
-            "configured_stores": 21,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 22.1,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "2사업부",
-            "team": "인천김포팀",
-            "sv": "전혜진",
-            "managed_stores": 25,
-            "configured_stores": 22,
-            "config_rate": 88.0,
-            "avg_items": {
-                "장기": 28.2,
-                "케익": 2.5,
-                "재료": 1.1
-            }
-        },
-        {
-            "department": "3사업부",
+            "division": "3사업부",
             "team": "광주제주팀",
-            "sv": "김지영",
-            "managed_stores": 17,
-            "configured_stores": 13,
-            "config_rate": 76.5,
-            "avg_items": {
-                "장기": 18.9
-            }
+            "totalStores": 164,
+            "appliedStores": 129,
+            "configRate": 78.7,
+            "avgSetItems": 25.6,
+            "ltAppliedStores": 128,
+            "ltAvgItems": 24.9
         },
         {
-            "department": "3사업부",
-            "team": "광주제주팀",
-            "sv": "김하균",
-            "managed_stores": 17,
-            "configured_stores": 15,
-            "config_rate": 88.2,
-            "avg_items": {
-                "장기": 30.4,
-                "케익": 3.6,
-                "재료": 0.1
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "광주제주팀",
-            "sv": "손슬기",
-            "managed_stores": 24,
-            "configured_stores": 16,
-            "config_rate": 66.7,
-            "avg_items": {
-                "장기": 12.9
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "광주제주팀",
-            "sv": "윤성하",
-            "managed_stores": 24,
-            "configured_stores": 21,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 19.8,
-                "재료": 0.1
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "광주제주팀",
-            "sv": "이승민",
-            "managed_stores": 25,
-            "configured_stores": 20,
-            "config_rate": 80.0,
-            "avg_items": {
-                "장기": 13.9,
-                "재료": 0.1
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "광주제주팀",
-            "sv": "조용빈",
-            "managed_stores": 17,
-            "configured_stores": 12,
-            "config_rate": 70.6,
-            "avg_items": {
-                "장기": 25.4,
-                "재료": 0.6
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "광주제주팀",
-            "sv": "조현구",
-            "managed_stores": 24,
-            "configured_stores": 21,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 19.5,
-                "재료": 0.8
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "광주제주팀",
-            "sv": "한용환",
-            "managed_stores": 16,
-            "configured_stores": 11,
-            "config_rate": 68.8,
-            "avg_items": {
-                "장기": 21.4
-            }
-        },
-        {
-            "department": "3사업부",
+            "division": "3사업부",
             "team": "광주호남팀",
-            "sv": "강경훈",
-            "managed_stores": 19,
-            "configured_stores": 16,
-            "config_rate": 84.2,
-            "avg_items": {
-                "장기": 25.5,
-                "재료": 0.1
-            }
+            "totalStores": 160,
+            "appliedStores": 135,
+            "configRate": 84.4,
+            "avgSetItems": 25.2,
+            "ltAppliedStores": 130,
+            "ltAvgItems": 24.0
         },
         {
-            "department": "3사업부",
-            "team": "광주호남팀",
-            "sv": "김진욱",
-            "managed_stores": 29,
-            "configured_stores": 23,
-            "config_rate": 79.3,
-            "avg_items": {
-                "장기": 22.1,
-                "케익": 0.3,
-                "재료": 0.5
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "광주호남팀",
-            "sv": "방세원",
-            "managed_stores": 27,
-            "configured_stores": 24,
-            "config_rate": 88.9,
-            "avg_items": {
-                "장기": 16.9,
-                "케익": 0.4,
-                "재료": 1.9
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "광주호남팀",
-            "sv": "변선아",
-            "managed_stores": 28,
-            "configured_stores": 23,
-            "config_rate": 82.1,
-            "avg_items": {
-                "장기": 18.7,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "광주호남팀",
-            "sv": "이근선",
-            "managed_stores": 28,
-            "configured_stores": 23,
-            "config_rate": 82.1,
-            "avg_items": {
-                "장기": 19.0,
-                "케익": 1.0,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "광주호남팀",
-            "sv": "정영임",
-            "managed_stores": 29,
-            "configured_stores": 26,
-            "config_rate": 89.7,
-            "avg_items": {
-                "장기": 20.7,
-                "재료": 0.7
-            }
-        },
-        {
-            "department": "3사업부",
+            "division": "3사업부",
             "team": "대전전북팀",
-            "sv": "박수균",
-            "managed_stores": 25,
-            "configured_stores": 20,
-            "config_rate": 80.0,
-            "avg_items": {
-                "장기": 21.5,
-                "케익": 0.8,
-                "재료": 0.4
-            }
+            "totalStores": 139,
+            "appliedStores": 113,
+            "configRate": 81.3,
+            "avgSetItems": 31.5,
+            "ltAppliedStores": 111,
+            "ltAvgItems": 30.6
         },
         {
-            "department": "3사업부",
-            "team": "대전전북팀",
-            "sv": "서성헌",
-            "managed_stores": 23,
-            "configured_stores": 18,
-            "config_rate": 78.3,
-            "avg_items": {
-                "장기": 24.0,
-                "케익": 0.1,
-                "재료": 0.2
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "대전전북팀",
-            "sv": "신관우",
-            "managed_stores": 27,
-            "configured_stores": 23,
-            "config_rate": 85.2,
-            "avg_items": {
-                "장기": 23.9,
-                "케익": 0.3,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "대전전북팀",
-            "sv": "심한가람",
-            "managed_stores": 25,
-            "configured_stores": 20,
-            "config_rate": 80.0,
-            "avg_items": {
-                "장기": 31.3,
-                "케익": 0.5,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "대전전북팀",
-            "sv": "정택순",
-            "managed_stores": 16,
-            "configured_stores": 15,
-            "config_rate": 93.8,
-            "avg_items": {
-                "장기": 33.9,
-                "케익": 0.8,
-                "재료": 0.8
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "대전전북팀",
-            "sv": "조태현",
-            "managed_stores": 23,
-            "configured_stores": 17,
-            "config_rate": 73.9,
-            "avg_items": {
-                "장기": 17.3,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "3사업부",
+            "division": "3사업부",
             "team": "천안충남팀",
-            "sv": "김태호",
-            "managed_stores": 32,
-            "configured_stores": 24,
-            "config_rate": 75.0,
-            "avg_items": {
-                "장기": 15.9
-            }
+            "totalStores": 138,
+            "appliedStores": 110,
+            "configRate": 79.7,
+            "avgSetItems": 21.8,
+            "ltAppliedStores": 109,
+            "ltAvgItems": 20.6
         },
         {
-            "department": "3사업부",
-            "team": "천안충남팀",
-            "sv": "송창석",
-            "managed_stores": 29,
-            "configured_stores": 22,
-            "config_rate": 75.9,
-            "avg_items": {
-                "장기": 14.4,
-                "케익": 0.7
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "천안충남팀",
-            "sv": "이하희",
-            "managed_stores": 16,
-            "configured_stores": 15,
-            "config_rate": 93.8,
-            "avg_items": {
-                "장기": 25.1,
-                "케익": 2.3
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "천안충남팀",
-            "sv": "정성화",
-            "managed_stores": 31,
-            "configured_stores": 22,
-            "config_rate": 71.0,
-            "avg_items": {
-                "장기": 12.8,
-                "케익": 0.6
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "천안충남팀",
-            "sv": "조성기",
-            "managed_stores": 30,
-            "configured_stores": 27,
-            "config_rate": 90.0,
-            "avg_items": {
-                "장기": 18.1,
-                "케익": 1.1,
-                "재료": 0.6
-            }
-        },
-        {
-            "department": "3사업부",
+            "division": "3사업부",
             "team": "청주충북팀",
-            "sv": "김명철",
-            "managed_stores": 25,
-            "configured_stores": 15,
-            "config_rate": 60.0,
-            "avg_items": {
-                "장기": 8.6,
-                "재료": 0.2
-            }
+            "totalStores": 138,
+            "appliedStores": 114,
+            "configRate": 82.6,
+            "avgSetItems": 28.1,
+            "ltAppliedStores": 112,
+            "ltAvgItems": 26.7
         },
         {
-            "department": "3사업부",
-            "team": "청주충북팀",
-            "sv": "김서린",
-            "managed_stores": 23,
-            "configured_stores": 19,
-            "config_rate": 82.6,
-            "avg_items": {
-                "장기": 27.4,
-                "케익": 0.7
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "청주충북팀",
-            "sv": "김수영",
-            "managed_stores": 24,
-            "configured_stores": 21,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 26.8,
-                "케익": 1.2,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "청주충북팀",
-            "sv": "이상진",
-            "managed_stores": 25,
-            "configured_stores": 25,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 29.6,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "청주충북팀",
-            "sv": "이승규",
-            "managed_stores": 25,
-            "configured_stores": 19,
-            "config_rate": 76.0,
-            "avg_items": {
-                "장기": 13.8
-            }
-        },
-        {
-            "department": "3사업부",
-            "team": "청주충북팀",
-            "sv": "한정석",
-            "managed_stores": 16,
-            "configured_stores": 15,
-            "config_rate": 93.8,
-            "avg_items": {
-                "장기": 29.6,
-                "케익": 0.3,
-                "재료": 4.9
-            }
-        },
-        {
-            "department": "4사업부",
+            "division": "4사업부",
             "team": "대구구미팀",
-            "sv": "김정식",
-            "managed_stores": 25,
-            "configured_stores": 23,
-            "config_rate": 92.0,
-            "avg_items": {
-                "장기": 22.4,
-                "재료": 0.5
-            }
+            "totalStores": 144,
+            "appliedStores": 125,
+            "configRate": 86.8,
+            "avgSetItems": 30.0,
+            "ltAppliedStores": 118,
+            "ltAvgItems": 28.5
         },
         {
-            "department": "4사업부",
-            "team": "대구구미팀",
-            "sv": "박종현",
-            "managed_stores": 25,
-            "configured_stores": 22,
-            "config_rate": 88.0,
-            "avg_items": {
-                "장기": 28.4,
-                "케익": 0.1,
-                "재료": 0.1
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "대구구미팀",
-            "sv": "신원창",
-            "managed_stores": 26,
-            "configured_stores": 24,
-            "config_rate": 92.3,
-            "avg_items": {
-                "장기": 18.5,
-                "케익": 1.2,
-                "재료": 1.0
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "대구구미팀",
-            "sv": "양종욱",
-            "managed_stores": 16,
-            "configured_stores": 16,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 23.7,
-                "재료": 0.6
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "대구구미팀",
-            "sv": "이수정",
-            "managed_stores": 26,
-            "configured_stores": 21,
-            "config_rate": 80.8,
-            "avg_items": {
-                "장기": 24.1,
-                "케익": 2.3,
-                "재료": 1.2
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "대구구미팀",
-            "sv": "이재우",
-            "managed_stores": 26,
-            "configured_stores": 19,
-            "config_rate": 73.1,
-            "avg_items": {
-                "장기": 30.9,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "4사업부",
+            "division": "4사업부",
             "team": "대구포항팀",
-            "sv": "도해일",
-            "managed_stores": 25,
-            "configured_stores": 22,
-            "config_rate": 88.0,
-            "avg_items": {
-                "장기": 25.2,
-                "케익": 1.5,
-                "재료": 0.4
-            }
+            "totalStores": 140,
+            "appliedStores": 120,
+            "configRate": 85.7,
+            "avgSetItems": 35.9,
+            "ltAppliedStores": 119,
+            "ltAvgItems": 34.4
         },
         {
-            "department": "4사업부",
-            "team": "대구포항팀",
-            "sv": "백상우",
-            "managed_stores": 25,
-            "configured_stores": 21,
-            "config_rate": 84.0,
-            "avg_items": {
-                "장기": 35.3,
-                "케익": 0.8,
-                "재료": 0.9
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "대구포항팀",
-            "sv": "손준오",
-            "managed_stores": 16,
-            "configured_stores": 16,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 41.2,
-                "케익": 1.1,
-                "재료": 0.6
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "대구포항팀",
-            "sv": "이현탁",
-            "managed_stores": 24,
-            "configured_stores": 19,
-            "config_rate": 79.2,
-            "avg_items": {
-                "장기": 26.0,
-                "재료": 0.3
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "대구포항팀",
-            "sv": "정성욱",
-            "managed_stores": 26,
-            "configured_stores": 22,
-            "config_rate": 84.6,
-            "avg_items": {
-                "장기": 25.1,
-                "재료": 1.7
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "대구포항팀",
-            "sv": "홍진석",
-            "managed_stores": 24,
-            "configured_stores": 20,
-            "config_rate": 83.3,
-            "avg_items": {
-                "장기": 28.1,
-                "재료": 0.8
-            }
-        },
-        {
-            "department": "4사업부",
+            "division": "4사업부",
             "team": "부산김해팀",
-            "sv": "김준혁",
-            "managed_stores": 16,
-            "configured_stores": 14,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 22.5,
-                "케익": 0.2
-            }
+            "totalStores": 144,
+            "appliedStores": 122,
+            "configRate": 84.7,
+            "avgSetItems": 29.3,
+            "ltAppliedStores": 117,
+            "ltAvgItems": 28.5
         },
         {
-            "department": "4사업부",
-            "team": "부산김해팀",
-            "sv": "박은빈",
-            "managed_stores": 25,
-            "configured_stores": 23,
-            "config_rate": 92.0,
-            "avg_items": {
-                "장기": 20.9,
-                "케익": 0.2,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산김해팀",
-            "sv": "배상원",
-            "managed_stores": 27,
-            "configured_stores": 23,
-            "config_rate": 85.2,
-            "avg_items": {
-                "장기": 24.1,
-                "재료": 0.9
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산김해팀",
-            "sv": "유영민",
-            "managed_stores": 25,
-            "configured_stores": 19,
-            "config_rate": 76.0,
-            "avg_items": {
-                "장기": 22.0,
-                "케익": 0.1,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산김해팀",
-            "sv": "윤하담",
-            "managed_stores": 26,
-            "configured_stores": 23,
-            "config_rate": 88.5,
-            "avg_items": {
-                "장기": 30.3,
-                "재료": 0.8
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산김해팀",
-            "sv": "정민석",
-            "managed_stores": 25,
-            "configured_stores": 20,
-            "config_rate": 80.0,
-            "avg_items": {
-                "장기": 24.5,
-                "재료": 0.6
-            }
-        },
-        {
-            "department": "4사업부",
+            "division": "4사업부",
             "team": "부산울산팀",
-            "sv": "김경상",
-            "managed_stores": 16,
-            "configured_stores": 16,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 18.3,
-                "케익": 0.2,
-                "재료": 0.6
-            }
+            "totalStores": 142,
+            "appliedStores": 119,
+            "configRate": 83.8,
+            "avgSetItems": 20.0,
+            "ltAppliedStores": 119,
+            "ltAvgItems": 19.4
         },
         {
-            "department": "4사업부",
-            "team": "부산울산팀",
-            "sv": "박소현",
-            "managed_stores": 25,
-            "configured_stores": 22,
-            "config_rate": 88.0,
-            "avg_items": {
-                "장기": 16.6
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산울산팀",
-            "sv": "이원제",
-            "managed_stores": 25,
-            "configured_stores": 20,
-            "config_rate": 80.0,
-            "avg_items": {
-                "장기": 16.0
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산울산팀",
-            "sv": "이윤정",
-            "managed_stores": 26,
-            "configured_stores": 20,
-            "config_rate": 76.9,
-            "avg_items": {
-                "장기": 13.5,
-                "재료": 0.5
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산울산팀",
-            "sv": "이중호",
-            "managed_stores": 25,
-            "configured_stores": 20,
-            "config_rate": 80.0,
-            "avg_items": {
-                "장기": 16.8,
-                "케익": 0.9,
-                "재료": 0.2
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산울산팀",
-            "sv": "임종현",
-            "managed_stores": 25,
-            "configured_stores": 21,
-            "config_rate": 84.0,
-            "avg_items": {
-                "장기": 17.1,
-                "재료": 0.5
-            }
-        },
-        {
-            "department": "4사업부",
+            "division": "4사업부",
             "team": "부산창원팀",
-            "sv": "곽지만",
-            "managed_stores": 24,
-            "configured_stores": 21,
-            "config_rate": 87.5,
-            "avg_items": {
-                "장기": 28.6,
-                "케익": 0.1,
-                "재료": 1.2
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산창원팀",
-            "sv": "구정훈",
-            "managed_stores": 25,
-            "configured_stores": 18,
-            "config_rate": 72.0,
-            "avg_items": {
-                "장기": 23.8,
-                "케익": 1.3,
-                "재료": 2.2
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산창원팀",
-            "sv": "김기동",
-            "managed_stores": 16,
-            "configured_stores": 16,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 37.3,
-                "케익": 0.2,
-                "재료": 0.4
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산창원팀",
-            "sv": "김장헌",
-            "managed_stores": 22,
-            "configured_stores": 18,
-            "config_rate": 81.8,
-            "avg_items": {
-                "장기": 24.3,
-                "케익": 0.7,
-                "재료": 0.7
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산창원팀",
-            "sv": "박민관",
-            "managed_stores": 25,
-            "configured_stores": 23,
-            "config_rate": 92.0,
-            "avg_items": {
-                "장기": 34.9,
-                "케익": 0.9,
-                "재료": 1.6
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산창원팀",
-            "sv": "정윤경",
-            "managed_stores": 22,
-            "configured_stores": 22,
-            "config_rate": 100.0,
-            "avg_items": {
-                "장기": 6.8,
-                "케익": 0.2,
-                "재료": 1.0
-            }
-        },
-        {
-            "department": "4사업부",
-            "team": "부산창원팀",
-            "sv": "최명권",
-            "managed_stores": 24,
-            "configured_stores": 19,
-            "config_rate": 79.2,
-            "avg_items": {
-                "장기": 19.0,
-                "재료": 0.3
-            }
+            "totalStores": 158,
+            "appliedStores": 137,
+            "configRate": 86.7,
+            "avgSetItems": 30.3,
+            "ltAppliedStores": 131,
+            "ltAvgItems": 28.4
         }
     ],
-    "region_details": [
+    "byManager": [
         {
-            "본부": "1사업부",
-            "total_stores": 927,
-            "configured_stores": 807,
-            "config_rate": 87.1
+            "division": "1사업부",
+            "team": "경기안양팀",
+            "manager": "김미영",
+            "totalStores": 22,
+            "appliedStores": 18,
+            "configRate": 81.8,
+            "audits": {
+                "mfg": 4.4,
+                "prod": 20.0,
+                "lt": 7.7,
+                "cake": 2.6
+            },
+            "avgLtItems": 31.3,
+            "avgCakeItems": 0.6,
+            "avgConsItems": 0.6
         },
         {
-            "본부": "2사업부",
-            "total_stores": 887,
-            "configured_stores": 769,
-            "config_rate": 86.7
+            "division": "1사업부",
+            "team": "경기안양팀",
+            "manager": "김민기",
+            "totalStores": 22,
+            "appliedStores": 21,
+            "configRate": 95.5,
+            "audits": {
+                "mfg": 6.6,
+                "prod": 28.3,
+                "lt": 12.9,
+                "cake": 5.4
+            },
+            "avgLtItems": 32.5,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.1
         },
         {
-            "본부": "3사업부",
-            "total_stores": 739,
-            "configured_stores": 601,
-            "config_rate": 81.3
+            "division": "1사업부",
+            "team": "경기안양팀",
+            "manager": "주지홍",
+            "totalStores": 22,
+            "appliedStores": 19,
+            "configRate": 86.4,
+            "audits": {
+                "mfg": 8.0,
+                "prod": 25.3,
+                "lt": 14.4,
+                "cake": 5.1
+            },
+            "avgLtItems": 31.2,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.5
         },
         {
-            "본부": "4사업부",
-            "total_stores": 728,
-            "configured_stores": 623,
-            "config_rate": 85.6
+            "division": "1사업부",
+            "team": "경기안양팀",
+            "manager": "차재훈",
+            "totalStores": 22,
+            "appliedStores": 21,
+            "configRate": 95.5,
+            "audits": {
+                "mfg": 10.4,
+                "prod": 23.1,
+                "lt": 11.3,
+                "cake": 4.8
+            },
+            "avgLtItems": 31.3,
+            "avgCakeItems": 0.9,
+            "avgConsItems": 1.0
+        },
+        {
+            "division": "1사업부",
+            "team": "경기안양팀",
+            "manager": "최주영",
+            "totalStores": 16,
+            "appliedStores": 16,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 8.9,
+                "prod": 22.8,
+                "lt": 9.4,
+                "cake": 3.2
+            },
+            "avgLtItems": 33.7,
+            "avgCakeItems": 0.4,
+            "avgConsItems": 0.9
+        },
+        {
+            "division": "1사업부",
+            "team": "경기안양팀",
+            "manager": "홍순철",
+            "totalStores": 22,
+            "appliedStores": 18,
+            "configRate": 81.8,
+            "audits": {
+                "mfg": 7.3,
+                "prod": 24.0,
+                "lt": 10.7,
+                "cake": 5.6
+            },
+            "avgLtItems": 32.9,
+            "avgCakeItems": 2.9,
+            "avgConsItems": 0.9
+        },
+        {
+            "division": "1사업부",
+            "team": "경기화성팀",
+            "manager": "김영주",
+            "totalStores": 23,
+            "appliedStores": 21,
+            "configRate": 91.3,
+            "audits": {
+                "mfg": 4.1,
+                "prod": 24.0,
+                "lt": 13.1,
+                "cake": 4.4
+            },
+            "avgLtItems": 19.7,
+            "avgCakeItems": 1.4,
+            "avgConsItems": 8.3
+        },
+        {
+            "division": "1사업부",
+            "team": "경기화성팀",
+            "manager": "김태우",
+            "totalStores": 23,
+            "appliedStores": 22,
+            "configRate": 95.7,
+            "audits": {
+                "mfg": 9.6,
+                "prod": 24.0,
+                "lt": 10.8,
+                "cake": 3.5
+            },
+            "avgLtItems": 17.5,
+            "avgCakeItems": 0.7,
+            "avgConsItems": 4.1
+        },
+        {
+            "division": "1사업부",
+            "team": "경기화성팀",
+            "manager": "김태진",
+            "totalStores": 23,
+            "appliedStores": 13,
+            "configRate": 56.5,
+            "audits": {
+                "mfg": 5.8,
+                "prod": 21.1,
+                "lt": 9.0,
+                "cake": 3.4
+            },
+            "avgLtItems": 32.8,
+            "avgCakeItems": 1.8,
+            "avgConsItems": 12.2
+        },
+        {
+            "division": "1사업부",
+            "team": "경기화성팀",
+            "manager": "남다진",
+            "totalStores": 16,
+            "appliedStores": 16,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 3.4,
+                "prod": 29.5,
+                "lt": 12.3,
+                "cake": 2.6
+            },
+            "avgLtItems": 41.0,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 15.5
+        },
+        {
+            "division": "1사업부",
+            "team": "경기화성팀",
+            "manager": "홍영두",
+            "totalStores": 24,
+            "appliedStores": 23,
+            "configRate": 95.8,
+            "audits": {
+                "mfg": 2.2,
+                "prod": 22.9,
+                "lt": 9.8,
+                "cake": 4.3
+            },
+            "avgLtItems": 37.8,
+            "avgCakeItems": 0.1,
+            "avgConsItems": 6.3
+        },
+        {
+            "division": "1사업부",
+            "team": "경기화성팀",
+            "manager": "황선욱",
+            "totalStores": 22,
+            "appliedStores": 19,
+            "configRate": 86.4,
+            "audits": {
+                "mfg": 1.7,
+                "prod": 20.0,
+                "lt": 7.1,
+                "cake": 3.0
+            },
+            "avgLtItems": 32.4,
+            "avgCakeItems": 1.5,
+            "avgConsItems": 7.6
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남동팀",
+            "manager": "김의겸",
+            "totalStores": 23,
+            "appliedStores": 21,
+            "configRate": 91.3,
+            "audits": {
+                "mfg": 1.5,
+                "prod": 29.8,
+                "lt": 15.9,
+                "cake": 3.8
+            },
+            "avgLtItems": 27.0,
+            "avgCakeItems": 0.3,
+            "avgConsItems": 0.9
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남동팀",
+            "manager": "김지현",
+            "totalStores": 24,
+            "appliedStores": 18,
+            "configRate": 75.0,
+            "audits": {
+                "mfg": 1.8,
+                "prod": 22.2,
+                "lt": 11.8,
+                "cake": 3.4
+            },
+            "avgLtItems": 32.7,
+            "avgCakeItems": 1.2,
+            "avgConsItems": 0.1
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남동팀",
+            "manager": "송재훈",
+            "totalStores": 22,
+            "appliedStores": 17,
+            "configRate": 77.3,
+            "audits": {
+                "mfg": 2.6,
+                "prod": 24.5,
+                "lt": 12.9,
+                "cake": 2.9
+            },
+            "avgLtItems": 11.2,
+            "avgCakeItems": 2.2,
+            "avgConsItems": 2.9
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남동팀",
+            "manager": "왕대선",
+            "totalStores": 22,
+            "appliedStores": 21,
+            "configRate": 95.5,
+            "audits": {
+                "mfg": 6.0,
+                "prod": 23.4,
+                "lt": 14.7,
+                "cake": 5.2
+            },
+            "avgLtItems": 27.4,
+            "avgCakeItems": 5.1,
+            "avgConsItems": 0.1
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남동팀",
+            "manager": "이동희",
+            "totalStores": 16,
+            "appliedStores": 16,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 4.1,
+                "prod": 21.6,
+                "lt": 11.9,
+                "cake": 4.9
+            },
+            "avgLtItems": 68.9,
+            "avgCakeItems": 4.1,
+            "avgConsItems": 11.6
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남동팀",
+            "manager": "이호원",
+            "totalStores": 22,
+            "appliedStores": 16,
+            "configRate": 72.7,
+            "audits": {
+                "mfg": 4.3,
+                "prod": 26.3,
+                "lt": 17.8,
+                "cake": 4.1
+            },
+            "avgLtItems": 14.7,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남부팀",
+            "manager": "박성준",
+            "totalStores": 20,
+            "appliedStores": 18,
+            "configRate": 90.0,
+            "audits": {
+                "mfg": 8.3,
+                "prod": 18.6,
+                "lt": 10.2,
+                "cake": 3.9
+            },
+            "avgLtItems": 18.8,
+            "avgCakeItems": 0.5,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남부팀",
+            "manager": "손훈락",
+            "totalStores": 16,
+            "appliedStores": 14,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 10.4,
+                "prod": 25.8,
+                "lt": 18.2,
+                "cake": 5.1
+            },
+            "avgLtItems": 37.9,
+            "avgCakeItems": 2.7,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남부팀",
+            "manager": "염은기",
+            "totalStores": 19,
+            "appliedStores": 13,
+            "configRate": 68.4,
+            "audits": {
+                "mfg": 6.3,
+                "prod": 21.1,
+                "lt": 13.3,
+                "cake": 2.4
+            },
+            "avgLtItems": 26.4,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남부팀",
+            "manager": "이왕진",
+            "totalStores": 22,
+            "appliedStores": 22,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 4.0,
+                "prod": 19.5,
+                "lt": 10.7,
+                "cake": 4.1
+            },
+            "avgLtItems": 33.9,
+            "avgCakeItems": 0.9,
+            "avgConsItems": 17.0
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남부팀",
+            "manager": "조재덕",
+            "totalStores": 22,
+            "appliedStores": 17,
+            "configRate": 77.3,
+            "audits": {
+                "mfg": 12.3,
+                "prod": 25.5,
+                "lt": 12.0,
+                "cake": 5.9
+            },
+            "avgLtItems": 38.6,
+            "avgCakeItems": 1.4,
+            "avgConsItems": 1.4
+        },
+        {
+            "division": "1사업부",
+            "team": "서울남부팀",
+            "manager": "황대출",
+            "totalStores": 21,
+            "appliedStores": 20,
+            "configRate": 95.2,
+            "audits": {
+                "mfg": 5.8,
+                "prod": 23.7,
+                "lt": 13.9,
+                "cake": 3.2
+            },
+            "avgLtItems": 30.3,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.1
+        },
+        {
+            "division": "1사업부",
+            "team": "서울서부팀",
+            "manager": "강태환",
+            "totalStores": 23,
+            "appliedStores": 21,
+            "configRate": 91.3,
+            "audits": {
+                "mfg": 6.4,
+                "prod": 20.0,
+                "lt": 12.2,
+                "cake": 3.5
+            },
+            "avgLtItems": 27.4,
+            "avgCakeItems": 1.5,
+            "avgConsItems": 0.3
+        },
+        {
+            "division": "1사업부",
+            "team": "서울서부팀",
+            "manager": "김덕수",
+            "totalStores": 17,
+            "appliedStores": 16,
+            "configRate": 94.1,
+            "audits": {
+                "mfg": 1.9,
+                "prod": 28.6,
+                "lt": 16.0,
+                "cake": 3.7
+            },
+            "avgLtItems": 44.2,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.9
+        },
+        {
+            "division": "1사업부",
+            "team": "서울서부팀",
+            "manager": "백승환",
+            "totalStores": 23,
+            "appliedStores": 18,
+            "configRate": 78.3,
+            "audits": {
+                "mfg": 1.8,
+                "prod": 28.3,
+                "lt": 11.3,
+                "cake": 3.9
+            },
+            "avgLtItems": 21.8,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "1사업부",
+            "team": "서울서부팀",
+            "manager": "이길재",
+            "totalStores": 22,
+            "appliedStores": 19,
+            "configRate": 86.4,
+            "audits": {
+                "mfg": 1.8,
+                "prod": 24.2,
+                "lt": 8.4,
+                "cake": 2.3
+            },
+            "avgLtItems": 32.9,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.9
+        },
+        {
+            "division": "1사업부",
+            "team": "서울서부팀",
+            "manager": "임태민",
+            "totalStores": 25,
+            "appliedStores": 22,
+            "configRate": 88.0,
+            "audits": {
+                "mfg": 5.7,
+                "prod": 24.5,
+                "lt": 8.3,
+                "cake": 3.7
+            },
+            "avgLtItems": 35.0,
+            "avgCakeItems": 1.0,
+            "avgConsItems": 1.5
+        },
+        {
+            "division": "1사업부",
+            "team": "서울서부팀",
+            "manager": "정진균",
+            "totalStores": 24,
+            "appliedStores": 19,
+            "configRate": 79.2,
+            "audits": {
+                "mfg": 8.2,
+                "prod": 26.2,
+                "lt": 18.2,
+                "cake": 4.5
+            },
+            "avgLtItems": 20.0,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.8
+        },
+        {
+            "division": "1사업부",
+            "team": "수원안산팀",
+            "manager": "구다정",
+            "totalStores": 24,
+            "appliedStores": 23,
+            "configRate": 95.8,
+            "audits": {
+                "mfg": 4.0,
+                "prod": 23.8,
+                "lt": 12.0,
+                "cake": 2.3
+            },
+            "avgLtItems": 33.8,
+            "avgCakeItems": 0.7,
+            "avgConsItems": 2.2
+        },
+        {
+            "division": "1사업부",
+            "team": "수원안산팀",
+            "manager": "김광균",
+            "totalStores": 24,
+            "appliedStores": 20,
+            "configRate": 83.3,
+            "audits": {
+                "mfg": 5.6,
+                "prod": 21.7,
+                "lt": 10.9,
+                "cake": 4.0
+            },
+            "avgLtItems": 30.8,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.2
+        },
+        {
+            "division": "1사업부",
+            "team": "수원안산팀",
+            "manager": "김동근",
+            "totalStores": 24,
+            "appliedStores": 21,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 5.8,
+                "prod": 19.5,
+                "lt": 9.2,
+                "cake": 4.2
+            },
+            "avgLtItems": 29.7,
+            "avgCakeItems": 1.3,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "1사업부",
+            "team": "수원안산팀",
+            "manager": "윤달선",
+            "totalStores": 16,
+            "appliedStores": 16,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 5.6,
+                "prod": 24.9,
+                "lt": 9.5,
+                "cake": 4.2
+            },
+            "avgLtItems": 40.4,
+            "avgCakeItems": 2.0,
+            "avgConsItems": 1.4
+        },
+        {
+            "division": "1사업부",
+            "team": "수원안산팀",
+            "manager": "이우태",
+            "totalStores": 23,
+            "appliedStores": 22,
+            "configRate": 95.7,
+            "audits": {
+                "mfg": 4.4,
+                "prod": 26.4,
+                "lt": 8.7,
+                "cake": 1.8
+            },
+            "avgLtItems": 29.4,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.1
+        },
+        {
+            "division": "1사업부",
+            "team": "수원안산팀",
+            "manager": "전도민",
+            "totalStores": 24,
+            "appliedStores": 21,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 7.1,
+                "prod": 23.0,
+                "lt": 9.2,
+                "cake": 3.2
+            },
+            "avgLtItems": 37.9,
+            "avgCakeItems": 1.3,
+            "avgConsItems": 1.5
+        },
+        {
+            "division": "1사업부",
+            "team": "용인원주팀",
+            "manager": "김윤기",
+            "totalStores": 22,
+            "appliedStores": 22,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 9.9,
+                "prod": 21.8,
+                "lt": 9.4,
+                "cake": 5.1
+            },
+            "avgLtItems": 30.1,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "1사업부",
+            "team": "용인원주팀",
+            "manager": "박계완",
+            "totalStores": 23,
+            "appliedStores": 17,
+            "configRate": 73.9,
+            "audits": {
+                "mfg": 4.7,
+                "prod": 20.3,
+                "lt": 7.9,
+                "cake": 3.2
+            },
+            "avgLtItems": 44.1,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.6
+        },
+        {
+            "division": "1사업부",
+            "team": "용인원주팀",
+            "manager": "박성철",
+            "totalStores": 16,
+            "appliedStores": 14,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 10.9,
+                "prod": 28.2,
+                "lt": 14.1,
+                "cake": 5.7
+            },
+            "avgLtItems": 44.0,
+            "avgCakeItems": 5.3,
+            "avgConsItems": 2.0
+        },
+        {
+            "division": "1사업부",
+            "team": "용인원주팀",
+            "manager": "손현희",
+            "totalStores": 24,
+            "appliedStores": 23,
+            "configRate": 95.8,
+            "audits": {
+                "mfg": 2.2,
+                "prod": 23.1,
+                "lt": 12.3,
+                "cake": 2.7
+            },
+            "avgLtItems": 28.8,
+            "avgCakeItems": 0.5,
+            "avgConsItems": 0.3
+        },
+        {
+            "division": "1사업부",
+            "team": "용인원주팀",
+            "manager": "이용직",
+            "totalStores": 22,
+            "appliedStores": 16,
+            "configRate": 72.7,
+            "audits": {
+                "mfg": 5.4,
+                "prod": 23.2,
+                "lt": 8.5,
+                "cake": 1.9
+            },
+            "avgLtItems": 29.0,
+            "avgCakeItems": 0.4,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "1사업부",
+            "team": "용인원주팀",
+            "manager": "장동건",
+            "totalStores": 22,
+            "appliedStores": 18,
+            "configRate": 81.8,
+            "audits": {
+                "mfg": 3.0,
+                "prod": 16.3,
+                "lt": 4.4,
+                "cake": 3.3
+            },
+            "avgLtItems": 30.6,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.3
+        },
+        {
+            "division": "1사업부",
+            "team": "용인원주팀",
+            "manager": "하재영",
+            "totalStores": 23,
+            "appliedStores": 19,
+            "configRate": 82.6,
+            "audits": {
+                "mfg": 3.2,
+                "prod": 18.3,
+                "lt": 9.8,
+                "cake": 2.9
+            },
+            "avgLtItems": 26.6,
+            "avgCakeItems": 1.1,
+            "avgConsItems": 7.2
+        },
+        {
+            "division": "2사업부",
+            "team": "부천인천팀",
+            "manager": "김효창",
+            "totalStores": 19,
+            "appliedStores": 16,
+            "configRate": 84.2,
+            "audits": {
+                "mfg": 12.2,
+                "prod": 22.4,
+                "lt": 9.9,
+                "cake": 4.5
+            },
+            "avgLtItems": 47.6,
+            "avgCakeItems": 1.2,
+            "avgConsItems": 1.0
+        },
+        {
+            "division": "2사업부",
+            "team": "부천인천팀",
+            "manager": "박종민",
+            "totalStores": 16,
+            "appliedStores": 15,
+            "configRate": 93.8,
+            "audits": {
+                "mfg": 6.6,
+                "prod": 29.4,
+                "lt": 10.4,
+                "cake": 3.8
+            },
+            "avgLtItems": 55.0,
+            "avgCakeItems": 2.9,
+            "avgConsItems": 5.9
+        },
+        {
+            "division": "2사업부",
+            "team": "부천인천팀",
+            "manager": "방민수",
+            "totalStores": 20,
+            "appliedStores": 17,
+            "configRate": 85.0,
+            "audits": {
+                "mfg": 6.2,
+                "prod": 16.4,
+                "lt": 5.7,
+                "cake": 4.2
+            },
+            "avgLtItems": 25.9,
+            "avgCakeItems": 0.8,
+            "avgConsItems": 0.7
+        },
+        {
+            "division": "2사업부",
+            "team": "부천인천팀",
+            "manager": "이지인",
+            "totalStores": 20,
+            "appliedStores": 17,
+            "configRate": 85.0,
+            "audits": {
+                "mfg": 4.5,
+                "prod": 26.4,
+                "lt": 11.3,
+                "cake": 3.9
+            },
+            "avgLtItems": 23.5,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.1
+        },
+        {
+            "division": "2사업부",
+            "team": "부천인천팀",
+            "manager": "이철순",
+            "totalStores": 20,
+            "appliedStores": 15,
+            "configRate": 75.0,
+            "audits": {
+                "mfg": 3.1,
+                "prod": 25.9,
+                "lt": 8.7,
+                "cake": 3.5
+            },
+            "avgLtItems": 37.7,
+            "avgCakeItems": 0.6,
+            "avgConsItems": 0.7
+        },
+        {
+            "division": "2사업부",
+            "team": "부천인천팀",
+            "manager": "이태영",
+            "totalStores": 20,
+            "appliedStores": 16,
+            "configRate": 80.0,
+            "audits": {
+                "mfg": 2.4,
+                "prod": 24.4,
+                "lt": 10.8,
+                "cake": 3.5
+            },
+            "avgLtItems": 20.2,
+            "avgCakeItems": 0.1,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "2사업부",
+            "team": "부천인천팀",
+            "manager": "임형수",
+            "totalStores": 21,
+            "appliedStores": 18,
+            "configRate": 85.7,
+            "audits": {
+                "mfg": 4.8,
+                "prod": 23.6,
+                "lt": 10.9,
+                "cake": 3.4
+            },
+            "avgLtItems": 25.1,
+            "avgCakeItems": 0.4,
+            "avgConsItems": 1.3
+        },
+        {
+            "division": "2사업부",
+            "team": "서울동북팀",
+            "manager": "구희성",
+            "totalStores": 25,
+            "appliedStores": 21,
+            "configRate": 84.0,
+            "audits": {
+                "mfg": 2.1,
+                "prod": 22.4,
+                "lt": 7.8,
+                "cake": 4.4
+            },
+            "avgLtItems": 32.0,
+            "avgCakeItems": 0.2,
+            "avgConsItems": 0.3
+        },
+        {
+            "division": "2사업부",
+            "team": "서울동북팀",
+            "manager": "김홍수",
+            "totalStores": 22,
+            "appliedStores": 20,
+            "configRate": 90.9,
+            "audits": {
+                "mfg": 5.2,
+                "prod": 20.7,
+                "lt": 8.3,
+                "cake": 2.7
+            },
+            "avgLtItems": 29.1,
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.3
+        },
+        {
+            "division": "2사업부",
+            "team": "서울동북팀",
+            "manager": "류한묵",
+            "totalStores": 16,
+            "appliedStores": 14,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 3.4,
+                "prod": 22.8,
+                "lt": 9.6,
+                "cake": 3.0
+            },
+            "avgLtItems": 34.4,
+            "avgCakeItems": 0.4,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "2사업부",
+            "team": "서울동북팀",
+            "manager": "박인규",
+            "totalStores": 26,
+            "appliedStores": 22,
+            "configRate": 84.6,
+            "audits": {
+                "mfg": 3.2,
+                "prod": 24.2,
+                "lt": 7.5,
+                "cake": 3.7
+            },
+            "avgLtItems": 28.3,
+            "avgCakeItems": 2.0,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "2사업부",
+            "team": "서울동북팀",
+            "manager": "박한나",
+            "totalStores": 24,
+            "appliedStores": 21,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 1.0,
+                "prod": 25.5,
+                "lt": 10.4,
+                "cake": 2.6
+            },
+            "avgLtItems": 28.1,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.3
+        },
+        {
+            "division": "2사업부",
+            "team": "서울동북팀",
+            "manager": "임영웅",
+            "totalStores": 24,
+            "appliedStores": 21,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 2.9,
+                "prod": 21.0,
+                "lt": 12.2,
+                "cake": 3.8
+            },
+            "avgLtItems": 28.7,
+            "avgCakeItems": 0.8,
+            "avgConsItems": 0.8
+        },
+        {
+            "division": "2사업부",
+            "team": "서울동북팀",
+            "manager": "장영조",
+            "totalStores": 26,
+            "appliedStores": 18,
+            "configRate": 69.2,
+            "audits": {
+                "mfg": 4.7,
+                "prod": 19.2,
+                "lt": 7.1,
+                "cake": 3.3
+            },
+            "avgLtItems": 29.9,
+            "avgCakeItems": 1.4,
+            "avgConsItems": 2.3
+        },
+        {
+            "division": "2사업부",
+            "team": "서울북부팀",
+            "manager": "김경래",
+            "totalStores": 22,
+            "appliedStores": 19,
+            "configRate": 86.4,
+            "audits": {
+                "mfg": 4.0,
+                "prod": 27.7,
+                "lt": 9.8,
+                "cake": 4.8
+            },
+            "avgLtItems": 23.4,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.7
+        },
+        {
+            "division": "2사업부",
+            "team": "서울북부팀",
+            "manager": "김상준",
+            "totalStores": 23,
+            "appliedStores": 20,
+            "configRate": 87.0,
+            "audits": {
+                "mfg": 11.1,
+                "prod": 27.3,
+                "lt": 8.6,
+                "cake": 4.3
+            },
+            "avgLtItems": 25.8,
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.8
+        },
+        {
+            "division": "2사업부",
+            "team": "서울북부팀",
+            "manager": "문경섭",
+            "totalStores": 25,
+            "appliedStores": 22,
+            "configRate": 88.0,
+            "audits": {
+                "mfg": 10.2,
+                "prod": 18.5,
+                "lt": 7.4,
+                "cake": 3.6
+            },
+            "avgLtItems": 32.0,
+            "avgCakeItems": 2.3,
+            "avgConsItems": 2.8
+        },
+        {
+            "division": "2사업부",
+            "team": "서울북부팀",
+            "manager": "선정우",
+            "totalStores": 25,
+            "appliedStores": 23,
+            "configRate": 92.0,
+            "audits": {
+                "mfg": 2.2,
+                "prod": 24.8,
+                "lt": 7.7,
+                "cake": 2.2
+            },
+            "avgLtItems": 36.5,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.3
+        },
+        {
+            "division": "2사업부",
+            "team": "서울북부팀",
+            "manager": "윤지현",
+            "totalStores": 22,
+            "appliedStores": 17,
+            "configRate": 77.3,
+            "audits": {
+                "mfg": 3.1,
+                "prod": 17.7,
+                "lt": 10.4,
+                "cake": 3.6
+            },
+            "avgLtItems": 42.5,
+            "avgCakeItems": 3.5,
+            "avgConsItems": 1.4
+        },
+        {
+            "division": "2사업부",
+            "team": "서울북부팀",
+            "manager": "이종성",
+            "totalStores": 24,
+            "appliedStores": 22,
+            "configRate": 91.7,
+            "audits": {
+                "mfg": 3.3,
+                "prod": 20.6,
+                "lt": 7.5,
+                "cake": 2.2
+            },
+            "avgLtItems": 24.9,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.6
+        },
+        {
+            "division": "2사업부",
+            "team": "서울북부팀",
+            "manager": "조영훈",
+            "totalStores": 16,
+            "appliedStores": 16,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 4.8,
+                "prod": 25.9,
+                "lt": 18.0,
+                "cake": 5.3
+            },
+            "avgLtItems": 38.2,
+            "avgCakeItems": 0.6,
+            "avgConsItems": 1.0
+        },
+        {
+            "division": "2사업부",
+            "team": "서울일산팀",
+            "manager": "강창희",
+            "totalStores": 23,
+            "appliedStores": 21,
+            "configRate": 91.3,
+            "audits": {
+                "mfg": 4.6,
+                "prod": 25.0,
+                "lt": 13.9,
+                "cake": 3.0
+            },
+            "avgLtItems": 25.3,
+            "avgCakeItems": 2.1,
+            "avgConsItems": 4.0
+        },
+        {
+            "division": "2사업부",
+            "team": "서울일산팀",
+            "manager": "김정석",
+            "totalStores": 21,
+            "appliedStores": 18,
+            "configRate": 85.7,
+            "audits": {
+                "mfg": 1.9,
+                "prod": 24.6,
+                "lt": 10.7,
+                "cake": 2.7
+            },
+            "avgLtItems": 23.9,
+            "avgCakeItems": 0.7,
+            "avgConsItems": 0.9
+        },
+        {
+            "division": "2사업부",
+            "team": "서울일산팀",
+            "manager": "문소라",
+            "totalStores": 22,
+            "appliedStores": 18,
+            "configRate": 81.8,
+            "audits": {
+                "mfg": 9.0,
+                "prod": 21.4,
+                "lt": 12.7,
+                "cake": 3.7
+            },
+            "avgLtItems": 30.9,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "2사업부",
+            "team": "서울일산팀",
+            "manager": "박세현",
+            "totalStores": 22,
+            "appliedStores": 18,
+            "configRate": 81.8,
+            "audits": {
+                "mfg": 2.1,
+                "prod": 24.3,
+                "lt": 12.5,
+                "cake": 3.0
+            },
+            "avgLtItems": 38.4,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "2사업부",
+            "team": "서울일산팀",
+            "manager": "유화영",
+            "totalStores": 16,
+            "appliedStores": 16,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 8.3,
+                "prod": 23.5,
+                "lt": 11.4,
+                "cake": 2.6
+            },
+            "avgLtItems": 34.3,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.2
+        },
+        {
+            "division": "2사업부",
+            "team": "서울일산팀",
+            "manager": "이태한",
+            "totalStores": 21,
+            "appliedStores": 18,
+            "configRate": 85.7,
+            "audits": {
+                "mfg": 6.8,
+                "prod": 21.5,
+                "lt": 8.7,
+                "cake": 2.0
+            },
+            "avgLtItems": 28.5,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.3
+        },
+        {
+            "division": "2사업부",
+            "team": "서울일산팀",
+            "manager": "이태현",
+            "totalStores": 22,
+            "appliedStores": 20,
+            "configRate": 90.9,
+            "audits": {
+                "mfg": 4.4,
+                "prod": 21.6,
+                "lt": 9.6,
+                "cake": 2.9
+            },
+            "avgLtItems": 34.5,
+            "avgCakeItems": 0.1,
+            "avgConsItems": 6.6
+        },
+        {
+            "division": "2사업부",
+            "team": "서울중부팀",
+            "manager": "김귀영",
+            "totalStores": 22,
+            "appliedStores": 17,
+            "configRate": 77.3,
+            "audits": {
+                "mfg": 11.3,
+                "prod": 20.1,
+                "lt": 9.9,
+                "cake": 4.5
+            },
+            "avgLtItems": 28.9,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 4.4
+        },
+        {
+            "division": "2사업부",
+            "team": "서울중부팀",
+            "manager": "김세진",
+            "totalStores": 26,
+            "appliedStores": 23,
+            "configRate": 88.5,
+            "audits": {
+                "mfg": 8.5,
+                "prod": 17.4,
+                "lt": 8.2,
+                "cake": 3.7
+            },
+            "avgLtItems": 23.3,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.7
+        },
+        {
+            "division": "2사업부",
+            "team": "서울중부팀",
+            "manager": "손용은",
+            "totalStores": 24,
+            "appliedStores": 22,
+            "configRate": 91.7,
+            "audits": {
+                "mfg": 3.8,
+                "prod": 16.2,
+                "lt": 5.0,
+                "cake": 2.9
+            },
+            "avgLtItems": 25.1,
+            "avgCakeItems": 2.0,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "2사업부",
+            "team": "서울중부팀",
+            "manager": "이홍석",
+            "totalStores": 25,
+            "appliedStores": 21,
+            "configRate": 84.0,
+            "audits": {
+                "mfg": 10.8,
+                "prod": 17.7,
+                "lt": 7.9,
+                "cake": 3.2
+            },
+            "avgLtItems": 30.0,
+            "avgCakeItems": 2.4,
+            "avgConsItems": 4.9
+        },
+        {
+            "division": "2사업부",
+            "team": "서울중부팀",
+            "manager": "이희성",
+            "totalStores": 24,
+            "appliedStores": 20,
+            "configRate": 83.3,
+            "audits": {
+                "mfg": 8.3,
+                "prod": 24.7,
+                "lt": 8.6,
+                "cake": 5.3
+            },
+            "avgLtItems": 26.9,
+            "avgCakeItems": 1.4,
+            "avgConsItems": 0.8
+        },
+        {
+            "division": "2사업부",
+            "team": "서울중부팀",
+            "manager": "최우진",
+            "totalStores": 20,
+            "appliedStores": 19,
+            "configRate": 95.0,
+            "audits": {
+                "mfg": 4.9,
+                "prod": 23.9,
+                "lt": 12.7,
+                "cake": 4.5
+            },
+            "avgLtItems": 47.3,
+            "avgCakeItems": 0.5,
+            "avgConsItems": 1.3
+        },
+        {
+            "division": "2사업부",
+            "team": "인천김포팀",
+            "manager": "곽상혁",
+            "totalStores": 20,
+            "appliedStores": 20,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 6.5,
+                "prod": 30.5,
+                "lt": 14.8,
+                "cake": 4.8
+            },
+            "avgLtItems": 35.0,
+            "avgCakeItems": 1.2,
+            "avgConsItems": 0.8
+        },
+        {
+            "division": "2사업부",
+            "team": "인천김포팀",
+            "manager": "김현오",
+            "totalStores": 26,
+            "appliedStores": 24,
+            "configRate": 92.3,
+            "audits": {
+                "mfg": 6.2,
+                "prod": 29.1,
+                "lt": 17.3,
+                "cake": 4.8
+            },
+            "avgLtItems": 35.6,
+            "avgCakeItems": 2.8,
+            "avgConsItems": 0.7
+        },
+        {
+            "division": "2사업부",
+            "team": "인천김포팀",
+            "manager": "신희승",
+            "totalStores": 23,
+            "appliedStores": 20,
+            "configRate": 87.0,
+            "audits": {
+                "mfg": 1.1,
+                "prod": 21.5,
+                "lt": 10.5,
+                "cake": 2.8
+            },
+            "avgLtItems": 25.6,
+            "avgCakeItems": 2.6,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "2사업부",
+            "team": "인천김포팀",
+            "manager": "염동관",
+            "totalStores": 25,
+            "appliedStores": 21,
+            "configRate": 84.0,
+            "audits": {
+                "mfg": 9.7,
+                "prod": 25.0,
+                "lt": 16.6,
+                "cake": 3.8
+            },
+            "avgLtItems": 28.5,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "2사업부",
+            "team": "인천김포팀",
+            "manager": "이원우",
+            "totalStores": 24,
+            "appliedStores": 21,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 3.7,
+                "prod": 23.1,
+                "lt": 7.6,
+                "cake": 2.7
+            },
+            "avgLtItems": 25.3,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.3
+        },
+        {
+            "division": "2사업부",
+            "team": "인천김포팀",
+            "manager": "전혜진",
+            "totalStores": 25,
+            "appliedStores": 22,
+            "configRate": 88.0,
+            "audits": {
+                "mfg": 4.3,
+                "prod": 18.6,
+                "lt": 8.8,
+                "cake": 3.0
+            },
+            "avgLtItems": 32.0,
+            "avgCakeItems": 2.9,
+            "avgConsItems": 1.2
+        },
+        {
+            "division": "3사업부",
+            "team": "광주제주팀",
+            "manager": "김지영",
+            "totalStores": 17,
+            "appliedStores": 13,
+            "configRate": 76.5,
+            "audits": {
+                "mfg": 4.1,
+                "prod": 29.4,
+                "lt": 13.5,
+                "cake": 3.6
+            },
+            "avgLtItems": 24.7,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "3사업부",
+            "team": "광주제주팀",
+            "manager": "김하균",
+            "totalStores": 17,
+            "appliedStores": 15,
+            "configRate": 88.2,
+            "audits": {
+                "mfg": 9.1,
+                "prod": 25.5,
+                "lt": 12.3,
+                "cake": 3.8
+            },
+            "avgLtItems": 34.4,
+            "avgCakeItems": 4.1,
+            "avgConsItems": 0.1
+        },
+        {
+            "division": "3사업부",
+            "team": "광주제주팀",
+            "manager": "손슬기",
+            "totalStores": 24,
+            "appliedStores": 16,
+            "configRate": 66.7,
+            "audits": {
+                "mfg": 3.6,
+                "prod": 26.5,
+                "lt": 10.7,
+                "cake": 2.4
+            },
+            "avgLtItems": 19.4,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "3사업부",
+            "team": "광주제주팀",
+            "manager": "윤성하",
+            "totalStores": 24,
+            "appliedStores": 21,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 0.8,
+                "prod": 21.8,
+                "lt": 11.5,
+                "cake": 2.1
+            },
+            "avgLtItems": 22.6,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.1
+        },
+        {
+            "division": "3사업부",
+            "team": "광주제주팀",
+            "manager": "이승민",
+            "totalStores": 25,
+            "appliedStores": 20,
+            "configRate": 80.0,
+            "audits": {
+                "mfg": 8.6,
+                "prod": 20.2,
+                "lt": 7.4,
+                "cake": 3.6
+            },
+            "avgLtItems": 17.4,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.1
+        },
+        {
+            "division": "3사업부",
+            "team": "광주제주팀",
+            "manager": "조용빈",
+            "totalStores": 17,
+            "appliedStores": 12,
+            "configRate": 70.6,
+            "audits": {
+                "mfg": 4.8,
+                "prod": 19.3,
+                "lt": 6.4,
+                "cake": 3.5
+            },
+            "avgLtItems": 36.0,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.8
+        },
+        {
+            "division": "3사업부",
+            "team": "광주제주팀",
+            "manager": "조현구",
+            "totalStores": 24,
+            "appliedStores": 21,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 3.9,
+                "prod": 24.9,
+                "lt": 10.8,
+                "cake": 2.6
+            },
+            "avgLtItems": 22.3,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.0
+        },
+        {
+            "division": "3사업부",
+            "team": "광주제주팀",
+            "manager": "한용환",
+            "totalStores": 16,
+            "appliedStores": 11,
+            "configRate": 68.8,
+            "audits": {
+                "mfg": 4.4,
+                "prod": 22.9,
+                "lt": 12.4,
+                "cake": 2.5
+            },
+            "avgLtItems": 31.1,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "3사업부",
+            "team": "광주호남팀",
+            "manager": "강경훈",
+            "totalStores": 19,
+            "appliedStores": 16,
+            "configRate": 84.2,
+            "audits": {
+                "mfg": 2.7,
+                "prod": 29.2,
+                "lt": 12.4,
+                "cake": 2.4
+            },
+            "avgLtItems": 30.2,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.1
+        },
+        {
+            "division": "3사업부",
+            "team": "광주호남팀",
+            "manager": "김진욱",
+            "totalStores": 29,
+            "appliedStores": 23,
+            "configRate": 79.3,
+            "audits": {
+                "mfg": 4.3,
+                "prod": 22.1,
+                "lt": 10.0,
+                "cake": 3.9
+            },
+            "avgLtItems": 27.9,
+            "avgCakeItems": 0.4,
+            "avgConsItems": 0.6
+        },
+        {
+            "division": "3사업부",
+            "team": "광주호남팀",
+            "manager": "방세원",
+            "totalStores": 27,
+            "appliedStores": 24,
+            "configRate": 88.9,
+            "audits": {
+                "mfg": 7.3,
+                "prod": 22.9,
+                "lt": 7.3,
+                "cake": 2.4
+            },
+            "avgLtItems": 19.0,
+            "avgCakeItems": 0.5,
+            "avgConsItems": 2.2
+        },
+        {
+            "division": "3사업부",
+            "team": "광주호남팀",
+            "manager": "변선아",
+            "totalStores": 28,
+            "appliedStores": 23,
+            "configRate": 82.1,
+            "audits": {
+                "mfg": 2.8,
+                "prod": 25.6,
+                "lt": 8.7,
+                "cake": 3.0
+            },
+            "avgLtItems": 22.8,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "3사업부",
+            "team": "광주호남팀",
+            "manager": "이근선",
+            "totalStores": 28,
+            "appliedStores": 23,
+            "configRate": 82.1,
+            "audits": {
+                "mfg": 2.4,
+                "prod": 22.8,
+                "lt": 6.6,
+                "cake": 2.4
+            },
+            "avgLtItems": 23.2,
+            "avgCakeItems": 1.3,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "3사업부",
+            "team": "광주호남팀",
+            "manager": "정영임",
+            "totalStores": 29,
+            "appliedStores": 26,
+            "configRate": 89.7,
+            "audits": {
+                "mfg": 5.9,
+                "prod": 19.8,
+                "lt": 8.7,
+                "cake": 1.9
+            },
+            "avgLtItems": 23.1,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.7
+        },
+        {
+            "division": "3사업부",
+            "team": "대전전북팀",
+            "manager": "박수균",
+            "totalStores": 25,
+            "appliedStores": 20,
+            "configRate": 80.0,
+            "audits": {
+                "mfg": 3.4,
+                "prod": 20.4,
+                "lt": 8.9,
+                "cake": 1.6
+            },
+            "avgLtItems": 26.9,
+            "avgCakeItems": 1.1,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "3사업부",
+            "team": "대전전북팀",
+            "manager": "서성헌",
+            "totalStores": 23,
+            "appliedStores": 18,
+            "configRate": 78.3,
+            "audits": {
+                "mfg": 6.3,
+                "prod": 22.7,
+                "lt": 9.8,
+                "cake": 3.9
+            },
+            "avgLtItems": 30.6,
+            "avgCakeItems": 0.2,
+            "avgConsItems": 0.2
+        },
+        {
+            "division": "3사업부",
+            "team": "대전전북팀",
+            "manager": "신관우",
+            "totalStores": 27,
+            "appliedStores": 23,
+            "configRate": 85.2,
+            "audits": {
+                "mfg": 8.7,
+                "prod": 23.6,
+                "lt": 8.7,
+                "cake": 3.6
+            },
+            "avgLtItems": 28.0,
+            "avgCakeItems": 0.3,
+            "avgConsItems": 0.3
+        },
+        {
+            "division": "3사업부",
+            "team": "대전전북팀",
+            "manager": "심한가람",
+            "totalStores": 25,
+            "appliedStores": 20,
+            "configRate": 80.0,
+            "audits": {
+                "mfg": 0.7,
+                "prod": 23.0,
+                "lt": 9.4,
+                "cake": 2.0
+            },
+            "avgLtItems": 39.1,
+            "avgCakeItems": 0.6,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "3사업부",
+            "team": "대전전북팀",
+            "manager": "정택순",
+            "totalStores": 16,
+            "appliedStores": 15,
+            "configRate": 93.8,
+            "audits": {
+                "mfg": 5.6,
+                "prod": 32.3,
+                "lt": 15.6,
+                "cake": 4.1
+            },
+            "avgLtItems": 36.1,
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.8
+        },
+        {
+            "division": "3사업부",
+            "team": "대전전북팀",
+            "manager": "조태현",
+            "totalStores": 23,
+            "appliedStores": 17,
+            "configRate": 73.9,
+            "audits": {
+                "mfg": 0.9,
+                "prod": 15.3,
+                "lt": 6.5,
+                "cake": 1.4
+            },
+            "avgLtItems": 23.4,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "3사업부",
+            "team": "천안충남팀",
+            "manager": "김태호",
+            "totalStores": 32,
+            "appliedStores": 24,
+            "configRate": 75.0,
+            "audits": {
+                "mfg": 5.9,
+                "prod": 23.0,
+                "lt": 13.3,
+                "cake": 2.5
+            },
+            "avgLtItems": 21.2,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "3사업부",
+            "team": "천안충남팀",
+            "manager": "송창석",
+            "totalStores": 29,
+            "appliedStores": 22,
+            "configRate": 75.9,
+            "audits": {
+                "mfg": 2.0,
+                "prod": 19.9,
+                "lt": 9.6,
+                "cake": 2.3
+            },
+            "avgLtItems": 19.0,
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "3사업부",
+            "team": "천안충남팀",
+            "manager": "이하희",
+            "totalStores": 16,
+            "appliedStores": 15,
+            "configRate": 93.8,
+            "audits": {
+                "mfg": 6.7,
+                "prod": 31.9,
+                "lt": 21.7,
+                "cake": 5.8
+            },
+            "avgLtItems": 26.8,
+            "avgCakeItems": 2.5,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "3사업부",
+            "team": "천안충남팀",
+            "manager": "정성화",
+            "totalStores": 31,
+            "appliedStores": 22,
+            "configRate": 71.0,
+            "audits": {
+                "mfg": 2.9,
+                "prod": 19.5,
+                "lt": 7.9,
+                "cake": 2.3
+            },
+            "avgLtItems": 18.0,
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "3사업부",
+            "team": "천안충남팀",
+            "manager": "조성기",
+            "totalStores": 30,
+            "appliedStores": 27,
+            "configRate": 90.0,
+            "audits": {
+                "mfg": 5.4,
+                "prod": 25.2,
+                "lt": 12.3,
+                "cake": 3.4
+            },
+            "avgLtItems": 20.1,
+            "avgCakeItems": 1.2,
+            "avgConsItems": 0.6
+        },
+        {
+            "division": "3사업부",
+            "team": "청주충북팀",
+            "manager": "김명철",
+            "totalStores": 25,
+            "appliedStores": 15,
+            "configRate": 60.0,
+            "audits": {
+                "mfg": 3.4,
+                "prod": 16.8,
+                "lt": 7.0,
+                "cake": 1.9
+            },
+            "avgLtItems": 14.4,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.3
+        },
+        {
+            "division": "3사업부",
+            "team": "청주충북팀",
+            "manager": "김서린",
+            "totalStores": 23,
+            "appliedStores": 19,
+            "configRate": 82.6,
+            "audits": {
+                "mfg": 4.2,
+                "prod": 22.1,
+                "lt": 9.7,
+                "cake": 3.0
+            },
+            "avgLtItems": 33.2,
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "3사업부",
+            "team": "청주충북팀",
+            "manager": "김수영",
+            "totalStores": 24,
+            "appliedStores": 21,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 6.6,
+                "prod": 20.9,
+                "lt": 6.9,
+                "cake": 1.8
+            },
+            "avgLtItems": 30.6,
+            "avgCakeItems": 1.4,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "3사업부",
+            "team": "청주충북팀",
+            "manager": "이상진",
+            "totalStores": 25,
+            "appliedStores": 25,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 0.0,
+                "prod": 21.1,
+                "lt": 7.8,
+                "cake": 2.5
+            },
+            "avgLtItems": 29.6,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "3사업부",
+            "team": "청주충북팀",
+            "manager": "이승규",
+            "totalStores": 25,
+            "appliedStores": 19,
+            "configRate": 76.0,
+            "audits": {
+                "mfg": 5.4,
+                "prod": 22.7,
+                "lt": 13.6,
+                "cake": 4.3
+            },
+            "avgLtItems": 18.1,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.1
+        },
+        {
+            "division": "3사업부",
+            "team": "청주충북팀",
+            "manager": "한정석",
+            "totalStores": 16,
+            "appliedStores": 15,
+            "configRate": 93.8,
+            "audits": {
+                "mfg": 2.4,
+                "prod": 27.3,
+                "lt": 8.8,
+                "cake": 3.1
+            },
+            "avgLtItems": 31.5,
+            "avgCakeItems": 0.3,
+            "avgConsItems": 5.2
+        },
+        {
+            "division": "4사업부",
+            "team": "대구구미팀",
+            "manager": "김정식",
+            "totalStores": 25,
+            "appliedStores": 23,
+            "configRate": 92.0,
+            "audits": {
+                "mfg": 5.1,
+                "prod": 24.2,
+                "lt": 9.2,
+                "cake": 2.8
+            },
+            "avgLtItems": 24.3,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "4사업부",
+            "team": "대구구미팀",
+            "manager": "박종현",
+            "totalStores": 25,
+            "appliedStores": 22,
+            "configRate": 88.0,
+            "audits": {
+                "mfg": 3.1,
+                "prod": 22.8,
+                "lt": 8.8,
+                "cake": 2.4
+            },
+            "avgLtItems": 32.3,
+            "avgCakeItems": 0.1,
+            "avgConsItems": 0.1
+        },
+        {
+            "division": "4사업부",
+            "team": "대구구미팀",
+            "manager": "신원창",
+            "totalStores": 26,
+            "appliedStores": 24,
+            "configRate": 92.3,
+            "audits": {
+                "mfg": 3.6,
+                "prod": 26.3,
+                "lt": 11.0,
+                "cake": 4.6
+            },
+            "avgLtItems": 20.1,
+            "avgCakeItems": 1.2,
+            "avgConsItems": 1.1
+        },
+        {
+            "division": "4사업부",
+            "team": "대구구미팀",
+            "manager": "양종욱",
+            "totalStores": 16,
+            "appliedStores": 16,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 2.5,
+                "prod": 33.8,
+                "lt": 10.8,
+                "cake": 2.6
+            },
+            "avgLtItems": 23.7,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.6
+        },
+        {
+            "division": "4사업부",
+            "team": "대구구미팀",
+            "manager": "이수정",
+            "totalStores": 26,
+            "appliedStores": 21,
+            "configRate": 80.8,
+            "audits": {
+                "mfg": 4.8,
+                "prod": 22.9,
+                "lt": 9.0,
+                "cake": 3.4
+            },
+            "avgLtItems": 29.8,
+            "avgCakeItems": 2.9,
+            "avgConsItems": 1.5
+        },
+        {
+            "division": "4사업부",
+            "team": "대구구미팀",
+            "manager": "이재우",
+            "totalStores": 26,
+            "appliedStores": 19,
+            "configRate": 73.1,
+            "audits": {
+                "mfg": 3.5,
+                "prod": 28.2,
+                "lt": 8.2,
+                "cake": 2.7
+            },
+            "avgLtItems": 42.3,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.6
+        },
+        {
+            "division": "4사업부",
+            "team": "대구포항팀",
+            "manager": "도해일",
+            "totalStores": 25,
+            "appliedStores": 22,
+            "configRate": 88.0,
+            "audits": {
+                "mfg": 6.0,
+                "prod": 17.8,
+                "lt": 7.7,
+                "cake": 1.6
+            },
+            "avgLtItems": 28.6,
+            "avgCakeItems": 1.7,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "4사업부",
+            "team": "대구포항팀",
+            "manager": "백상우",
+            "totalStores": 25,
+            "appliedStores": 21,
+            "configRate": 84.0,
+            "audits": {
+                "mfg": 11.6,
+                "prod": 20.2,
+                "lt": 8.0,
+                "cake": 4.0
+            },
+            "avgLtItems": 42.0,
+            "avgCakeItems": 1.0,
+            "avgConsItems": 1.1
+        },
+        {
+            "division": "4사업부",
+            "team": "대구포항팀",
+            "manager": "손준오",
+            "totalStores": 16,
+            "appliedStores": 16,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 3.6,
+                "prod": 28.4,
+                "lt": 10.8,
+                "cake": 4.1
+            },
+            "avgLtItems": 41.2,
+            "avgCakeItems": 1.1,
+            "avgConsItems": 0.6
+        },
+        {
+            "division": "4사업부",
+            "team": "대구포항팀",
+            "manager": "이현탁",
+            "totalStores": 24,
+            "appliedStores": 19,
+            "configRate": 79.2,
+            "audits": {
+                "mfg": 1.1,
+                "prod": 23.9,
+                "lt": 11.0,
+                "cake": 2.8
+            },
+            "avgLtItems": 32.9,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "4사업부",
+            "team": "대구포항팀",
+            "manager": "정성욱",
+            "totalStores": 26,
+            "appliedStores": 22,
+            "configRate": 84.6,
+            "audits": {
+                "mfg": 9.0,
+                "prod": 22.7,
+                "lt": 11.2,
+                "cake": 2.7
+            },
+            "avgLtItems": 29.6,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 2.0
+        },
+        {
+            "division": "4사업부",
+            "team": "대구포항팀",
+            "manager": "홍진석",
+            "totalStores": 24,
+            "appliedStores": 20,
+            "configRate": 83.3,
+            "audits": {
+                "mfg": 2.1,
+                "prod": 20.9,
+                "lt": 8.8,
+                "cake": 1.0
+            },
+            "avgLtItems": 33.7,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.0
+        },
+        {
+            "division": "4사업부",
+            "team": "부산김해팀",
+            "manager": "김준혁",
+            "totalStores": 16,
+            "appliedStores": 14,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 8.3,
+                "prod": 29.8,
+                "lt": 11.8,
+                "cake": 3.6
+            },
+            "avgLtItems": 25.7,
+            "avgCakeItems": 0.3,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "4사업부",
+            "team": "부산김해팀",
+            "manager": "박은빈",
+            "totalStores": 25,
+            "appliedStores": 23,
+            "configRate": 92.0,
+            "audits": {
+                "mfg": 0.6,
+                "prod": 20.5,
+                "lt": 7.5,
+                "cake": 1.4
+            },
+            "avgLtItems": 22.7,
+            "avgCakeItems": 0.3,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "4사업부",
+            "team": "부산김해팀",
+            "manager": "배상원",
+            "totalStores": 27,
+            "appliedStores": 23,
+            "configRate": 85.2,
+            "audits": {
+                "mfg": 6.1,
+                "prod": 19.3,
+                "lt": 7.3,
+                "cake": 2.7
+            },
+            "avgLtItems": 28.3,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 1.0
+        },
+        {
+            "division": "4사업부",
+            "team": "부산김해팀",
+            "manager": "유영민",
+            "totalStores": 25,
+            "appliedStores": 19,
+            "configRate": 76.0,
+            "audits": {
+                "mfg": 0.6,
+                "prod": 23.2,
+                "lt": 10.2,
+                "cake": 2.5
+            },
+            "avgLtItems": 28.9,
+            "avgCakeItems": 0.1,
+            "avgConsItems": 0.5
+        },
+        {
+            "division": "4사업부",
+            "team": "부산김해팀",
+            "manager": "윤하담",
+            "totalStores": 26,
+            "appliedStores": 23,
+            "configRate": 88.5,
+            "audits": {
+                "mfg": 2.1,
+                "prod": 20.0,
+                "lt": 10.2,
+                "cake": 2.9
+            },
+            "avgLtItems": 34.3,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.9
+        },
+        {
+            "division": "4사업부",
+            "team": "부산김해팀",
+            "manager": "정민석",
+            "totalStores": 25,
+            "appliedStores": 20,
+            "configRate": 80.0,
+            "audits": {
+                "mfg": 5.8,
+                "prod": 18.8,
+                "lt": 8.0,
+                "cake": 3.4
+            },
+            "avgLtItems": 30.6,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.8
+        },
+        {
+            "division": "4사업부",
+            "team": "부산울산팀",
+            "manager": "김경상",
+            "totalStores": 16,
+            "appliedStores": 16,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 3.0,
+                "prod": 23.1,
+                "lt": 13.4,
+                "cake": 4.4
+            },
+            "avgLtItems": 18.3,
+            "avgCakeItems": 0.2,
+            "avgConsItems": 0.6
+        },
+        {
+            "division": "4사업부",
+            "team": "부산울산팀",
+            "manager": "박소현",
+            "totalStores": 25,
+            "appliedStores": 22,
+            "configRate": 88.0,
+            "audits": {
+                "mfg": 7.2,
+                "prod": 22.3,
+                "lt": 10.0,
+                "cake": 3.9
+            },
+            "avgLtItems": 18.9,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "4사업부",
+            "team": "부산울산팀",
+            "manager": "이원제",
+            "totalStores": 25,
+            "appliedStores": 20,
+            "configRate": 80.0,
+            "audits": {
+                "mfg": 6.0,
+                "prod": 26.3,
+                "lt": 13.4,
+                "cake": 3.2
+            },
+            "avgLtItems": 20.1,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.0
+        },
+        {
+            "division": "4사업부",
+            "team": "부산울산팀",
+            "manager": "이윤정",
+            "totalStores": 26,
+            "appliedStores": 20,
+            "configRate": 76.9,
+            "audits": {
+                "mfg": 6.3,
+                "prod": 23.8,
+                "lt": 10.4,
+                "cake": 3.5
+            },
+            "avgLtItems": 17.6,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.7
+        },
+        {
+            "division": "4사업부",
+            "team": "부산울산팀",
+            "manager": "이중호",
+            "totalStores": 25,
+            "appliedStores": 20,
+            "configRate": 80.0,
+            "audits": {
+                "mfg": 7.6,
+                "prod": 24.1,
+                "lt": 8.4,
+                "cake": 2.1
+            },
+            "avgLtItems": 20.9,
+            "avgCakeItems": 1.1,
+            "avgConsItems": 0.2
+        },
+        {
+            "division": "4사업부",
+            "team": "부산울산팀",
+            "manager": "임종현",
+            "totalStores": 25,
+            "appliedStores": 21,
+            "configRate": 84.0,
+            "audits": {
+                "mfg": 1.4,
+                "prod": 21.4,
+                "lt": 12.8,
+                "cake": 2.7
+            },
+            "avgLtItems": 20.4,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.6
+        },
+        {
+            "division": "4사업부",
+            "team": "부산창원팀",
+            "manager": "곽지만",
+            "totalStores": 24,
+            "appliedStores": 21,
+            "configRate": 87.5,
+            "audits": {
+                "mfg": 3.7,
+                "prod": 22.9,
+                "lt": 9.2,
+                "cake": 3.3
+            },
+            "avgLtItems": 32.7,
+            "avgCakeItems": 0.1,
+            "avgConsItems": 1.4
+        },
+        {
+            "division": "4사업부",
+            "team": "부산창원팀",
+            "manager": "구정훈",
+            "totalStores": 25,
+            "appliedStores": 18,
+            "configRate": 72.0,
+            "audits": {
+                "mfg": 7.4,
+                "prod": 24.6,
+                "lt": 14.2,
+                "cake": 4.5
+            },
+            "avgLtItems": 33.0,
+            "avgCakeItems": 1.8,
+            "avgConsItems": 3.0
+        },
+        {
+            "division": "4사업부",
+            "team": "부산창원팀",
+            "manager": "김기동",
+            "totalStores": 16,
+            "appliedStores": 16,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 5.1,
+                "prod": 25.2,
+                "lt": 10.4,
+                "cake": 4.1
+            },
+            "avgLtItems": 37.3,
+            "avgCakeItems": 0.2,
+            "avgConsItems": 0.4
+        },
+        {
+            "division": "4사업부",
+            "team": "부산창원팀",
+            "manager": "김장헌",
+            "totalStores": 22,
+            "appliedStores": 18,
+            "configRate": 81.8,
+            "audits": {
+                "mfg": 4.6,
+                "prod": 19.9,
+                "lt": 9.0,
+                "cake": 2.4
+            },
+            "avgLtItems": 29.7,
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.9
+        },
+        {
+            "division": "4사업부",
+            "team": "부산창원팀",
+            "manager": "박민관",
+            "totalStores": 25,
+            "appliedStores": 23,
+            "configRate": 92.0,
+            "audits": {
+                "mfg": 4.3,
+                "prod": 24.1,
+                "lt": 8.7,
+                "cake": 2.7
+            },
+            "avgLtItems": 38.0,
+            "avgCakeItems": 1.0,
+            "avgConsItems": 1.7
+        },
+        {
+            "division": "4사업부",
+            "team": "부산창원팀",
+            "manager": "정윤경",
+            "totalStores": 22,
+            "appliedStores": 22,
+            "configRate": 100.0,
+            "audits": {
+                "mfg": 1.5,
+                "prod": 23.8,
+                "lt": 9.8,
+                "cake": 2.6
+            },
+            "avgLtItems": 6.8,
+            "avgCakeItems": 0.2,
+            "avgConsItems": 1.0
+        },
+        {
+            "division": "4사업부",
+            "team": "부산창원팀",
+            "manager": "최명권",
+            "totalStores": 24,
+            "appliedStores": 19,
+            "configRate": 79.2,
+            "audits": {
+                "mfg": 9.0,
+                "prod": 23.2,
+                "lt": 10.9,
+                "cake": 3.8
+            },
+            "avgLtItems": 24.1,
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
         }
     ],
-    "last_updated": "2026-06-15 10:58:50"
+    "byRegion": [
+        {
+            "region": "경기도",
+            "totalStores": 894,
+            "appliedStores": 780,
+            "configRate": 87.2
+        },
+        {
+            "region": "서울특별시",
+            "totalStores": 608,
+            "appliedStores": 527,
+            "configRate": 86.7
+        },
+        {
+            "region": "인천광역시",
+            "totalStores": 208,
+            "appliedStores": 183,
+            "configRate": 88.0
+        },
+        {
+            "region": "부산광역시",
+            "totalStores": 184,
+            "appliedStores": 159,
+            "configRate": 86.4
+        },
+        {
+            "region": "경상남도",
+            "totalStores": 183,
+            "appliedStores": 159,
+            "configRate": 86.9
+        },
+        {
+            "region": "대구광역시",
+            "totalStores": 152,
+            "appliedStores": 131,
+            "configRate": 86.2
+        },
+        {
+            "region": "충청남도",
+            "totalStores": 141,
+            "appliedStores": 113,
+            "configRate": 80.1
+        },
+        {
+            "region": "경상북도",
+            "totalStores": 140,
+            "appliedStores": 120,
+            "configRate": 85.7
+        },
+        {
+            "region": "전라남도",
+            "totalStores": 112,
+            "appliedStores": 90,
+            "configRate": 80.4
+        },
+        {
+            "region": "전라북도",
+            "totalStores": 112,
+            "appliedStores": 95,
+            "configRate": 84.8
+        },
+        {
+            "region": "충청북도",
+            "totalStores": 112,
+            "appliedStores": 93,
+            "configRate": 83.0
+        },
+        {
+            "region": "강원도",
+            "totalStores": 104,
+            "appliedStores": 86,
+            "configRate": 82.7
+        },
+        {
+            "region": "광주광역시",
+            "totalStores": 97,
+            "appliedStores": 80,
+            "configRate": 82.5
+        },
+        {
+            "region": "대전시",
+            "totalStores": 92,
+            "appliedStores": 76,
+            "configRate": 82.6
+        },
+        {
+            "region": "울산광역시",
+            "totalStores": 69,
+            "appliedStores": 54,
+            "configRate": 78.3
+        },
+        {
+            "region": "제주도",
+            "totalStores": 50,
+            "appliedStores": 36,
+            "configRate": 72.0
+        },
+        {
+            "region": "세종시",
+            "totalStores": 23,
+            "appliedStores": 18,
+            "configRate": 78.3
+        }
+    ]
 }
