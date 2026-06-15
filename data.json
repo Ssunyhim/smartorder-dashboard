@@ -148,6 +148,192 @@
             "config_rate": 78.3
         }
     ],
+    "team_details": [
+        {
+            "department": "1사업부",
+            "team": "수원안산팀",
+            "total_stores": 135,
+            "configured_stores": 123,
+            "config_rate": 91.1,
+            "long_term_avg_items": 33.9
+        },
+        {
+            "department": "1사업부",
+            "team": "경기안양팀",
+            "total_stores": 126,
+            "configured_stores": 113,
+            "config_rate": 89.7,
+            "long_term_avg_items": 33.0
+        },
+        {
+            "department": "1사업부",
+            "team": "경기화성팀",
+            "total_stores": 131,
+            "configured_stores": 114,
+            "config_rate": 87.0,
+            "long_term_avg_items": 30.3
+        },
+        {
+            "department": "1사업부",
+            "team": "서울남부팀",
+            "total_stores": 120,
+            "configured_stores": 104,
+            "config_rate": 86.7,
+            "long_term_avg_items": 31.6
+        },
+        {
+            "department": "1사업부",
+            "team": "서울서부팀",
+            "total_stores": 134,
+            "configured_stores": 115,
+            "config_rate": 85.8,
+            "long_term_avg_items": 31.1
+        },
+        {
+            "department": "1사업부",
+            "team": "용인원주팀",
+            "total_stores": 152,
+            "configured_stores": 129,
+            "config_rate": 84.9,
+            "long_term_avg_items": 33.4
+        },
+        {
+            "department": "1사업부",
+            "team": "서울남동팀",
+            "total_stores": 129,
+            "configured_stores": 109,
+            "config_rate": 84.5,
+            "long_term_avg_items": 31.3
+        },
+        {
+            "department": "2사업부",
+            "team": "인천김포팀",
+            "total_stores": 143,
+            "configured_stores": 128,
+            "config_rate": 89.5,
+            "long_term_avg_items": 31.0
+        },
+        {
+            "department": "2사업부",
+            "team": "서울북부팀",
+            "total_stores": 157,
+            "configured_stores": 139,
+            "config_rate": 88.5,
+            "long_term_avg_items": 32.2
+        },
+        {
+            "department": "2사업부",
+            "team": "서울일산팀",
+            "total_stores": 147,
+            "configured_stores": 129,
+            "config_rate": 87.8,
+            "long_term_avg_items": 31.9
+        },
+        {
+            "department": "2사업부",
+            "team": "서울중부팀",
+            "total_stores": 141,
+            "configured_stores": 122,
+            "config_rate": 86.5,
+            "long_term_avg_items": 31.5
+        },
+        {
+            "department": "2사업부",
+            "team": "서울동북팀",
+            "total_stores": 163,
+            "configured_stores": 137,
+            "config_rate": 84.0,
+            "long_term_avg_items": 30.3
+        },
+        {
+            "department": "2사업부",
+            "team": "부천인천팀",
+            "total_stores": 136,
+            "configured_stores": 114,
+            "config_rate": 83.8,
+            "long_term_avg_items": 33.0
+        },
+        {
+            "department": "3사업부",
+            "team": "광주호남팀",
+            "total_stores": 160,
+            "configured_stores": 135,
+            "config_rate": 84.4,
+            "long_term_avg_items": 24.9
+        },
+        {
+            "department": "3사업부",
+            "team": "청주충북팀",
+            "total_stores": 138,
+            "configured_stores": 114,
+            "config_rate": 82.6,
+            "long_term_avg_items": 27.2
+        },
+        {
+            "department": "3사업부",
+            "team": "대전전북팀",
+            "total_stores": 139,
+            "configured_stores": 113,
+            "config_rate": 81.3,
+            "long_term_avg_items": 31.1
+        },
+        {
+            "department": "3사업부",
+            "team": "천안충남팀",
+            "total_stores": 138,
+            "configured_stores": 110,
+            "config_rate": 79.7,
+            "long_term_avg_items": 20.8
+        },
+        {
+            "department": "3사업부",
+            "team": "광주제주팀",
+            "total_stores": 164,
+            "configured_stores": 129,
+            "config_rate": 78.7,
+            "long_term_avg_items": 25.1
+        },
+        {
+            "department": "4사업부",
+            "team": "대구구미팀",
+            "total_stores": 144,
+            "configured_stores": 125,
+            "config_rate": 86.8,
+            "long_term_avg_items": 30.2
+        },
+        {
+            "department": "4사업부",
+            "team": "부산창원팀",
+            "total_stores": 158,
+            "configured_stores": 137,
+            "config_rate": 86.7,
+            "long_term_avg_items": 29.7
+        },
+        {
+            "department": "4사업부",
+            "team": "대구포항팀",
+            "total_stores": 140,
+            "configured_stores": 120,
+            "config_rate": 85.7,
+            "long_term_avg_items": 34.6
+        },
+        {
+            "department": "4사업부",
+            "team": "부산김해팀",
+            "total_stores": 144,
+            "configured_stores": 122,
+            "config_rate": 84.7,
+            "long_term_avg_items": 29.8
+        },
+        {
+            "department": "4사업부",
+            "team": "부산울산팀",
+            "total_stores": 142,
+            "configured_stores": 119,
+            "config_rate": 83.8,
+            "long_term_avg_items": 19.4
+        }
+    ],
     "sv_summary": [
         {
             "department": "1사업부",
@@ -1969,5 +2155,5 @@
             }
         }
     ],
-    "last_updated": "2026-06-15 17:26:12"
+    "last_updated": "2026-06-15 17:33:43"
 }
