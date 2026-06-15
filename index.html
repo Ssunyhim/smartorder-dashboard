@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>파리바게뜨 자동권고주문 대시보드 v6.0 (최종)</title>
+    <title>파리바게뜨 자동권고주문 대시보드 (최종 안정화)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
                     <img src="https://www.paris.co.kr/wp-content/themes/paris-baguette/images/logo_color.png" alt="Paris Baguette Logo" class="h-8 mr-4">
-                    <h1 class="text-xl font-bold tracking-tight">자동권고주문 관제 대시보드 v6.0</h1>
+                    <h1 class="text-xl font-bold tracking-tight">자동권고주문 관제 대시보드</h1>
                 </div>
                 <nav class="hidden md:flex space-x-4 text-sm font-medium">
                     <a href="#total-status" class="hover:text-amber-300">전체현황</a>
@@ -36,7 +36,7 @@
                 <p class="text-lg font-semibold text-slate-700">실시간 가맹사업부 설정 대시보드 및 AI 인사이트 보고</p>
                 <div class="text-sm text-slate-500 text-right">
                     <p>최종 업데이트 시간</p>
-                    <p id="last-updated" class="font-bold"></p>
+                    <p id="last-updated" class="font-bold">로딩 중...</p>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
         <section id="total-status" class="mb-10">
             <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="w-2 h-5 bg-blue-600 mr-3"></span>1. 전체 가맹점 설정 요약 현황</h2>
             <div id="summary-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Summary Cards will be rendered here -->
+                <!-- Javascript will render cards here -->
             </div>
         </section>
 
@@ -105,7 +105,6 @@
             },
             renderSummary(summary) {
                 const container = document.getElementById('summary-cards');
-                // *** FIX: Changed the card title to be specific ***
                 const cards = [
                     { title: '분석 대상 가맹점 수', value: summary.total_stores, unit: '개점' },
                     { title: '자동권고 설정 가맹점', value: summary.configured_stores, unit: '개점' },
@@ -130,7 +129,7 @@
                  const labels = ['PB가맹 평균', '1사업부', '2사업부', '3사업부', '4사업부'];
                  const rates = labels.map(l => data[l]?.rate || 0);
                  const colors = rates.map(rate => rate < (data['PB가맹 평균']?.rate || 0) ? 'rgba(239, 68, 68, 0.8)' : 'rgba(59, 130, 246, 0.8)');
-                 colors[0] = 'rgba(245, 158, 11, 0.9)';
+                 colors[0] = 'rgba(245, 158, 11, 0.9)'; // PB가맹 평균 색상
                  this.renderChart('departmentChart', {type: 'bar', data: {labels, datasets: [{label: '설정률(%)', data: rates, backgroundColor: colors}]}, options: {plugins: {legend: {display: false}}, scales: {y: {max: 100}}}});
             },
             renderLongTermChart(data) {
