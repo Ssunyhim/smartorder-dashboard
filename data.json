@@ -25,92 +25,25 @@
     "long_term_by_department": {
         "PB가맹 평균": {
             "configured_stores": 2730,
-            "avg_items": 29.9,
-            "total_items_sum": 81577
+            "avg_items": 29.9
         },
         "1사업부": {
             "configured_stores": 785,
-            "avg_items": 32.2,
-            "total_items_sum": 25243
+            "avg_items": 32.2
         },
         "2사업부": {
             "configured_stores": 751,
-            "avg_items": 31.6,
-            "total_items_sum": 23751
+            "avg_items": 31.6
         },
         "3사업부": {
             "configured_stores": 590,
-            "avg_items": 25.8,
-            "total_items_sum": 15221
+            "avg_items": 25.8
         },
         "4사업부": {
             "configured_stores": 604,
-            "avg_items": 28.7,
-            "total_items_sum": 17362
+            "avg_items": 28.7
         }
     },
-    "long_term_by_team_top10": [
-        {
-            "team": "대구포항팀",
-            "configured_stores": 119,
-            "avg_items": 34.6,
-            "total_items_sum": 4122
-        },
-        {
-            "team": "수원안산팀",
-            "configured_stores": 121,
-            "avg_items": 33.9,
-            "total_items_sum": 4105
-        },
-        {
-            "team": "용인원주팀",
-            "configured_stores": 126,
-            "avg_items": 33.4,
-            "total_items_sum": 4211
-        },
-        {
-            "team": "경기안양팀",
-            "configured_stores": 110,
-            "avg_items": 33.0,
-            "total_items_sum": 3628
-        },
-        {
-            "team": "부천인천팀",
-            "configured_stores": 114,
-            "avg_items": 33.0,
-            "total_items_sum": 3765
-        },
-        {
-            "team": "서울북부팀",
-            "configured_stores": 136,
-            "avg_items": 32.2,
-            "total_items_sum": 4384
-        },
-        {
-            "team": "서울일산팀",
-            "configured_stores": 124,
-            "avg_items": 31.9,
-            "total_items_sum": 3961
-        },
-        {
-            "team": "서울남부팀",
-            "configured_stores": 102,
-            "avg_items": 31.6,
-            "total_items_sum": 3219
-        },
-        {
-            "team": "서울중부팀",
-            "configured_stores": 116,
-            "avg_items": 31.5,
-            "total_items_sum": 3649
-        },
-        {
-            "team": "서울남동팀",
-            "configured_stores": 104,
-            "avg_items": 31.3,
-            "total_items_sum": 3260
-        }
-    ],
     "sv_summary": [
         {
             "department": "1사업부",
@@ -1934,107 +1867,107 @@
     ],
     "region_details": [
         {
-            "본부": "경기도",
+            "region": "경기도",
             "total_stores": 894,
             "configured_stores": 780,
             "config_rate": 87.2
         },
         {
-            "본부": "서울특별시",
+            "region": "서울특별시",
             "total_stores": 608,
             "configured_stores": 527,
             "config_rate": 86.7
         },
         {
-            "본부": "인천광역시",
+            "region": "인천광역시",
             "total_stores": 208,
             "configured_stores": 183,
             "config_rate": 88.0
         },
         {
-            "본부": "부산광역시",
+            "region": "부산광역시",
             "total_stores": 184,
             "configured_stores": 159,
             "config_rate": 86.4
         },
         {
-            "본부": "경상남도",
+            "region": "경상남도",
             "total_stores": 183,
             "configured_stores": 159,
             "config_rate": 86.9
         },
         {
-            "본부": "대구광역시",
+            "region": "대구광역시",
             "total_stores": 152,
             "configured_stores": 131,
             "config_rate": 86.2
         },
         {
-            "본부": "충청남도",
+            "region": "충청남도",
             "total_stores": 141,
             "configured_stores": 113,
             "config_rate": 80.1
         },
         {
-            "본부": "경상북도",
+            "region": "경상북도",
             "total_stores": 140,
             "configured_stores": 120,
             "config_rate": 85.7
         },
         {
-            "본부": "전라남도",
+            "region": "전라남도",
             "total_stores": 112,
             "configured_stores": 90,
             "config_rate": 80.4
         },
         {
-            "본부": "전라북도",
+            "region": "전라북도",
             "total_stores": 112,
             "configured_stores": 95,
             "config_rate": 84.8
         },
         {
-            "본부": "충청북도",
+            "region": "충청북도",
             "total_stores": 112,
             "configured_stores": 93,
             "config_rate": 83.0
         },
         {
-            "본부": "강원도",
+            "region": "강원도",
             "total_stores": 104,
             "configured_stores": 86,
             "config_rate": 82.7
         },
         {
-            "본부": "광주광역시",
+            "region": "광주광역시",
             "total_stores": 97,
             "configured_stores": 80,
             "config_rate": 82.5
         },
         {
-            "본부": "대전시",
+            "region": "대전시",
             "total_stores": 92,
             "configured_stores": 76,
             "config_rate": 82.6
         },
         {
-            "본부": "울산광역시",
+            "region": "울산광역시",
             "total_stores": 69,
             "configured_stores": 54,
             "config_rate": 78.3
         },
         {
-            "본부": "제주도",
+            "region": "제주도",
             "total_stores": 50,
             "configured_stores": 36,
             "config_rate": 72.0
         },
         {
-            "본부": "세종시",
+            "region": "세종시",
             "total_stores": 23,
             "configured_stores": 18,
             "config_rate": 78.3
         }
     ],
-    "last_updated": "2026-06-15 16:12:28"
+    "last_updated": "2026-06-15 16:27:44"
 }
