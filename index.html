@@ -1,463 +1,421 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>파리바게뜨 자동권고주문 관제 대시보드 v4.0</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파리바게뜨 자동권고주문 관제 대시보드</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-      body {
-        font-family: "Noto Sans KR", sans-serif;
-      }
-      .chart-container {
-        position: relative;
-        height: 380px;
-        width: 100%;
-      }
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .chart-container { position: relative; height: 380px; width: 100%; }
+        .tab-btn.active { border-color: #1e3a8a; color: #1e3a8a; font-weight: 700; }
     </style>
-  </head>
-  <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
-    <!-- 네비게이션 헤더 -->
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
     <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center">
-            <img
-              src="https://www.paris.co.kr/wp-content/themes/paris-baguette/images/logo_color.png"
-              alt="Paris Baguette Logo"
-              class="h-8 mr-4"
-            />
-            <h1 class="text-xl font-bold tracking-tight">
-              자동권고주문 관제 대시보드
-            </h1>
-          </div>
-          <nav class="hidden md:flex space-x-6 text-sm font-medium">
-            <a
-              href="#total-status"
-              class="hover:text-amber-300 transition-colors"
-              >전체현황</a
-            >
-            <a href="#charts" class="hover:text-amber-300 transition-colors"
-              >다각도 차트</a
-            >
-            <a
-              href="#region-details"
-              class="hover:text-amber-300 transition-colors"
-              >지역별 지표</a
-            >
-            <a href="#sv-details" class="hover:text-amber-300 transition-colors"
-              >SV담당별</a
-            >
-          </nav>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <img src="https://www.paris.co.kr/wp-content/themes/paris-baguette/images/logo_color.png" alt="PB Logo" class="h-8 mr-4 bg-white p-1 rounded">
+                    <h1 class="text-xl font-bold tracking-tight">자동권고주문 관제 대시보드 v4.0</h1>
+                </div>
+                <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="#total-status" class="hover:text-amber-300">전체현황</a>
+                    <a href="#charts" class="hover:text-amber-300">다각도 분석</a>
+                    <a href="#region-section" class="hover:text-amber-300">지역별지표</a>
+                    <a href="#sv-section" class="hover:text-amber-300">SV담당별 현황</a>
+                </nav>
+            </div>
         </div>
-      </div>
     </header>
 
     <main class="flex-grow container mx-auto p-4 sm:p-6 lg:p-8">
-      <!-- 상단 실시간 동기화 상태 바 -->
-      <div
-        class="bg-white p-4 rounded-lg shadow-md mb-8 border border-slate-200"
-      >
-        <div
-          class="flex flex-col sm:flex-row items-center justify-between gap-4"
-        >
-          <p class="text-lg font-semibold text-slate-700">
-            실시간 가맹사업부 설정 대시보드 및 AI 인사이트 보고
-          </p>
-          <div class="text-sm text-slate-500 text-center sm:text-right">
-            <p>최종 데이터 업데이트 시간</p>
-            <p id="last-updated" class="font-bold text-blue-800">로딩 중...</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 1. KPI 대형 카드 현황판 -->
-      <section id="total-status" class="mb-10">
-        <h2 class="text-2xl font-bold mb-5 flex items-center">
-          <span class="w-2 h-5 bg-blue-600 mr-3 rounded"></span>1. 전체 가맹점
-          설정 요약 현황
-        </h2>
-        <div
-          id="summary-cards"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-        >
-          <!-- Javascript로 동적 렌더링 -->
-        </div>
-      </section>
-
-      <!-- 경영진 핵심 요약 보고서 -->
-      <section id="insight" class="mb-10">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
-          <div class="lg:col-span-3 bg-white p-6 rounded-lg shadow-md border">
-            <h3 class="font-bold text-lg mb-4 flex items-center">
-              <span class="w-2 h-5 bg-amber-500 mr-3 rounded"></span>경영진 핵심
-              요약 보고 (AI 분석)
-            </h3>
-            <div class="space-y-4 text-slate-600">
-              <p>
-                ✓
-                <span class="font-semibold"
-                  >사업부별 설정률 불균형 완화 필요:</span
-                >
-                1사업부와 4사업부의 평균 설정률은 안정 범위 내에서 유지되고
-                있으나, 2사업부와 3사업부의 장기유통 및 케이크 자동설정 지표가
-                평균치를 하회하여 특별 점검 및 촉구가 필요한 시점입니다.
-              </p>
-              <p>
-                ✓
-                <span class="font-semibold">장기유통 품목 설정률 관리:</span>
-                점포 재고 건전성과 운영 기한 효율화의 핵심인 장기유통 품목
-                설정률이 크게 뒤처지는 일부 취약 팀 대상, 우수 SV 가이드를
-                배포하여 전체적인 상향 평준화를 이뤄내야 합니다.
-              </p>
+        <!-- 상단 데이터 상태 알림판 -->
+        <div class="bg-white p-4 rounded-lg shadow-sm mb-8 border border-slate-200 flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+            <div class="flex items-center">
+                <span class="relative flex h-3 w-3 mr-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                </span>
+                <p class="text-slate-700 font-medium">실시간 주간 가맹사업부 설정 데이터 동기화 완료</p>
             </div>
-          </div>
-          <div
-            class="lg:col-span-2 bg-slate-800 p-6 rounded-lg shadow-md text-white"
-          >
-            <h3 class="font-bold text-lg mb-4 flex items-center">
-              <span class="w-2 h-5 bg-cyan-400 mr-3 rounded"></span>자동화 지표
-              개선 Action Plan
-            </h3>
-            <ol
-              class="space-y-4 text-sm list-decimal list-inside text-slate-300"
-            >
-              <li>
-                <span class="font-semibold text-white"
-                  >장기유통 하위 사업팀 SV 밀착 케어:</span
-                >
-                수치가 하위권에 머물러 있는 담당 사업팀을 타겟하여 본사 메뉴얼을
-                재배포하고 주간 모니터링 주기를 조밀하게 단축해 정합성을
-                향상시킵니다.
-              </li>
-              <li>
-                <span class="font-semibold text-white"
-                  >2, 3사업부 특별 교육 추진:</span
-                >
-                참여율이 미비한 담당 SV들과 1:1 면담 및 교육을 전개해 시스템
-                오설정을 방지하고 장벽을 허뭅니다.
-              </li>
-            </ol>
-          </div>
-        </div>
-      </section>
-
-      <!-- 2. 다각도 분석 차트 2개 나란히 배치 -->
-      <section id="charts" class="mb-10">
-        <h2 class="text-2xl font-bold mb-6 flex items-center">
-          <span class="w-2 h-5 bg-blue-600 mr-3 rounded"></span>2. 사업부별
-          다각도 시각화 분석
-        </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- 차트 1 -->
-          <div class="bg-white p-6 rounded-lg shadow-md border">
-            <h3 class="text-lg font-bold mb-4 text-slate-700">
-              사업부별 시스템 적용 현황 (PB가맹 평균 맨 왼쪽 배치)
-            </h3>
-            <div class="chart-container">
-              <canvas id="departmentChart"></canvas>
+            <div class="text-sm text-slate-500">
+                <span>최종 동기화 시점: </span>
+                <span id="last-updated" class="font-bold text-blue-900">로딩 중...</span>
             </div>
-          </div>
-          <!-- 차트 2 (꺾은선 이중 축 개선 완료) -->
-          <div class="bg-white p-6 rounded-lg shadow-md border">
-            <h3 class="text-lg font-bold mb-4 text-slate-700">
-              장기유통 유형 사업부별 설정 지표 (설정품목은 꺾은선 적용)
-            </h3>
-            <div class="chart-container">
-              <canvas id="longTermDeptChart"></canvas>
+        </div>
+
+        <!-- 1. 전체 가맹점 설정 요약 현황 -->
+        <section id="total-status" class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="w-2.5 h-6 bg-blue-600 mr-3 rounded-sm"></span>1. 전체 가맹점 설정 요약 현황</h2>
+            <div id="summary-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 요약 카드가 렌더링되는 공간 -->
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- 3. 지역별 세부 지표 요약 (데이터 누락 문제 완전 해결) -->
-      <section id="region-details" class="mb-10">
-        <h2 class="text-2xl font-bold mb-6 flex items-center">
-          <span class="w-2 h-5 bg-blue-600 mr-3 rounded"></span>3. 지역별 세부
-          지표 요약
-        </h2>
-        <div
-          id="region-details-grid"
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
-        >
-          <!-- 지역 카드 동적 출력 -->
-        </div>
-      </section>
+        <!-- 핵심 보고 & 실시간 분석 하이라이트 -->
+        <section class="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-10">
+            <!-- AI 분석 리포트 -->
+            <div class="lg:col-span-3 bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                <h3 class="font-bold text-lg mb-4 flex items-center text-slate-800">
+                    <span class="w-1.5 h-5 bg-amber-500 mr-2.5 rounded-sm"></span>경영진 핵심 요약 보고
+                </h3>
+                <div class="space-y-4 text-sm leading-relaxed text-slate-600">
+                    <p class="flex items-start">
+                        <span class="text-blue-600 mr-2">✓</span>
+                        <span><strong>사업부별 설정률 불균형 완화 필요:</strong> 1사업부와 4사업부의 평균 설정률은 양호하지만, 2사업부와 3사업부의 장기유통 및 케이크 지표가 가맹점 평균에 미달하여 관리가 요구됩니다.</span>
+                    </p>
+                    <p class="flex items-start">
+                        <span class="text-blue-600 mr-2">✓</span>
+                        <span><strong>장기유통 품목 설정률 관리:</strong> 점포 재고 효율화의 핵심인 장기유통 평균 설정 수가 낮은 하위 그룹(광주제주팀 등) 소속 SV들의 밀착 관리가 시급합니다.</span>
+                    </p>
+                </div>
+            </div>
+            <!-- 실시간 Action Plan -->
+            <div class="lg:col-span-2 bg-slate-800 p-6 rounded-lg shadow-sm text-white">
+                <h3 class="font-bold text-lg mb-4 flex items-center">
+                    <span class="w-1.5 h-5 bg-cyan-400 mr-2.5 rounded-sm"></span>지표 개선을 위한 Action Plan
+                </h3>
+                <ol class="space-y-3.5 text-xs list-decimal list-inside text-slate-200 leading-relaxed">
+                    <li><span class="font-semibold text-white">SV 밀착 가이드 전개:</span> 수치가 미비한 부진 SV 대상 맞춤 교육을 진행하고 주간 모니터링 체계를 고도화합니다.</li>
+                    <li><span class="font-semibold text-white">케이크 자동설정 집중 개선:</span> 2, 3사업부의 케이크 미설정 사유를 파악하여 기술적 장애 및 시스템 접근성 문제를 밀착 해결합니다.</li>
+                </ol>
+            </div>
+        </section>
 
-      <!-- 4. 담당 SV별 설정 현황 표 -->
-      <section id="sv-details" class="mb-10">
-        <h2 class="text-2xl font-bold mb-5 flex items-center">
-          <span class="w-2 h-5 bg-blue-600 mr-3 rounded"></span>4. 담당 SV별
-          설정 현황
-        </h2>
-        <div class="bg-white rounded-lg shadow-md border overflow-x-auto">
-          <table class="w-full text-sm text-left">
-            <thead
-              class="text-xs text-slate-700 uppercase bg-slate-100 border-b"
-            >
-              <tr>
-                <th class="px-6 py-4">사업부</th>
-                <th class="px-6 py-4">사업팀</th>
-                <th class="px-6 py-4">담당 SV</th>
-                <th class="px-6 py-4 text-center">관리점포 수</th>
-                <th class="px-6 py-4 text-center">설정점포 수</th>
-                <th class="px-6 py-4 text-center">설정률</th>
-                <th class="px-6 py-4 text-right">유형별 평균 품목 수</th>
-              </tr>
-            </thead>
-            <tbody id="sv-table-body" class="divide-y">
-              <!-- SV 데이터 리스트 출력 -->
-            </tbody>
-          </table>
-        </div>
-      </section>
+        <!-- 2. 대시보드 핵심 성과 요약 (TOP 5 / WORST 5) -->
+        <section id="highlights-section" class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="w-2.5 h-6 bg-blue-600 mr-3 rounded-sm"></span>2. SV 장기유통 품목 설정 성과 하이라이트</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- TOP 5 SV 카드 -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-emerald-100">
+                    <h3 class="font-bold text-emerald-800 flex items-center mb-4 text-base">
+                        <span class="mr-2">🟢</span> TOP 5 SV (장기유통 평균 품목 수 우수)
+                    </h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs text-left">
+                            <thead class="bg-emerald-50 text-emerald-900 font-bold">
+                                <tr>
+                                    <th class="p-2.5">사업팀</th>
+                                    <th class="p-2.5">담당 SV</th>
+                                    <th class="p-2.5 text-center">장기유통 평균 품목수</th>
+                                    <th class="p-2.5 text-center">설정률</th>
+                                </tr>
+                            </thead>
+                            <tbody id="top-sv-body" class="divide-y divide-emerald-50">
+                                <!-- JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- WORST 5 SV 카드 -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-red-100">
+                    <h3 class="font-bold text-red-800 flex items-center mb-4 text-base">
+                        <span class="mr-2">🔴</span> WORST 5 SV (개선 시급 그룹)
+                    </h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs text-left">
+                            <thead class="bg-red-50 text-red-900 font-bold">
+                                <tr>
+                                    <th class="p-2.5">사업팀</th>
+                                    <th class="p-2.5">담당 SV</th>
+                                    <th class="p-2.5 text-center">장기유통 평균 품목수</th>
+                                    <th class="p-2.5 text-center">설정률</th>
+                                </tr>
+                            </thead>
+                            <tbody id="worst-sv-body" class="divide-y divide-red-50">
+                                <!-- JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 다각도 분석 차트 영역 -->
+        <section id="charts" class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="w-2.5 h-6 bg-blue-600 mr-3 rounded-sm"></span>3. 사업부별/사업팀별 다각도 시각화 분석</h2>
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                <!-- 사업부별 설정률 차트 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                    <h3 class="text-base font-bold text-slate-800 mb-4 flex items-center">
+                        <span class="w-1 h-4 bg-blue-900 mr-2"></span> 사업부별 시스템 적용 현황 <span class="text-xs text-slate-400 ml-2">(그래프 클릭 시 하단 SV 테이블 필터링 가능)</span>
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="departmentChart"></canvas>
+                    </div>
+                </div>
+                <!-- 장기유통 사업부별 설정 지표 차트 (이중 축 적용!) -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
+                    <h3 class="text-base font-bold text-slate-800 mb-4 flex items-center">
+                        <span class="w-1 h-4 bg-blue-900 mr-2"></span> 장기유통 유형 사업부별 설정 지표 <span class="text-xs text-slate-400 ml-2">(설정점: 막대 / 평균품목: 꺾은선 믹스 구조)</span>
+                    </h3>
+                    <div class="chart-container">
+                        <canvas id="longTermDeptChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!-- 사업팀별 장기유통 차트 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-200 mt-8">
+                <h3 class="text-base font-bold text-slate-800 mb-4 flex items-center">
+                    <span class="w-1 h-4 bg-blue-900 mr-2"></span> 장기유통 유형 사업팀별 설정 TOP 10
+                </h3>
+                <div class="chart-container" style="height: 320px;">
+                    <canvas id="longTermTeamChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 지역별 세부 지표 요약 (오새힘님 최우선 수정 지점!) -->
+        <section id="region-section" class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="w-2.5 h-6 bg-blue-600 mr-3 rounded-sm"></span>4. 지역별 세부 지표 요약</h2>
+            <div id="region-details-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                <!-- 동적으로 지역 카드들이 삽입됩니다 -->
+            </div>
+        </section>
+
+        <!-- 5. 담당 SV별 설정 및 실사 현황 -->
+        <section id="sv-section" class="mb-10">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 space-y-3 sm:space-y-0">
+                <h2 class="text-2xl font-bold flex items-center">
+                    <span class="w-2.5 h-6 bg-blue-600 mr-3 rounded-sm"></span>5. 담당 SV별 설정 및 재고 실사 현황
+                </h2>
+                <!-- 테이블 필터 보드 -->
+                <div class="flex flex-wrap gap-2" id="filter-container">
+                    <button class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-900 text-white border border-blue-900 shadow-sm" onclick="filterTable('ALL')">전체</button>
+                    <button class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50" onclick="filterTable('1사업부')">1사업부</button>
+                    <button class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50" onclick="filterTable('2사업부')">2사업부</button>
+                    <button class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50" onclick="filterTable('3사업부')">3사업부</button>
+                    <button class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50" onclick="filterTable('4사업부')">4사업부</button>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-slate-600">
+                        <thead class="text-xs text-slate-700 bg-slate-50 border-b border-slate-200">
+                            <tr>
+                                <th class="px-6 py-4">사업부</th>
+                                <th class="px-6 py-4">사업팀</th>
+                                <th class="px-6 py-4">담당 SV</th>
+                                <th class="px-6 py-4 text-center">관리점포</th>
+                                <th class="px-6 py-4 text-center">설정점포</th>
+                                <th class="px-6 py-4 text-center">설정률 (상태🟢🟡🔴)</th>
+                                <th class="px-6 py-4 text-center">주요 실사 평균</th>
+                                <th class="px-6 py-4 text-center">설정품목 평균 수</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sv-table-body" class="divide-y divide-slate-100">
+                            <!-- 로딩 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-slate-800 text-white mt-auto">
-      <div class="container mx-auto p-5 text-center text-sm text-slate-400">
-        &copy; 2026 PB Smart Order Team. All Rights Reserved. (기획 및 운영:
-        오새힘)
-      </div>
+    <footer class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800">
+        <div class="container mx-auto px-4 text-center text-xs space-y-1">
+            <p class="text-slate-300 font-medium">© 2026 Paris Baguette Smart Order Team. All Rights Reserved.</p>
+            <p>스마트주문 시스템(자동권고주문 시스템 + 재고관리 시스템) 기획 및 운영 • 설계자: 오새힘(OHpower)</p>
+        </div>
     </footer>
 
     <script>
-      const dataManager = {
-        charts: {},
-        async init() {
-          try {
-            const res = await fetch(`data.json?v=${new Date().getTime()}`);
-            if (!res.ok) throw new Error("데이터 수신 오류");
-            const data = await res.json();
-            this.render(data);
-            document.getElementById("last-updated").textContent =
-              `서버 동기화 완료: ${data.last_updated}`;
-          } catch (e) {
-            document.getElementById("last-updated").textContent =
-              `데이터 로드 실패 (convert_excel.py 실행 필요)`;
-          }
-        },
-        render(data) {
-          this.renderSummary(data.summary);
-          this.renderDeptChart(data.department_summary);
-          this.renderLongTermChart(data.long_term_by_department);
-          this.renderRegionCards(data.region_details);
-          this.renderSvTable(data.sv_summary);
-        },
-        renderSummary(summary) {
-          const container = document.getElementById("summary-cards");
-          const cards = [
-            {
-              title: "분석 대상 가맹점 수",
-              value: summary.total_stores,
-              unit: "개점",
-              color: "text-blue-600",
+        const dataManager = {
+            charts: {},
+            rawData: null,
+            currentFilter: 'ALL',
+
+            async init() {
+                try {
+                    const res = await fetch(`data.json?v=${new Date().getTime()}`);
+                    if (!res.ok) throw new Error("데이터 수집 실패");
+                    this.rawData = await res.json();
+                    
+                    document.getElementById('last-updated').textContent = this.rawData.lastUpdated || "N/A";
+                    this.renderAll();
+                } catch (e) {
+                    console.error("데이터 초기화 에러:", e);
+                    document.getElementById('last-updated').textContent = "연동 실패";
+                }
             },
-            {
-              title: "자동권고 설정 가맹점",
-              value: summary.configured_stores,
-              unit: "개점",
-              color: "text-indigo-600",
+
+            renderAll() {
+                if (!this.rawData) return;
+                this.renderSummary(this.rawData.overall);
+                this.renderHighlights(this.rawData.byManager);
+                this.renderDeptChart(this.rawData.byDivision);
+                this.renderLongTermDeptChart(this.rawData.byDivision);
+                this.renderLongTermTeamChart(this.rawData.byTeam);
+                this.renderRegionDetails(this.rawData.byRegion);
+                this.renderSvTable(this.rawData.byManager);
             },
-            {
-              title: "장기유통 평균 품목 수",
-              value: summary.long_term_avg_items,
-              unit: "개",
-              color: "text-pink-600",
-            },
-            {
-              title: "PB가맹 평균 설정률",
-              value: summary.config_rate,
-              unit: "%",
-              color: "text-emerald-600",
-            },
-          ];
-          container.innerHTML = cards
-            .map(
-              (card) => `
-                    <div class="bg-white p-6 rounded-lg shadow-md border text-center transition-transform hover:-translate-y-1 hover:shadow-lg">
-                        <h4 class="text-sm font-semibold text-slate-500">${card.title}</h4>
-                        <p class="text-4xl font-bold ${card.color} mt-2">${(card.value || 0).toLocaleString()}
-                           <span class="text-xl font-medium ml-1">${card.unit}</span>
+
+            renderSummary(overall) {
+                const container = document.getElementById('summary-cards');
+                if (!overall) return;
+                
+                const cards = [
+                    { title: "분석 대상 가맹점", value: overall.totalStores, unit: "개점", bg: "border-blue-100" },
+                    { title: "자동권고 설정 가맹점", value: overall.appliedStores, unit: "개점", bg: "border-blue-100" },
+                    { title: "장기유통 설정 가맹 평균", value: overall.ltAvgItems, unit: "개", bg: "border-amber-100" }, // 가맹 평균 29.9개 도출
+                    { title: "평균 설정 점포 비율", value: overall.configRate, unit: "%", bg: "border-emerald-100" }
+                ];
+
+                container.innerHTML = cards.map(c => `
+                    <div class="bg-white p-5 rounded-xl shadow-sm border ${c.bg} hover:shadow-md transition duration-200">
+                        <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">${c.title}</h4>
+                        <p class="text-3xl font-extrabold text-blue-950 mt-2">
+                            ${(c.value || 0).toLocaleString()}<span class="text-lg font-medium text-slate-500 ml-1">${c.unit}</span>
                         </p>
-                    </div>`,
-            )
-            .join("");
-        },
-        renderChart(id, config) {
-          const ctx = document.getElementById(id)?.getContext("2d");
-          if (!ctx) return;
-          if (this.charts[id]) this.charts[id].destroy();
-          this.charts[id] = new Chart(ctx, {
-            ...config,
-            options: {
-              responsive: true,
-              maintainAspectRatio: false,
-              ...config.options,
+                    </div>
+                `).join('');
             },
-          });
-        },
-        renderDeptChart(data) {
-          const labels = [
-            "PB가맹 평균",
-            "1사업부",
-            "2사업부",
-            "3사업부",
-            "4사업부",
-          ];
-          const rates = labels.map((l) => data[l]?.rate || 0);
-          const avgRate = data["PB가맹 평균"]?.rate || 0;
-          const colors = rates.map((rate, i) => {
-            if (i === 0) return "rgba(245, 158, 11, 0.9)"; // PB가맹 평균 주황색
-            return rate < avgRate
-              ? "rgba(239, 68, 68, 0.8)"
-              : "rgba(59, 130, 246, 0.8)";
-          });
-          this.renderChart("departmentChart", {
-            type: "bar",
-            data: {
-              labels,
-              datasets: [
-                { label: "설정률 (%)", data: rates, backgroundColor: colors },
-              ],
-            },
-            options: {
-              plugins: { legend: { display: false } },
-              scales: {
-                y: { max: 100, title: { display: true, text: "설정률 (%)" } },
-              },
-            },
-          });
-        },
-        renderLongTermChart(data) {
-          const labels = [
-            "PB가맹 평균",
-            "1사업부",
-            "2사업부",
-            "3사업부",
-            "4사업부",
-          ];
-          this.renderChart("longTermDeptChart", {
-            type: "bar",
-            data: {
-              labels,
-              datasets: [
-                {
-                  label: "장기유통 설정점 수 (막대)",
-                  data: labels.map((l) => data[l]?.configured_stores || 0),
-                  backgroundColor: "rgba(249, 115, 22, 0.85)",
-                  categoryPercentage: 0.5,
-                  barPercentage: 0.5,
-                  yAxisID: "y",
-                },
-                {
-                  label: "장기유통 평균 품목 수 (꺾은선)",
-                  data: labels.map((l) => data[l]?.avg_items || 0),
-                  type: "line",
-                  borderColor: "rgba(192, 38, 211, 1)",
-                  backgroundColor: "rgba(192, 38, 211, 0.1)",
-                  borderWidth: 3,
-                  pointBackgroundColor: "rgba(192, 38, 211, 1)",
-                  pointRadius: 5,
-                  tension: 0.3,
-                  fill: false,
-                  yAxisID: "y1",
-                },
-              ],
-            },
-            options: {
-              plugins: { legend: { position: "bottom" } },
-              scales: {
-                x: { grid: { display: false } },
-                y: {
-                  type: "linear",
-                  display: true,
-                  position: "left",
-                  title: { display: true, text: "설정점 수 (개점)" },
-                },
-                y1: {
-                  type: "linear",
-                  display: true,
-                  position: "right",
-                  grid: { drawOnChartArea: false },
-                  title: { display: true, text: "평균 품목 수 (개)" },
-                },
-              },
-            },
-          });
-        },
-        renderRegionCards(regions) {
-          const container = document.getElementById("region-details-grid");
-          if (!regions || regions.length === 0) {
-            container.innerHTML = `<div class="col-span-full p-6 text-center text-slate-400 bg-white rounded-lg border">지역별 요약 데이터가 존재하지 않습니다.</div>`;
-            return;
-          }
-          container.innerHTML = regions
-            .map(
-              (reg) => `
-                    <div class="bg-white p-5 rounded-lg shadow-md border text-center border-slate-200 hover:shadow-lg transition-shadow">
-                        <h5 class="font-bold text-md text-slate-700">${reg.region}</h5>
-                        <p class="text-2xl font-bold text-blue-700 mt-2">${reg.total_stores}<span class="text-base font-medium ml-1 text-slate-500">개점</span></p>
-                        <p class="text-sm text-slate-400 -mt-0.5">(${reg.configured_stores.toLocaleString()}점 설정 완료)</p>
-                        <div class="w-full bg-slate-100 rounded-full h-2.5 mt-3 overflow-hidden">
-                          <div class="bg-emerald-500 h-2.5 rounded-full" style="width: ${reg.config_rate}%"></div>
-                        </div>
-                        <p class="text-xs font-semibold text-emerald-600 mt-1.5">${reg.config_rate}% 설정 완료</p>
-                    </div>`,
-            )
-            .join("");
-        },
-        renderSvTable(sv_summary) {
-          const tableBody = document.getElementById("sv-table-body");
-          if (!sv_summary || sv_summary.length === 0) {
-            tableBody.innerHTML =
-              '<tr><td colspan="7" class="text-center py-6 text-slate-400">데이터가 없습니다.</td></tr>';
-            return;
-          }
-          tableBody.innerHTML = sv_summary
-            .map((sv) => {
-              // 신호등 분기 로직 적용하여 직관성 확보
-              let statusColor = "text-slate-500";
-              let statusDot = "⚪";
-              if (sv.config_rate >= 90) {
-                statusColor = "text-emerald-600 font-bold";
-                statusDot = "🟢";
-              } else if (sv.config_rate >= 70) {
-                statusColor = "text-amber-600 font-bold";
-                statusDot = "🟡";
-              } else {
-                statusColor = "text-rose-600 font-bold";
-                statusDot = "🔴";
-              }
 
-              const badges = Object.entries(sv.avg_items)
-                .map(
-                  ([k, v]) => `
-                        <span class="inline-block bg-slate-100 text-slate-700 text-xs font-semibold px-2 py-0.5 rounded border border-slate-200 mr-1 mt-1">
-                            ${k}: ${v}개
-                        </span>`,
-                )
-                .join("");
+            renderHighlights(managers) {
+                if (!managers || managers.length === 0) return;
 
-              return `
-                        <tr class="bg-white hover:bg-slate-50 transition-colors">
-                            <td class="px-6 py-4 font-medium text-slate-600">${sv.department}</td>
-                            <td class="px-6 py-4 text-slate-600">${sv.team}</td>
-                            <td class="px-6 py-4 font-bold text-slate-800">${sv.sv}</td>
-                            <td class="px-6 py-4 text-center text-slate-600 font-medium">${sv.managed_stores}</td>
-                            <td class="px-6 py-4 text-center text-blue-700 font-semibold">${sv.configured_stores}</td>
-                            <td class="px-6 py-4 text-center ${statusColor}">${statusDot} ${sv.config_rate}%</td>
-                            <td class="px-6 py-4 text-right">${badges || '<span class="text-slate-300">-</span>'}</td>
-                        </tr>`;
-            })
-            .join("");
-        },
-      };
-      document.addEventListener("DOMContentLoaded", () => dataManager.init());
-    </script>
-  </body>
-</html>
+                // 1개 이상 설정 매장 기준 장기유통 평균품목수 정렬
+                const sorted = [...managers].sort((a, b) => b.avgLtItems - a.avgLtItems);
+                
+                // TOP 5 SV 렌더링
+                const top5 = sorted.slice(0, 5);
+                document.getElementById('top-sv-body').innerHTML = top5.map(sv => `
+                    <tr class="hover:bg-emerald-50/50">
+                        <td class="p-2.5 font-medium text-slate-700">${sv.team}</td>
+                        <td class="p-2.5 font-bold text-slate-900">${sv.manager}</td>
+                        <td class="p-2.5 text-center text-emerald-700 font-bold">${sv.avgLtItems}개</td>
+                        <td class="p-2.5 text-center font-medium">${sv.configRate}%</td>
+                    </tr>
+                `).join('');
+
+                // WORST 5 SV 렌더링 (하위 5개 중, 설정 가맹점이 있는 유효 SV 필터링)
+                const activeWorst = sorted.filter(sv => sv.avgLtItems > 0);
+                const worst5 = activeWorst.slice(-5).reverse();
+                document.getElementById('worst-sv-body').innerHTML = worst5.map(sv => `
+                    <tr class="hover:bg-red-50/50">
+                        <td class="p-2.5 font-medium text-slate-700">${sv.team}</td>
+                        <td class="p-2.5 font-bold text-slate-900">${sv.manager}</td>
+                        <td class="p-2.5 text-center text-red-600 font-bold">${sv.avgLtItems}개</td>
+                        <td class="p-2.5 text-center font-medium">${sv.configRate}%</td>
+                    </tr>
+                `).join('');
+            },
+
+            renderChart(id, config) {
+                if (this.charts[id]) this.charts[id].destroy();
+                const ctx = document.getElementById(id)?.getContext('2d');
+                if (!ctx) return;
+                this.charts[id] = new Chart(ctx, config);
+            },
+
+            renderDeptChart(divisions) {
+                if (!divisions) return;
+                const labels = divisions.map(d => d.division);
+                const rates = divisions.map(d => d.configRate);
+
+                this.renderChart('departmentChart', {
+                    type: 'bar',
+                    data: {
+                        labels,
+                        datasets: [{
+                            label: '자동권고 적용 비율(%)',
+                            data: rates,
+                            backgroundColor: ['#f59e0b', '#3b82f6', '#10b981', '#6366f1', '#ec4899'],
+                            borderRadius: 4,
+                            barThickness: 28
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        onClick: (event, elements) => {
+                            if (elements.length > 0) {
+                                const index = elements[0].index;
+                                const selectedDept = labels[index];
+                                if (selectedDept !== 'PB가맹 평균') {
+                                    this.filterTable(selectedDept);
+                                    // 스크롤 이동
+                                    document.getElementById('sv-section').scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }
+                        },
+                        scales: {
+                            y: { max: 100, beginAtZero: true, title: { display: true, text: '설정율 (%)', font: { size: 11 } } }
+                        },
+                        plugins: { legend: { display: false } }
+                    }
+                });
+            },
+
+            renderLongTermDeptChart(divisions) {
+                if (!divisions) return;
+                // 'PB가맹 평균' 포함 리스트업
+                const labels = divisions.map(d => d.division);
+                
+                const configuredStores = divisions.map(d => d.appliedStores);
+                const ltAvgItems = divisions.map(d => d.ltAvgItems);
+
+                this.renderChart('longTermDeptChart', {
+                    type: 'bar',
+                    data: {
+                        labels,
+                        datasets: [
+                            {
+                                label: '장기유통 설정점 수 (막대)',
+                                data: configuredStores,
+                                backgroundColor: 'rgba(249, 115, 22, 0.85)',
+                                type: 'bar',
+                                yAxisID: 'y',
+                                barThickness: 24,
+                                borderRadius: 3
+                            },
+                            {
+                                label: '장기유통 평균품목 수 (이중축 꺾은선)',
+                                data: ltAvgItems,
+                                borderColor: '#c026d3',
+                                backgroundColor: 'rgba(192, 38, 211, 0.1)',
+                                borderWidth: 3,
+                                pointBackgroundColor: '#c026d3',
+                                pointRadius: 5,
+                                tension: 0.25,
+                                type: 'line',
+                                yAxisID: 'y1'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                position: 'left',
+                                title: { display: true, text: '설정 가맹점 수 (개점)', font: { size: 11 } }
+                            },
+                            y1: {
+                                beginAtZero: true,
+                                position: 'right',
+                                grid: { drawOnChartArea: false },
+                                title: { display: true, text: '평균 품목 수 (개)', font: { size: 11 } }
+                            }
+                        },
+                        plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } } }
+                    }
+                });
+            },
+
+            renderLongTermTeamChart(teams) {
+                if (!teams || teams.length === 0) return;
+                const labels = teams.map(t => t.team);
+                const appliedStores = teams.map(t => t.appliedStores);
+                const ltAvgItems = teams.map(t => t.ltAvgItems);
+
+                this.renderChart('longTermTeamChart', {
+                    type: 'bar',
+                    data: 
