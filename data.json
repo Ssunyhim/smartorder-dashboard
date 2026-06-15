@@ -1,11 +1,11 @@
 {
-    "lastUpdated": "2026-06-15 10:43:07",
+    "lastUpdated": "2026-06-15 10:48:53",
     "overall": {
         "totalStores": 3281,
         "appliedStores": 2800,
         "configRate": 85.3,
         "avgSetItems": 31.4,
-        "ltAvgItems": 29.9
+        "ltAvgItems": 29.1
     },
     "byDivision": [
         {
@@ -15,7 +15,7 @@
             "configRate": 87.1,
             "avgSetItems": 35.0,
             "ltAppliedStores": 785,
-            "ltAvgItems": 32.2
+            "ltAvgItems": 31.3
         },
         {
             "division": "2사업부",
@@ -24,7 +24,7 @@
             "configRate": 86.7,
             "avgSetItems": 33.3,
             "ltAppliedStores": 751,
-            "ltAvgItems": 31.6
+            "ltAvgItems": 30.9
         },
         {
             "division": "3사업부",
@@ -33,7 +33,7 @@
             "configRate": 81.3,
             "avgSetItems": 26.4,
             "ltAppliedStores": 590,
-            "ltAvgItems": 25.8
+            "ltAvgItems": 25.3
         },
         {
             "division": "4사업부",
@@ -42,7 +42,7 @@
             "configRate": 85.6,
             "avgSetItems": 29.1,
             "ltAppliedStores": 604,
-            "ltAvgItems": 28.7
+            "ltAvgItems": 27.9
         }
     ],
     "byTeam": [
@@ -54,7 +54,7 @@
             "configRate": 89.7,
             "avgSetItems": 33.7,
             "ltAppliedStores": 110,
-            "ltAvgItems": 33.0
+            "ltAvgItems": 32.1
         },
         {
             "division": "1사업부",
@@ -64,7 +64,7 @@
             "configRate": 87.0,
             "avgSetItems": 38.9,
             "ltAppliedStores": 111,
-            "ltAvgItems": 30.3
+            "ltAvgItems": 29.5
         },
         {
             "division": "1사업부",
@@ -74,7 +74,7 @@
             "configRate": 84.5,
             "avgSetItems": 34.5,
             "ltAppliedStores": 104,
-            "ltAvgItems": 31.3
+            "ltAvgItems": 29.9
         },
         {
             "division": "1사업부",
@@ -84,7 +84,7 @@
             "configRate": 86.7,
             "avgSetItems": 36.0,
             "ltAppliedStores": 102,
-            "ltAvgItems": 31.6
+            "ltAvgItems": 31.0
         },
         {
             "division": "1사업부",
@@ -94,7 +94,7 @@
             "configRate": 85.8,
             "avgSetItems": 31.3,
             "ltAppliedStores": 111,
-            "ltAvgItems": 31.1
+            "ltAvgItems": 30.0
         },
         {
             "division": "1사업부",
@@ -104,7 +104,7 @@
             "configRate": 91.1,
             "avgSetItems": 35.5,
             "ltAppliedStores": 121,
-            "ltAvgItems": 33.9
+            "ltAvgItems": 33.4
         },
         {
             "division": "1사업부",
@@ -114,7 +114,7 @@
             "configRate": 84.9,
             "avgSetItems": 35.1,
             "ltAppliedStores": 126,
-            "ltAvgItems": 33.4
+            "ltAvgItems": 32.6
         },
         {
             "division": "2사업부",
@@ -134,7 +134,7 @@
             "configRate": 84.0,
             "avgSetItems": 31.6,
             "ltAppliedStores": 135,
-            "ltAvgItems": 30.3
+            "ltAvgItems": 29.8
         },
         {
             "division": "2사업부",
@@ -144,7 +144,7 @@
             "configRate": 88.5,
             "avgSetItems": 33.6,
             "ltAppliedStores": 136,
-            "ltAvgItems": 32.2
+            "ltAvgItems": 31.5
         },
         {
             "division": "2사업부",
@@ -154,7 +154,7 @@
             "configRate": 87.8,
             "avgSetItems": 33.3,
             "ltAppliedStores": 124,
-            "ltAvgItems": 31.9
+            "ltAvgItems": 30.7
         },
         {
             "division": "2사업부",
@@ -164,7 +164,7 @@
             "configRate": 86.5,
             "avgSetItems": 33.2,
             "ltAppliedStores": 116,
-            "ltAvgItems": 31.5
+            "ltAvgItems": 29.9
         },
         {
             "division": "2사업부",
@@ -174,7 +174,7 @@
             "configRate": 89.5,
             "avgSetItems": 32.8,
             "ltAppliedStores": 126,
-            "ltAvgItems": 31.0
+            "ltAvgItems": 30.5
         },
         {
             "division": "3사업부",
@@ -184,7 +184,7 @@
             "configRate": 78.7,
             "avgSetItems": 25.6,
             "ltAppliedStores": 128,
-            "ltAvgItems": 25.1
+            "ltAvgItems": 24.9
         },
         {
             "division": "3사업부",
@@ -194,7 +194,7 @@
             "configRate": 84.4,
             "avgSetItems": 25.2,
             "ltAppliedStores": 130,
-            "ltAvgItems": 24.9
+            "ltAvgItems": 24.0
         },
         {
             "division": "3사업부",
@@ -204,7 +204,7 @@
             "configRate": 81.3,
             "avgSetItems": 31.5,
             "ltAppliedStores": 111,
-            "ltAvgItems": 31.1
+            "ltAvgItems": 30.6
         },
         {
             "division": "3사업부",
@@ -214,7 +214,7 @@
             "configRate": 79.7,
             "avgSetItems": 21.8,
             "ltAppliedStores": 109,
-            "ltAvgItems": 20.8
+            "ltAvgItems": 20.6
         },
         {
             "division": "3사업부",
@@ -224,7 +224,7 @@
             "configRate": 82.6,
             "avgSetItems": 28.1,
             "ltAppliedStores": 112,
-            "ltAvgItems": 27.2
+            "ltAvgItems": 26.7
         },
         {
             "division": "4사업부",
@@ -234,7 +234,7 @@
             "configRate": 86.8,
             "avgSetItems": 30.0,
             "ltAppliedStores": 118,
-            "ltAvgItems": 30.2
+            "ltAvgItems": 28.5
         },
         {
             "division": "4사업부",
@@ -244,7 +244,7 @@
             "configRate": 85.7,
             "avgSetItems": 35.9,
             "ltAppliedStores": 119,
-            "ltAvgItems": 34.6
+            "ltAvgItems": 34.4
         },
         {
             "division": "4사업부",
@@ -254,7 +254,7 @@
             "configRate": 84.7,
             "avgSetItems": 29.3,
             "ltAppliedStores": 117,
-            "ltAvgItems": 29.8
+            "ltAvgItems": 28.5
         },
         {
             "division": "4사업부",
@@ -274,7 +274,7 @@
             "configRate": 86.7,
             "avgSetItems": 30.3,
             "ltAppliedStores": 131,
-            "ltAvgItems": 29.7
+            "ltAvgItems": 28.4
         }
     ],
     "byManager": [
@@ -292,8 +292,8 @@
                 "cake": 2.6
             },
             "avgLtItems": 31.3,
-            "avgCakeItems": 10.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.6,
+            "avgConsItems": 0.6
         },
         {
             "division": "1사업부",
@@ -310,7 +310,7 @@
             },
             "avgLtItems": 32.5,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.1
+            "avgConsItems": 1.1
         },
         {
             "division": "1사업부",
@@ -325,9 +325,9 @@
                 "lt": 14.4,
                 "cake": 5.1
             },
-            "avgLtItems": 32.9,
+            "avgLtItems": 31.2,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.5
         },
         {
             "division": "1사업부",
@@ -342,9 +342,9 @@
                 "lt": 11.3,
                 "cake": 4.8
             },
-            "avgLtItems": 32.9,
-            "avgCakeItems": 9.0,
-            "avgConsItems": 1.2
+            "avgLtItems": 31.3,
+            "avgCakeItems": 0.9,
+            "avgConsItems": 1.0
         },
         {
             "division": "1사업부",
@@ -359,9 +359,9 @@
                 "lt": 9.4,
                 "cake": 3.2
             },
-            "avgLtItems": 35.9,
-            "avgCakeItems": 7.0,
-            "avgConsItems": 1.5
+            "avgLtItems": 33.7,
+            "avgCakeItems": 0.4,
+            "avgConsItems": 0.9
         },
         {
             "division": "1사업부",
@@ -377,8 +377,8 @@
                 "cake": 5.6
             },
             "avgLtItems": 32.9,
-            "avgCakeItems": 17.3,
-            "avgConsItems": 2.0
+            "avgCakeItems": 2.9,
+            "avgConsItems": 0.9
         },
         {
             "division": "1사업부",
@@ -394,8 +394,8 @@
                 "cake": 4.4
             },
             "avgLtItems": 19.7,
-            "avgCakeItems": 29.0,
-            "avgConsItems": 29.0
+            "avgCakeItems": 1.4,
+            "avgConsItems": 8.3
         },
         {
             "division": "1사업부",
@@ -410,9 +410,9 @@
                 "lt": 10.8,
                 "cake": 3.5
             },
-            "avgLtItems": 18.4,
-            "avgCakeItems": 7.5,
-            "avgConsItems": 22.8
+            "avgLtItems": 17.5,
+            "avgCakeItems": 0.7,
+            "avgConsItems": 4.1
         },
         {
             "division": "1사업부",
@@ -427,9 +427,9 @@
                 "lt": 9.0,
                 "cake": 3.4
             },
-            "avgLtItems": 35.5,
-            "avgCakeItems": 24.0,
-            "avgConsItems": 26.5
+            "avgLtItems": 32.8,
+            "avgCakeItems": 1.8,
+            "avgConsItems": 12.2
         },
         {
             "division": "1사업부",
@@ -446,7 +446,7 @@
             },
             "avgLtItems": 41.0,
             "avgCakeItems": 0.0,
-            "avgConsItems": 27.6
+            "avgConsItems": 15.5
         },
         {
             "division": "1사업부",
@@ -462,8 +462,8 @@
                 "cake": 4.3
             },
             "avgLtItems": 37.8,
-            "avgCakeItems": 1.0,
-            "avgConsItems": 20.9
+            "avgCakeItems": 0.1,
+            "avgConsItems": 6.3
         },
         {
             "division": "1사업부",
@@ -478,9 +478,9 @@
                 "lt": 7.1,
                 "cake": 3.0
             },
-            "avgLtItems": 34.2,
-            "avgCakeItems": 28.0,
-            "avgConsItems": 16.1
+            "avgLtItems": 32.4,
+            "avgCakeItems": 1.5,
+            "avgConsItems": 7.6
         },
         {
             "division": "1사업부",
@@ -496,8 +496,8 @@
                 "cake": 3.8
             },
             "avgLtItems": 27.0,
-            "avgCakeItems": 7.0,
-            "avgConsItems": 1.3
+            "avgCakeItems": 0.3,
+            "avgConsItems": 0.9
         },
         {
             "division": "1사업부",
@@ -512,9 +512,9 @@
                 "lt": 11.8,
                 "cake": 3.4
             },
-            "avgLtItems": 34.6,
-            "avgCakeItems": 11.0,
-            "avgConsItems": 1.0
+            "avgLtItems": 32.7,
+            "avgCakeItems": 1.2,
+            "avgConsItems": 0.1
         },
         {
             "division": "1사업부",
@@ -529,9 +529,9 @@
                 "lt": 12.9,
                 "cake": 2.9
             },
-            "avgLtItems": 13.6,
-            "avgCakeItems": 19.0,
-            "avgConsItems": 4.9
+            "avgLtItems": 11.2,
+            "avgCakeItems": 2.2,
+            "avgConsItems": 2.9
         },
         {
             "division": "1사업부",
@@ -547,8 +547,8 @@
                 "cake": 5.2
             },
             "avgLtItems": 27.4,
-            "avgCakeItems": 27.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 5.1,
+            "avgConsItems": 0.1
         },
         {
             "division": "1사업부",
@@ -563,9 +563,9 @@
                 "lt": 11.9,
                 "cake": 4.9
             },
-            "avgLtItems": 73.5,
-            "avgCakeItems": 21.7,
-            "avgConsItems": 12.4
+            "avgLtItems": 68.9,
+            "avgCakeItems": 4.1,
+            "avgConsItems": 11.6
         },
         {
             "division": "1사업부",
@@ -598,7 +598,7 @@
                 "cake": 3.9
             },
             "avgLtItems": 18.8,
-            "avgCakeItems": 9.0,
+            "avgCakeItems": 0.5,
             "avgConsItems": 0.0
         },
         {
@@ -615,8 +615,8 @@
                 "cake": 5.1
             },
             "avgLtItems": 37.9,
-            "avgCakeItems": 19.0,
-            "avgConsItems": 1.4
+            "avgCakeItems": 2.7,
+            "avgConsItems": 0.5
         },
         {
             "division": "1사업부",
@@ -633,7 +633,7 @@
             },
             "avgLtItems": 26.4,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.5
         },
         {
             "division": "1사업부",
@@ -649,8 +649,8 @@
                 "cake": 4.1
             },
             "avgLtItems": 33.9,
-            "avgCakeItems": 19.0,
-            "avgConsItems": 24.9
+            "avgCakeItems": 0.9,
+            "avgConsItems": 17.0
         },
         {
             "division": "1사업부",
@@ -665,9 +665,9 @@
                 "lt": 12.0,
                 "cake": 5.9
             },
-            "avgLtItems": 41.0,
-            "avgCakeItems": 11.5,
-            "avgConsItems": 2.7
+            "avgLtItems": 38.6,
+            "avgCakeItems": 1.4,
+            "avgConsItems": 1.4
         },
         {
             "division": "1사업부",
@@ -682,9 +682,9 @@
                 "lt": 13.9,
                 "cake": 3.2
             },
-            "avgLtItems": 31.9,
+            "avgLtItems": 30.3,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.1
+            "avgConsItems": 1.1
         },
         {
             "division": "1사업부",
@@ -699,9 +699,9 @@
                 "lt": 12.2,
                 "cake": 3.5
             },
-            "avgLtItems": 30.3,
-            "avgCakeItems": 16.0,
-            "avgConsItems": 1.0
+            "avgLtItems": 27.4,
+            "avgCakeItems": 1.5,
+            "avgConsItems": 0.3
         },
         {
             "division": "1사업부",
@@ -718,7 +718,7 @@
             },
             "avgLtItems": 44.2,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.2
+            "avgConsItems": 0.9
         },
         {
             "division": "1사업부",
@@ -735,7 +735,7 @@
             },
             "avgLtItems": 21.8,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.4
         },
         {
             "division": "1사업부",
@@ -750,9 +750,9 @@
                 "lt": 8.4,
                 "cake": 2.3
             },
-            "avgLtItems": 34.8,
+            "avgLtItems": 32.9,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.0
+            "avgConsItems": 0.9
         },
         {
             "division": "1사업부",
@@ -768,8 +768,8 @@
                 "cake": 3.7
             },
             "avgLtItems": 35.0,
-            "avgCakeItems": 11.0,
-            "avgConsItems": 4.1
+            "avgCakeItems": 1.0,
+            "avgConsItems": 1.5
         },
         {
             "division": "1사업부",
@@ -784,9 +784,9 @@
                 "lt": 18.2,
                 "cake": 4.5
             },
-            "avgLtItems": 21.1,
+            "avgLtItems": 20.0,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.1
+            "avgConsItems": 0.8
         },
         {
             "division": "1사업부",
@@ -802,8 +802,8 @@
                 "cake": 2.3
             },
             "avgLtItems": 33.8,
-            "avgCakeItems": 15.0,
-            "avgConsItems": 4.6
+            "avgCakeItems": 0.7,
+            "avgConsItems": 2.2
         },
         {
             "division": "1사업부",
@@ -818,9 +818,9 @@
                 "lt": 10.9,
                 "cake": 4.0
             },
-            "avgLtItems": 34.2,
+            "avgLtItems": 30.8,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.3
+            "avgConsItems": 1.2
         },
         {
             "division": "1사업부",
@@ -836,8 +836,8 @@
                 "cake": 4.2
             },
             "avgLtItems": 29.7,
-            "avgCakeItems": 27.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 1.3,
+            "avgConsItems": 0.4
         },
         {
             "division": "1사업부",
@@ -853,8 +853,8 @@
                 "cake": 4.2
             },
             "avgLtItems": 40.4,
-            "avgCakeItems": 16.0,
-            "avgConsItems": 1.5
+            "avgCakeItems": 2.0,
+            "avgConsItems": 1.4
         },
         {
             "division": "1사업부",
@@ -887,7 +887,7 @@
                 "cake": 3.2
             },
             "avgLtItems": 37.9,
-            "avgCakeItems": 13.5,
+            "avgCakeItems": 1.3,
             "avgConsItems": 1.5
         },
         {
@@ -905,7 +905,7 @@
             },
             "avgLtItems": 30.1,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.4
         },
         {
             "division": "1사업부",
@@ -920,9 +920,9 @@
                 "lt": 7.9,
                 "cake": 3.2
             },
-            "avgLtItems": 46.9,
+            "avgLtItems": 44.1,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.2
+            "avgConsItems": 0.6
         },
         {
             "division": "1사업부",
@@ -937,9 +937,9 @@
                 "lt": 14.1,
                 "cake": 5.7
             },
-            "avgLtItems": 47.4,
-            "avgCakeItems": 18.5,
-            "avgConsItems": 2.5
+            "avgLtItems": 44.0,
+            "avgCakeItems": 5.3,
+            "avgConsItems": 2.0
         },
         {
             "division": "1사업부",
@@ -955,8 +955,8 @@
                 "cake": 2.7
             },
             "avgLtItems": 28.8,
-            "avgCakeItems": 12.0,
-            "avgConsItems": 1.3
+            "avgCakeItems": 0.5,
+            "avgConsItems": 0.3
         },
         {
             "division": "1사업부",
@@ -972,8 +972,8 @@
                 "cake": 1.9
             },
             "avgLtItems": 29.0,
-            "avgCakeItems": 6.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.4,
+            "avgConsItems": 0.4
         },
         {
             "division": "1사업부",
@@ -990,7 +990,7 @@
             },
             "avgLtItems": 30.6,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.3
         },
         {
             "division": "1사업부",
@@ -1005,9 +1005,9 @@
                 "lt": 9.8,
                 "cake": 2.9
             },
-            "avgLtItems": 28.1,
-            "avgCakeItems": 10.0,
-            "avgConsItems": 22.7
+            "avgLtItems": 26.6,
+            "avgCakeItems": 1.1,
+            "avgConsItems": 7.2
         },
         {
             "division": "2사업부",
@@ -1023,8 +1023,8 @@
                 "cake": 4.5
             },
             "avgLtItems": 47.6,
-            "avgCakeItems": 20.0,
-            "avgConsItems": 1.5
+            "avgCakeItems": 1.2,
+            "avgConsItems": 1.0
         },
         {
             "division": "2사업부",
@@ -1040,8 +1040,8 @@
                 "cake": 3.8
             },
             "avgLtItems": 55.0,
-            "avgCakeItems": 21.5,
-            "avgConsItems": 6.3
+            "avgCakeItems": 2.9,
+            "avgConsItems": 5.9
         },
         {
             "division": "2사업부",
@@ -1057,8 +1057,8 @@
                 "cake": 4.2
             },
             "avgLtItems": 25.9,
-            "avgCakeItems": 14.0,
-            "avgConsItems": 2.0
+            "avgCakeItems": 0.8,
+            "avgConsItems": 0.7
         },
         {
             "division": "2사업부",
@@ -1091,8 +1091,8 @@
                 "cake": 3.5
             },
             "avgLtItems": 37.7,
-            "avgCakeItems": 4.5,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.6,
+            "avgConsItems": 0.7
         },
         {
             "division": "2사업부",
@@ -1108,8 +1108,8 @@
                 "cake": 3.5
             },
             "avgLtItems": 20.2,
-            "avgCakeItems": 1.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.1,
+            "avgConsItems": 0.5
         },
         {
             "division": "2사업부",
@@ -1125,8 +1125,8 @@
                 "cake": 3.4
             },
             "avgLtItems": 25.1,
-            "avgCakeItems": 4.0,
-            "avgConsItems": 2.7
+            "avgCakeItems": 0.4,
+            "avgConsItems": 1.3
         },
         {
             "division": "2사업부",
@@ -1142,8 +1142,8 @@
                 "cake": 4.4
             },
             "avgLtItems": 32.0,
-            "avgCakeItems": 5.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.2,
+            "avgConsItems": 0.3
         },
         {
             "division": "2사업부",
@@ -1159,8 +1159,8 @@
                 "cake": 2.7
             },
             "avgLtItems": 29.1,
-            "avgCakeItems": 18.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.3
         },
         {
             "division": "2사업부",
@@ -1175,9 +1175,9 @@
                 "lt": 9.6,
                 "cake": 3.0
             },
-            "avgLtItems": 37.1,
-            "avgCakeItems": 6.0,
-            "avgConsItems": 1.0
+            "avgLtItems": 34.4,
+            "avgCakeItems": 0.4,
+            "avgConsItems": 0.5
         },
         {
             "division": "2사업부",
@@ -1193,8 +1193,8 @@
                 "cake": 3.7
             },
             "avgLtItems": 28.3,
-            "avgCakeItems": 44.0,
-            "avgConsItems": 1.4
+            "avgCakeItems": 2.0,
+            "avgConsItems": 0.5
         },
         {
             "division": "2사업부",
@@ -1209,9 +1209,9 @@
                 "lt": 10.4,
                 "cake": 2.6
             },
-            "avgLtItems": 29.5,
+            "avgLtItems": 28.1,
             "avgCakeItems": 0.0,
-            "avgConsItems": 3.1
+            "avgConsItems": 1.3
         },
         {
             "division": "2사업부",
@@ -1227,8 +1227,8 @@
                 "cake": 3.8
             },
             "avgLtItems": 28.7,
-            "avgCakeItems": 8.5,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.8,
+            "avgConsItems": 0.8
         },
         {
             "division": "2사업부",
@@ -1244,8 +1244,8 @@
                 "cake": 3.3
             },
             "avgLtItems": 29.9,
-            "avgCakeItems": 8.7,
-            "avgConsItems": 4.6
+            "avgCakeItems": 1.4,
+            "avgConsItems": 2.3
         },
         {
             "division": "2사업부",
@@ -1260,9 +1260,9 @@
                 "lt": 9.8,
                 "cake": 4.8
             },
-            "avgLtItems": 24.7,
+            "avgLtItems": 23.4,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.7
         },
         {
             "division": "2사업부",
@@ -1278,8 +1278,8 @@
                 "cake": 4.3
             },
             "avgLtItems": 25.8,
-            "avgCakeItems": 19.0,
-            "avgConsItems": 1.7
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.8
         },
         {
             "division": "2사업부",
@@ -1294,9 +1294,9 @@
                 "lt": 7.4,
                 "cake": 3.6
             },
-            "avgLtItems": 33.5,
-            "avgCakeItems": 25.0,
-            "avgConsItems": 4.1
+            "avgLtItems": 32.0,
+            "avgCakeItems": 2.3,
+            "avgConsItems": 2.8
         },
         {
             "division": "2사업부",
@@ -1313,7 +1313,7 @@
             },
             "avgLtItems": 36.5,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.3
         },
         {
             "division": "2사업부",
@@ -1329,8 +1329,8 @@
                 "cake": 3.6
             },
             "avgLtItems": 42.5,
-            "avgCakeItems": 19.7,
-            "avgConsItems": 2.4
+            "avgCakeItems": 3.5,
+            "avgConsItems": 1.4
         },
         {
             "division": "2사업부",
@@ -1345,9 +1345,9 @@
                 "lt": 7.5,
                 "cake": 2.2
             },
-            "avgLtItems": 26.1,
+            "avgLtItems": 24.9,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.0
+            "avgConsItems": 0.6
         },
         {
             "division": "2사업부",
@@ -1363,7 +1363,7 @@
                 "cake": 5.3
             },
             "avgLtItems": 38.2,
-            "avgCakeItems": 10.0,
+            "avgCakeItems": 0.6,
             "avgConsItems": 1.0
         },
         {
@@ -1379,9 +1379,9 @@
                 "lt": 13.9,
                 "cake": 3.0
             },
-            "avgLtItems": 26.6,
-            "avgCakeItems": 11.2,
-            "avgConsItems": 28.3
+            "avgLtItems": 25.3,
+            "avgCakeItems": 2.1,
+            "avgConsItems": 4.0
         },
         {
             "division": "2사업부",
@@ -1396,9 +1396,9 @@
                 "lt": 10.7,
                 "cake": 2.7
             },
-            "avgLtItems": 25.3,
-            "avgCakeItems": 6.5,
-            "avgConsItems": 2.4
+            "avgLtItems": 23.9,
+            "avgCakeItems": 0.7,
+            "avgConsItems": 0.9
         },
         {
             "division": "2사업부",
@@ -1413,9 +1413,9 @@
                 "lt": 12.7,
                 "cake": 3.7
             },
-            "avgLtItems": 32.7,
+            "avgLtItems": 30.9,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.4
         },
         {
             "division": "2사업부",
@@ -1432,7 +1432,7 @@
             },
             "avgLtItems": 38.4,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.4
         },
         {
             "division": "2사업부",
@@ -1447,7 +1447,7 @@
                 "lt": 11.4,
                 "cake": 2.6
             },
-            "avgLtItems": 36.6,
+            "avgLtItems": 34.3,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.2
         },
@@ -1466,7 +1466,7 @@
             },
             "avgLtItems": 28.5,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.3
         },
         {
             "division": "2사업부",
@@ -1481,9 +1481,9 @@
                 "lt": 9.6,
                 "cake": 2.9
             },
-            "avgLtItems": 36.3,
-            "avgCakeItems": 3.0,
-            "avgConsItems": 18.9
+            "avgLtItems": 34.5,
+            "avgCakeItems": 0.1,
+            "avgConsItems": 6.6
         },
         {
             "division": "2사업부",
@@ -1498,9 +1498,9 @@
                 "lt": 9.9,
                 "cake": 4.5
             },
-            "avgLtItems": 32.8,
+            "avgLtItems": 28.9,
             "avgCakeItems": 0.0,
-            "avgConsItems": 5.3
+            "avgConsItems": 4.4
         },
         {
             "division": "2사업부",
@@ -1515,9 +1515,9 @@
                 "lt": 8.2,
                 "cake": 3.7
             },
-            "avgLtItems": 24.4,
+            "avgLtItems": 23.3,
             "avgCakeItems": 0.0,
-            "avgConsItems": 4.9
+            "avgConsItems": 1.7
         },
         {
             "division": "2사업부",
@@ -1532,9 +1532,9 @@
                 "lt": 5.0,
                 "cake": 2.9
             },
-            "avgLtItems": 26.3,
-            "avgCakeItems": 22.0,
-            "avgConsItems": 10.0
+            "avgLtItems": 25.1,
+            "avgCakeItems": 2.0,
+            "avgConsItems": 0.5
         },
         {
             "division": "2사업부",
@@ -1549,9 +1549,9 @@
                 "lt": 7.9,
                 "cake": 3.2
             },
-            "avgLtItems": 31.4,
-            "avgCakeItems": 25.0,
-            "avgConsItems": 11.3
+            "avgLtItems": 30.0,
+            "avgCakeItems": 2.4,
+            "avgConsItems": 4.9
         },
         {
             "division": "2사업부",
@@ -1566,9 +1566,9 @@
                 "lt": 8.6,
                 "cake": 5.3
             },
-            "avgLtItems": 28.4,
-            "avgCakeItems": 28.0,
-            "avgConsItems": 1.9
+            "avgLtItems": 26.9,
+            "avgCakeItems": 1.4,
+            "avgConsItems": 0.8
         },
         {
             "division": "2사업부",
@@ -1584,7 +1584,7 @@
                 "cake": 4.5
             },
             "avgLtItems": 47.3,
-            "avgCakeItems": 3.3,
+            "avgCakeItems": 0.5,
             "avgConsItems": 1.3
         },
         {
@@ -1601,8 +1601,8 @@
                 "cake": 4.8
             },
             "avgLtItems": 35.0,
-            "avgCakeItems": 12.0,
-            "avgConsItems": 1.9
+            "avgCakeItems": 1.2,
+            "avgConsItems": 0.8
         },
         {
             "division": "2사업부",
@@ -1617,9 +1617,9 @@
                 "lt": 17.3,
                 "cake": 4.8
             },
-            "avgLtItems": 38.8,
-            "avgCakeItems": 22.0,
-            "avgConsItems": 1.2
+            "avgLtItems": 35.6,
+            "avgCakeItems": 2.8,
+            "avgConsItems": 0.7
         },
         {
             "division": "2사업부",
@@ -1635,8 +1635,8 @@
                 "cake": 2.8
             },
             "avgLtItems": 25.6,
-            "avgCakeItems": 26.5,
-            "avgConsItems": 1.0
+            "avgCakeItems": 2.6,
+            "avgConsItems": 0.5
         },
         {
             "division": "2사업부",
@@ -1652,8 +1652,8 @@
                 "cake": 3.8
             },
             "avgLtItems": 28.5,
-            "avgCakeItems": 1.0,
-            "avgConsItems": 1.1
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
         },
         {
             "division": "2사업부",
@@ -1670,7 +1670,7 @@
             },
             "avgLtItems": 25.3,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.3
         },
         {
             "division": "2사업부",
@@ -1686,8 +1686,8 @@
                 "cake": 3.0
             },
             "avgLtItems": 32.0,
-            "avgCakeItems": 31.5,
-            "avgConsItems": 3.4
+            "avgCakeItems": 2.9,
+            "avgConsItems": 1.2
         },
         {
             "division": "3사업부",
@@ -1720,8 +1720,8 @@
                 "cake": 3.8
             },
             "avgLtItems": 34.4,
-            "avgCakeItems": 30.5,
-            "avgConsItems": 1.0
+            "avgCakeItems": 4.1,
+            "avgConsItems": 0.1
         },
         {
             "division": "3사업부",
@@ -1755,7 +1755,7 @@
             },
             "avgLtItems": 22.6,
             "avgCakeItems": 0.0,
-            "avgConsItems": 3.0
+            "avgConsItems": 0.1
         },
         {
             "division": "3사업부",
@@ -1770,9 +1770,9 @@
                 "lt": 7.4,
                 "cake": 3.6
             },
-            "avgLtItems": 18.3,
+            "avgLtItems": 17.4,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.0
+            "avgConsItems": 0.1
         },
         {
             "division": "3사업부",
@@ -1789,7 +1789,7 @@
             },
             "avgLtItems": 36.0,
             "avgCakeItems": 0.0,
-            "avgConsItems": 10.0
+            "avgConsItems": 0.8
         },
         {
             "division": "3사업부",
@@ -1806,7 +1806,7 @@
             },
             "avgLtItems": 22.3,
             "avgCakeItems": 0.0,
-            "avgConsItems": 10.0
+            "avgConsItems": 1.0
         },
         {
             "division": "3사업부",
@@ -1840,7 +1840,7 @@
             },
             "avgLtItems": 30.2,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.1
         },
         {
             "division": "3사업부",
@@ -1855,9 +1855,9 @@
                 "lt": 10.0,
                 "cake": 3.9
             },
-            "avgLtItems": 29.2,
-            "avgCakeItems": 10.0,
-            "avgConsItems": 7.0
+            "avgLtItems": 27.9,
+            "avgCakeItems": 0.4,
+            "avgConsItems": 0.6
         },
         {
             "division": "3사업부",
@@ -1872,9 +1872,9 @@
                 "lt": 7.3,
                 "cake": 2.4
             },
-            "avgLtItems": 20.8,
-            "avgCakeItems": 11.0,
-            "avgConsItems": 8.7
+            "avgLtItems": 19.0,
+            "avgCakeItems": 0.5,
+            "avgConsItems": 2.2
         },
         {
             "division": "3사업부",
@@ -1891,7 +1891,7 @@
             },
             "avgLtItems": 22.8,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.5
+            "avgConsItems": 0.4
         },
         {
             "division": "3사업부",
@@ -1907,8 +1907,8 @@
                 "cake": 2.4
             },
             "avgLtItems": 23.2,
-            "avgCakeItems": 9.7,
-            "avgConsItems": 2.0
+            "avgCakeItems": 1.3,
+            "avgConsItems": 0.5
         },
         {
             "division": "3사업부",
@@ -1923,9 +1923,9 @@
                 "lt": 8.7,
                 "cake": 1.9
             },
-            "avgLtItems": 25.0,
+            "avgLtItems": 23.1,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.7
         },
         {
             "division": "3사업부",
@@ -1940,9 +1940,9 @@
                 "lt": 8.9,
                 "cake": 1.6
             },
-            "avgLtItems": 29.9,
-            "avgCakeItems": 10.5,
-            "avgConsItems": 1.0
+            "avgLtItems": 26.9,
+            "avgCakeItems": 1.1,
+            "avgConsItems": 0.5
         },
         {
             "division": "3사업부",
@@ -1958,8 +1958,8 @@
                 "cake": 3.9
             },
             "avgLtItems": 30.6,
-            "avgCakeItems": 1.5,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.2,
+            "avgConsItems": 0.2
         },
         {
             "division": "3사업부",
@@ -1975,8 +1975,8 @@
                 "cake": 3.6
             },
             "avgLtItems": 28.0,
-            "avgCakeItems": 4.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.3,
+            "avgConsItems": 0.3
         },
         {
             "division": "3사업부",
@@ -1992,8 +1992,8 @@
                 "cake": 2.0
             },
             "avgLtItems": 39.1,
-            "avgCakeItems": 6.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.6,
+            "avgConsItems": 0.5
         },
         {
             "division": "3사업부",
@@ -2009,8 +2009,8 @@
                 "cake": 4.1
             },
             "avgLtItems": 36.1,
-            "avgCakeItems": 13.0,
-            "avgConsItems": 1.5
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.8
         },
         {
             "division": "3사업부",
@@ -2027,7 +2027,7 @@
             },
             "avgLtItems": 23.4,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.4
         },
         {
             "division": "3사업부",
@@ -2060,7 +2060,7 @@
                 "cake": 2.3
             },
             "avgLtItems": 19.0,
-            "avgCakeItems": 20.0,
+            "avgCakeItems": 0.9,
             "avgConsItems": 0.0
         },
         {
@@ -2077,7 +2077,7 @@
                 "cake": 5.8
             },
             "avgLtItems": 26.8,
-            "avgCakeItems": 12.3,
+            "avgCakeItems": 2.5,
             "avgConsItems": 0.0
         },
         {
@@ -2094,7 +2094,7 @@
                 "cake": 2.3
             },
             "avgLtItems": 18.0,
-            "avgCakeItems": 19.0,
+            "avgCakeItems": 0.9,
             "avgConsItems": 0.0
         },
         {
@@ -2110,9 +2110,9 @@
                 "lt": 12.3,
                 "cake": 3.4
             },
-            "avgLtItems": 20.8,
-            "avgCakeItems": 10.7,
-            "avgConsItems": 17.0
+            "avgLtItems": 20.1,
+            "avgCakeItems": 1.2,
+            "avgConsItems": 0.6
         },
         {
             "division": "3사업부",
@@ -2127,9 +2127,9 @@
                 "lt": 7.0,
                 "cake": 1.9
             },
-            "avgLtItems": 16.6,
+            "avgLtItems": 14.4,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.0
+            "avgConsItems": 0.3
         },
         {
             "division": "3사업부",
@@ -2145,7 +2145,7 @@
                 "cake": 3.0
             },
             "avgLtItems": 33.2,
-            "avgCakeItems": 8.5,
+            "avgCakeItems": 0.9,
             "avgConsItems": 0.0
         },
         {
@@ -2162,8 +2162,8 @@
                 "cake": 1.8
             },
             "avgLtItems": 30.6,
-            "avgCakeItems": 30.0,
-            "avgConsItems": 10.0
+            "avgCakeItems": 1.4,
+            "avgConsItems": 0.5
         },
         {
             "division": "3사업부",
@@ -2179,8 +2179,8 @@
                 "cake": 2.5
             },
             "avgLtItems": 29.6,
-            "avgCakeItems": 1.0,
-            "avgConsItems": 3.7
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.4
         },
         {
             "division": "3사업부",
@@ -2197,7 +2197,7 @@
             },
             "avgLtItems": 18.1,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.1
         },
         {
             "division": "3사업부",
@@ -2213,8 +2213,8 @@
                 "cake": 3.1
             },
             "avgLtItems": 31.5,
-            "avgCakeItems": 5.0,
-            "avgConsItems": 13.0
+            "avgCakeItems": 0.3,
+            "avgConsItems": 5.2
         },
         {
             "division": "4사업부",
@@ -2230,8 +2230,8 @@
                 "cake": 2.8
             },
             "avgLtItems": 24.3,
-            "avgCakeItems": 1.0,
-            "avgConsItems": 2.0
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.5
         },
         {
             "division": "4사업부",
@@ -2247,8 +2247,8 @@
                 "cake": 2.4
             },
             "avgLtItems": 32.3,
-            "avgCakeItems": 3.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.1,
+            "avgConsItems": 0.1
         },
         {
             "division": "4사업부",
@@ -2263,9 +2263,9 @@
                 "lt": 11.0,
                 "cake": 4.6
             },
-            "avgLtItems": 23.0,
-            "avgCakeItems": 10.0,
-            "avgConsItems": 1.9
+            "avgLtItems": 20.1,
+            "avgCakeItems": 1.2,
+            "avgConsItems": 1.1
         },
         {
             "division": "4사업부",
@@ -2282,7 +2282,7 @@
             },
             "avgLtItems": 23.7,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.0
+            "avgConsItems": 0.6
         },
         {
             "division": "4사업부",
@@ -2297,9 +2297,9 @@
                 "lt": 9.0,
                 "cake": 3.4
             },
-            "avgLtItems": 36.8,
-            "avgCakeItems": 30.5,
-            "avgConsItems": 3.1
+            "avgLtItems": 29.8,
+            "avgCakeItems": 2.9,
+            "avgConsItems": 1.5
         },
         {
             "division": "4사업부",
@@ -2316,7 +2316,7 @@
             },
             "avgLtItems": 42.3,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.6
+            "avgConsItems": 0.6
         },
         {
             "division": "4사업부",
@@ -2332,8 +2332,8 @@
                 "cake": 1.6
             },
             "avgLtItems": 28.6,
-            "avgCakeItems": 19.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 1.7,
+            "avgConsItems": 0.5
         },
         {
             "division": "4사업부",
@@ -2349,8 +2349,8 @@
                 "cake": 4.0
             },
             "avgLtItems": 42.0,
-            "avgCakeItems": 10.0,
-            "avgConsItems": 2.3
+            "avgCakeItems": 1.0,
+            "avgConsItems": 1.1
         },
         {
             "division": "4사업부",
@@ -2366,8 +2366,8 @@
                 "cake": 4.1
             },
             "avgLtItems": 41.2,
-            "avgCakeItems": 18.0,
-            "avgConsItems": 1.3
+            "avgCakeItems": 1.1,
+            "avgConsItems": 0.6
         },
         {
             "division": "4사업부",
@@ -2384,7 +2384,7 @@
             },
             "avgLtItems": 32.9,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.4
         },
         {
             "division": "4사업부",
@@ -2399,9 +2399,9 @@
                 "lt": 11.2,
                 "cake": 2.7
             },
-            "avgLtItems": 31.0,
+            "avgLtItems": 29.6,
             "avgCakeItems": 0.0,
-            "avgConsItems": 3.1
+            "avgConsItems": 2.0
         },
         {
             "division": "4사업부",
@@ -2434,7 +2434,7 @@
                 "cake": 3.6
             },
             "avgLtItems": 25.7,
-            "avgCakeItems": 4.0,
+            "avgCakeItems": 0.3,
             "avgConsItems": 0.0
         },
         {
@@ -2450,9 +2450,9 @@
                 "lt": 7.5,
                 "cake": 1.4
             },
-            "avgLtItems": 26.1,
-            "avgCakeItems": 6.0,
-            "avgConsItems": 1.0
+            "avgLtItems": 22.7,
+            "avgCakeItems": 0.3,
+            "avgConsItems": 0.4
         },
         {
             "division": "4사업부",
@@ -2469,7 +2469,7 @@
             },
             "avgLtItems": 28.3,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.3
+            "avgConsItems": 1.0
         },
         {
             "division": "4사업부",
@@ -2484,9 +2484,9 @@
                 "lt": 10.2,
                 "cake": 2.5
             },
-            "avgLtItems": 30.5,
-            "avgCakeItems": 1.0,
-            "avgConsItems": 1.0
+            "avgLtItems": 28.9,
+            "avgCakeItems": 0.1,
+            "avgConsItems": 0.5
         },
         {
             "division": "4사업부",
@@ -2501,9 +2501,9 @@
                 "lt": 10.2,
                 "cake": 2.9
             },
-            "avgLtItems": 35.8,
+            "avgLtItems": 34.3,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.9
         },
         {
             "division": "4사업부",
@@ -2520,7 +2520,7 @@
             },
             "avgLtItems": 30.6,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.8
         },
         {
             "division": "4사업부",
@@ -2536,8 +2536,8 @@
                 "cake": 4.4
             },
             "avgLtItems": 18.3,
-            "avgCakeItems": 4.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.2,
+            "avgConsItems": 0.6
         },
         {
             "division": "4사업부",
@@ -2588,7 +2588,7 @@
             },
             "avgLtItems": 17.6,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 0.7
         },
         {
             "division": "4사업부",
@@ -2604,8 +2604,8 @@
                 "cake": 2.1
             },
             "avgLtItems": 20.9,
-            "avgCakeItems": 11.0,
-            "avgConsItems": 4.0
+            "avgCakeItems": 1.1,
+            "avgConsItems": 0.2
         },
         {
             "division": "4사업부",
@@ -2621,8 +2621,8 @@
                 "cake": 2.7
             },
             "avgLtItems": 20.4,
-            "avgCakeItems": 1.0,
-            "avgConsItems": 1.0
+            "avgCakeItems": 0.0,
+            "avgConsItems": 0.6
         },
         {
             "division": "4사업부",
@@ -2637,9 +2637,9 @@
                 "lt": 9.2,
                 "cake": 3.3
             },
-            "avgLtItems": 34.4,
-            "avgCakeItems": 2.0,
-            "avgConsItems": 1.7
+            "avgLtItems": 32.7,
+            "avgCakeItems": 0.1,
+            "avgConsItems": 1.4
         },
         {
             "division": "4사업부",
@@ -2655,8 +2655,8 @@
                 "cake": 4.5
             },
             "avgLtItems": 33.0,
-            "avgCakeItems": 8.2,
-            "avgConsItems": 3.6
+            "avgCakeItems": 1.8,
+            "avgConsItems": 3.0
         },
         {
             "division": "4사업부",
@@ -2671,9 +2671,9 @@
                 "lt": 10.4,
                 "cake": 4.1
             },
-            "avgLtItems": 39.8,
-            "avgCakeItems": 4.0,
-            "avgConsItems": 1.0
+            "avgLtItems": 37.3,
+            "avgCakeItems": 0.2,
+            "avgConsItems": 0.4
         },
         {
             "division": "4사업부",
@@ -2689,8 +2689,8 @@
                 "cake": 2.4
             },
             "avgLtItems": 29.7,
-            "avgCakeItems": 16.0,
-            "avgConsItems": 1.1
+            "avgCakeItems": 0.9,
+            "avgConsItems": 0.9
         },
         {
             "division": "4사업부",
@@ -2706,8 +2706,8 @@
                 "cake": 2.7
             },
             "avgLtItems": 38.0,
-            "avgCakeItems": 11.5,
-            "avgConsItems": 3.6
+            "avgCakeItems": 1.0,
+            "avgConsItems": 1.7
         },
         {
             "division": "4사업부",
@@ -2722,8 +2722,8 @@
                 "lt": 9.8,
                 "cake": 2.6
             },
-            "avgLtItems": 8.3,
-            "avgCakeItems": 4.0,
+            "avgLtItems": 6.8,
+            "avgCakeItems": 0.2,
             "avgConsItems": 1.0
         },
         {
@@ -2741,7 +2741,7 @@
             },
             "avgLtItems": 24.1,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.1
+            "avgConsItems": 0.4
         }
     ],
     "byRegion": [
