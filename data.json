@@ -1,48 +1,48 @@
 {
-    "lastUpdated": "2026-06-10 17:59:54",
+    "lastUpdated": "2026-06-15 10:43:07",
     "overall": {
-        "totalStores": 3280,
-        "appliedStores": 2806,
-        "configRate": 85.5,
-        "avgSetItems": 31.5,
-        "ltAvgItems": 30.0
+        "totalStores": 3281,
+        "appliedStores": 2800,
+        "configRate": 85.3,
+        "avgSetItems": 31.4,
+        "ltAvgItems": 29.9
     },
     "byDivision": [
         {
             "division": "1사업부",
-            "totalStores": 926,
-            "appliedStores": 805,
-            "configRate": 86.9,
-            "avgSetItems": 35.1,
-            "ltAppliedStores": 784,
-            "ltAvgItems": 32.3
+            "totalStores": 927,
+            "appliedStores": 807,
+            "configRate": 87.1,
+            "avgSetItems": 35.0,
+            "ltAppliedStores": 785,
+            "ltAvgItems": 32.2
         },
         {
             "division": "2사업부",
             "totalStores": 887,
-            "appliedStores": 771,
-            "configRate": 86.9,
-            "avgSetItems": 33.5,
-            "ltAppliedStores": 754,
-            "ltAvgItems": 31.7
+            "appliedStores": 769,
+            "configRate": 86.7,
+            "avgSetItems": 33.3,
+            "ltAppliedStores": 751,
+            "ltAvgItems": 31.6
         },
         {
             "division": "3사업부",
             "totalStores": 739,
-            "appliedStores": 604,
-            "configRate": 81.7,
-            "avgSetItems": 26.5,
-            "ltAppliedStores": 593,
-            "ltAvgItems": 25.9
+            "appliedStores": 601,
+            "configRate": 81.3,
+            "avgSetItems": 26.4,
+            "ltAppliedStores": 590,
+            "ltAvgItems": 25.8
         },
         {
             "division": "4사업부",
             "totalStores": 728,
-            "appliedStores": 626,
-            "configRate": 86.0,
-            "avgSetItems": 29.3,
-            "ltAppliedStores": 607,
-            "ltAvgItems": 28.9
+            "appliedStores": 623,
+            "configRate": 85.6,
+            "avgSetItems": 29.1,
+            "ltAppliedStores": 604,
+            "ltAvgItems": 28.7
         }
     ],
     "byTeam": [
@@ -52,9 +52,9 @@
             "totalStores": 126,
             "appliedStores": 113,
             "configRate": 89.7,
-            "avgSetItems": 33.8,
+            "avgSetItems": 33.7,
             "ltAppliedStores": 110,
-            "ltAvgItems": 33.1
+            "ltAvgItems": 33.0
         },
         {
             "division": "1사업부",
@@ -62,39 +62,39 @@
             "totalStores": 131,
             "appliedStores": 114,
             "configRate": 87.0,
-            "avgSetItems": 38.8,
+            "avgSetItems": 38.9,
             "ltAppliedStores": 111,
-            "ltAvgItems": 30.4
+            "ltAvgItems": 30.3
         },
         {
             "division": "1사업부",
             "team": "서울남동팀",
             "totalStores": 129,
-            "appliedStores": 108,
-            "configRate": 83.7,
-            "avgSetItems": 34.8,
+            "appliedStores": 109,
+            "configRate": 84.5,
+            "avgSetItems": 34.5,
             "ltAppliedStores": 104,
-            "ltAvgItems": 31.5
+            "ltAvgItems": 31.3
         },
         {
             "division": "1사업부",
             "team": "서울남부팀",
             "totalStores": 120,
-            "appliedStores": 103,
-            "configRate": 85.8,
-            "avgSetItems": 36.2,
-            "ltAppliedStores": 101,
-            "ltAvgItems": 31.7
+            "appliedStores": 104,
+            "configRate": 86.7,
+            "avgSetItems": 36.0,
+            "ltAppliedStores": 102,
+            "ltAvgItems": 31.6
         },
         {
             "division": "1사업부",
             "team": "서울서부팀",
-            "totalStores": 133,
+            "totalStores": 134,
             "appliedStores": 115,
-            "configRate": 86.5,
-            "avgSetItems": 31.4,
+            "configRate": 85.8,
+            "avgSetItems": 31.3,
             "ltAppliedStores": 111,
-            "ltAvgItems": 31.2
+            "ltAvgItems": 31.1
         },
         {
             "division": "1사업부",
@@ -102,9 +102,9 @@
             "totalStores": 135,
             "appliedStores": 123,
             "configRate": 91.1,
-            "avgSetItems": 35.6,
+            "avgSetItems": 35.5,
             "ltAppliedStores": 121,
-            "ltAvgItems": 34.0
+            "ltAvgItems": 33.9
         },
         {
             "division": "1사업부",
@@ -112,9 +112,9 @@
             "totalStores": 152,
             "appliedStores": 129,
             "configRate": 84.9,
-            "avgSetItems": 35.2,
+            "avgSetItems": 35.1,
             "ltAppliedStores": 126,
-            "ltAvgItems": 33.5
+            "ltAvgItems": 33.4
         },
         {
             "division": "2사업부",
@@ -124,7 +124,7 @@
             "configRate": 83.8,
             "avgSetItems": 35.4,
             "ltAppliedStores": 114,
-            "ltAvgItems": 33.1
+            "ltAvgItems": 33.0
         },
         {
             "division": "2사업부",
@@ -132,9 +132,9 @@
             "totalStores": 163,
             "appliedStores": 137,
             "configRate": 84.0,
-            "avgSetItems": 31.7,
+            "avgSetItems": 31.6,
             "ltAppliedStores": 135,
-            "ltAvgItems": 30.5
+            "ltAvgItems": 30.3
         },
         {
             "division": "2사업부",
@@ -142,29 +142,29 @@
             "totalStores": 157,
             "appliedStores": 139,
             "configRate": 88.5,
-            "avgSetItems": 33.7,
+            "avgSetItems": 33.6,
             "ltAppliedStores": 136,
-            "ltAvgItems": 32.3
+            "ltAvgItems": 32.2
         },
         {
             "division": "2사업부",
             "team": "서울일산팀",
             "totalStores": 147,
-            "appliedStores": 130,
-            "configRate": 88.4,
+            "appliedStores": 129,
+            "configRate": 87.8,
             "avgSetItems": 33.3,
-            "ltAppliedStores": 125,
-            "ltAvgItems": 32.0
+            "ltAppliedStores": 124,
+            "ltAvgItems": 31.9
         },
         {
             "division": "2사업부",
             "team": "서울중부팀",
             "totalStores": 141,
-            "appliedStores": 123,
-            "configRate": 87.2,
-            "avgSetItems": 34.3,
-            "ltAppliedStores": 118,
-            "ltAvgItems": 31.1
+            "appliedStores": 122,
+            "configRate": 86.5,
+            "avgSetItems": 33.2,
+            "ltAppliedStores": 116,
+            "ltAvgItems": 31.5
         },
         {
             "division": "2사업부",
@@ -172,9 +172,9 @@
             "totalStores": 143,
             "appliedStores": 128,
             "configRate": 89.5,
-            "avgSetItems": 33.0,
+            "avgSetItems": 32.8,
             "ltAppliedStores": 126,
-            "ltAvgItems": 31.1
+            "ltAvgItems": 31.0
         },
         {
             "division": "3사업부",
@@ -182,39 +182,39 @@
             "totalStores": 164,
             "appliedStores": 129,
             "configRate": 78.7,
-            "avgSetItems": 25.8,
+            "avgSetItems": 25.6,
             "ltAppliedStores": 128,
-            "ltAvgItems": 25.2
+            "ltAvgItems": 25.1
         },
         {
             "division": "3사업부",
             "team": "광주호남팀",
             "totalStores": 160,
-            "appliedStores": 136,
-            "configRate": 85.0,
-            "avgSetItems": 25.6,
-            "ltAppliedStores": 132,
-            "ltAvgItems": 25.1
+            "appliedStores": 135,
+            "configRate": 84.4,
+            "avgSetItems": 25.2,
+            "ltAppliedStores": 130,
+            "ltAvgItems": 24.9
         },
         {
             "division": "3사업부",
             "team": "대전전북팀",
             "totalStores": 139,
-            "appliedStores": 114,
-            "configRate": 82.0,
-            "avgSetItems": 31.3,
+            "appliedStores": 113,
+            "configRate": 81.3,
+            "avgSetItems": 31.5,
             "ltAppliedStores": 111,
-            "ltAvgItems": 31.2
+            "ltAvgItems": 31.1
         },
         {
             "division": "3사업부",
             "team": "천안충남팀",
             "totalStores": 138,
-            "appliedStores": 111,
-            "configRate": 80.4,
-            "avgSetItems": 22.0,
-            "ltAppliedStores": 110,
-            "ltAvgItems": 21.0
+            "appliedStores": 110,
+            "configRate": 79.7,
+            "avgSetItems": 21.8,
+            "ltAppliedStores": 109,
+            "ltAvgItems": 20.8
         },
         {
             "division": "3사업부",
@@ -232,29 +232,29 @@
             "totalStores": 144,
             "appliedStores": 125,
             "configRate": 86.8,
-            "avgSetItems": 30.1,
+            "avgSetItems": 30.0,
             "ltAppliedStores": 118,
-            "ltAvgItems": 30.3
+            "ltAvgItems": 30.2
         },
         {
             "division": "4사업부",
             "team": "대구포항팀",
             "totalStores": 140,
-            "appliedStores": 121,
-            "configRate": 86.4,
-            "avgSetItems": 36.2,
+            "appliedStores": 120,
+            "configRate": 85.7,
+            "avgSetItems": 35.9,
             "ltAppliedStores": 119,
-            "ltAvgItems": 35.3
+            "ltAvgItems": 34.6
         },
         {
             "division": "4사업부",
             "team": "부산김해팀",
             "totalStores": 144,
-            "appliedStores": 124,
-            "configRate": 86.1,
-            "avgSetItems": 29.7,
-            "ltAppliedStores": 120,
-            "ltAvgItems": 30.0
+            "appliedStores": 122,
+            "configRate": 84.7,
+            "avgSetItems": 29.3,
+            "ltAppliedStores": 117,
+            "ltAvgItems": 29.8
         },
         {
             "division": "4사업부",
@@ -286,12 +286,12 @@
             "appliedStores": 18,
             "configRate": 81.8,
             "audits": {
-                "mfg": 4.5,
-                "prod": 18.8,
-                "lt": 10.9,
-                "cake": 3.4
+                "mfg": 4.4,
+                "prod": 20.0,
+                "lt": 7.7,
+                "cake": 2.6
             },
-            "avgLtItems": 31.4,
+            "avgLtItems": 31.3,
             "avgCakeItems": 10.0,
             "avgConsItems": 1.0
         },
@@ -304,11 +304,11 @@
             "configRate": 95.5,
             "audits": {
                 "mfg": 6.6,
-                "prod": 29.5,
-                "lt": 12.5,
-                "cake": 5.5
+                "prod": 28.3,
+                "lt": 12.9,
+                "cake": 5.4
             },
-            "avgLtItems": 32.6,
+            "avgLtItems": 32.5,
             "avgCakeItems": 0.0,
             "avgConsItems": 2.1
         },
@@ -320,12 +320,12 @@
             "appliedStores": 19,
             "configRate": 86.4,
             "audits": {
-                "mfg": 6.6,
-                "prod": 25.8,
-                "lt": 12.8,
+                "mfg": 8.0,
+                "prod": 25.3,
+                "lt": 14.4,
                 "cake": 5.1
             },
-            "avgLtItems": 33.1,
+            "avgLtItems": 32.9,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -337,12 +337,12 @@
             "appliedStores": 21,
             "configRate": 95.5,
             "audits": {
-                "mfg": 12.3,
-                "prod": 24.7,
-                "lt": 9.1,
-                "cake": 4.9
+                "mfg": 10.4,
+                "prod": 23.1,
+                "lt": 11.3,
+                "cake": 4.8
             },
-            "avgLtItems": 33.1,
+            "avgLtItems": 32.9,
             "avgCakeItems": 9.0,
             "avgConsItems": 1.2
         },
@@ -354,12 +354,12 @@
             "appliedStores": 16,
             "configRate": 100.0,
             "audits": {
-                "mfg": 4.8,
-                "prod": 20.9,
-                "lt": 10.7,
-                "cake": 3.9
+                "mfg": 8.9,
+                "prod": 22.8,
+                "lt": 9.4,
+                "cake": 3.2
             },
-            "avgLtItems": 36.1,
+            "avgLtItems": 35.9,
             "avgCakeItems": 7.0,
             "avgConsItems": 1.5
         },
@@ -371,12 +371,12 @@
             "appliedStores": 18,
             "configRate": 81.8,
             "audits": {
-                "mfg": 13.9,
-                "prod": 22.2,
-                "lt": 8.7,
-                "cake": 5.0
+                "mfg": 7.3,
+                "prod": 24.0,
+                "lt": 10.7,
+                "cake": 5.6
             },
-            "avgLtItems": 33.0,
+            "avgLtItems": 32.9,
             "avgCakeItems": 17.3,
             "avgConsItems": 2.0
         },
@@ -388,12 +388,12 @@
             "appliedStores": 21,
             "configRate": 91.3,
             "audits": {
-                "mfg": 2.5,
-                "prod": 23.3,
-                "lt": 11.9,
-                "cake": 2.7
+                "mfg": 4.1,
+                "prod": 24.0,
+                "lt": 13.1,
+                "cake": 4.4
             },
-            "avgLtItems": 19.8,
+            "avgLtItems": 19.7,
             "avgCakeItems": 29.0,
             "avgConsItems": 29.0
         },
@@ -405,12 +405,12 @@
             "appliedStores": 22,
             "configRate": 95.7,
             "audits": {
-                "mfg": 6.8,
-                "prod": 23.2,
-                "lt": 9.7,
-                "cake": 3.8
+                "mfg": 9.6,
+                "prod": 24.0,
+                "lt": 10.8,
+                "cake": 3.5
             },
-            "avgLtItems": 18.5,
+            "avgLtItems": 18.4,
             "avgCakeItems": 7.5,
             "avgConsItems": 22.8
         },
@@ -422,12 +422,12 @@
             "appliedStores": 13,
             "configRate": 56.5,
             "audits": {
-                "mfg": 5.9,
-                "prod": 23.6,
-                "lt": 8.7,
-                "cake": 4.0
+                "mfg": 5.8,
+                "prod": 21.1,
+                "lt": 9.0,
+                "cake": 3.4
             },
-            "avgLtItems": 35.7,
+            "avgLtItems": 35.5,
             "avgCakeItems": 24.0,
             "avgConsItems": 26.5
         },
@@ -439,12 +439,12 @@
             "appliedStores": 16,
             "configRate": 100.0,
             "audits": {
-                "mfg": 3.2,
-                "prod": 29.4,
-                "lt": 8.3,
-                "cake": 3.1
+                "mfg": 3.4,
+                "prod": 29.5,
+                "lt": 12.3,
+                "cake": 2.6
             },
-            "avgLtItems": 41.1,
+            "avgLtItems": 41.0,
             "avgCakeItems": 0.0,
             "avgConsItems": 27.6
         },
@@ -456,14 +456,14 @@
             "appliedStores": 23,
             "configRate": 95.8,
             "audits": {
-                "mfg": 5.8,
-                "prod": 23.8,
-                "lt": 9.4,
-                "cake": 3.9
+                "mfg": 2.2,
+                "prod": 22.9,
+                "lt": 9.8,
+                "cake": 4.3
             },
-            "avgLtItems": 37.9,
+            "avgLtItems": 37.8,
             "avgCakeItems": 1.0,
-            "avgConsItems": 19.0
+            "avgConsItems": 20.9
         },
         {
             "division": "1사업부",
@@ -473,12 +473,12 @@
             "appliedStores": 19,
             "configRate": 86.4,
             "audits": {
-                "mfg": 1.9,
-                "prod": 19.8,
-                "lt": 5.1,
-                "cake": 4.4
+                "mfg": 1.7,
+                "prod": 20.0,
+                "lt": 7.1,
+                "cake": 3.0
             },
-            "avgLtItems": 34.3,
+            "avgLtItems": 34.2,
             "avgCakeItems": 28.0,
             "avgConsItems": 16.1
         },
@@ -490,12 +490,12 @@
             "appliedStores": 21,
             "configRate": 91.3,
             "audits": {
-                "mfg": 1.9,
-                "prod": 30.3,
-                "lt": 16.8,
-                "cake": 6.9
+                "mfg": 1.5,
+                "prod": 29.8,
+                "lt": 15.9,
+                "cake": 3.8
             },
-            "avgLtItems": 27.1,
+            "avgLtItems": 27.0,
             "avgCakeItems": 7.0,
             "avgConsItems": 1.3
         },
@@ -504,16 +504,16 @@
             "team": "서울남동팀",
             "manager": "김지현",
             "totalStores": 24,
-            "appliedStores": 17,
-            "configRate": 70.8,
+            "appliedStores": 18,
+            "configRate": 75.0,
             "audits": {
-                "mfg": 3.1,
-                "prod": 20.8,
-                "lt": 8.1,
-                "cake": 3.0
+                "mfg": 1.8,
+                "prod": 22.2,
+                "lt": 11.8,
+                "cake": 3.4
             },
-            "avgLtItems": 34.7,
-            "avgCakeItems": 8.0,
+            "avgLtItems": 34.6,
+            "avgCakeItems": 11.0,
             "avgConsItems": 1.0
         },
         {
@@ -524,10 +524,10 @@
             "appliedStores": 17,
             "configRate": 77.3,
             "audits": {
-                "mfg": 6.5,
-                "prod": 22.7,
-                "lt": 10.2,
-                "cake": 3.7
+                "mfg": 2.6,
+                "prod": 24.5,
+                "lt": 12.9,
+                "cake": 2.9
             },
             "avgLtItems": 13.6,
             "avgCakeItems": 19.0,
@@ -541,12 +541,12 @@
             "appliedStores": 21,
             "configRate": 95.5,
             "audits": {
-                "mfg": 6.2,
-                "prod": 25.4,
-                "lt": 13.4,
-                "cake": 3.6
+                "mfg": 6.0,
+                "prod": 23.4,
+                "lt": 14.7,
+                "cake": 5.2
             },
-            "avgLtItems": 27.7,
+            "avgLtItems": 27.4,
             "avgCakeItems": 27.0,
             "avgConsItems": 1.0
         },
@@ -558,14 +558,14 @@
             "appliedStores": 16,
             "configRate": 100.0,
             "audits": {
-                "mfg": 3.2,
-                "prod": 21.4,
-                "lt": 11.4,
-                "cake": 2.4
+                "mfg": 4.1,
+                "prod": 21.6,
+                "lt": 11.9,
+                "cake": 4.9
             },
-            "avgLtItems": 73.8,
+            "avgLtItems": 73.5,
             "avgCakeItems": 21.7,
-            "avgConsItems": 12.5
+            "avgConsItems": 12.4
         },
         {
             "division": "1사업부",
@@ -575,10 +575,10 @@
             "appliedStores": 16,
             "configRate": 72.7,
             "audits": {
-                "mfg": 6.2,
+                "mfg": 4.3,
                 "prod": 26.3,
-                "lt": 16.8,
-                "cake": 4.5
+                "lt": 17.8,
+                "cake": 4.1
             },
             "avgLtItems": 14.7,
             "avgCakeItems": 0.0,
@@ -592,10 +592,10 @@
             "appliedStores": 18,
             "configRate": 90.0,
             "audits": {
-                "mfg": 10.8,
-                "prod": 18.9,
-                "lt": 11.1,
-                "cake": 3.4
+                "mfg": 8.3,
+                "prod": 18.6,
+                "lt": 10.2,
+                "cake": 3.9
             },
             "avgLtItems": 18.8,
             "avgCakeItems": 9.0,
@@ -609,12 +609,12 @@
             "appliedStores": 14,
             "configRate": 87.5,
             "audits": {
-                "mfg": 4.9,
-                "prod": 25.1,
-                "lt": 18.6,
-                "cake": 4.9
+                "mfg": 10.4,
+                "prod": 25.8,
+                "lt": 18.2,
+                "cake": 5.1
             },
-            "avgLtItems": 38.1,
+            "avgLtItems": 37.9,
             "avgCakeItems": 19.0,
             "avgConsItems": 1.4
         },
@@ -626,12 +626,12 @@
             "appliedStores": 13,
             "configRate": 68.4,
             "audits": {
-                "mfg": 6.6,
-                "prod": 22.8,
-                "lt": 13.6,
-                "cake": 1.7
+                "mfg": 6.3,
+                "prod": 21.1,
+                "lt": 13.3,
+                "cake": 2.4
             },
-            "avgLtItems": 26.5,
+            "avgLtItems": 26.4,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -640,15 +640,15 @@
             "team": "서울남부팀",
             "manager": "이왕진",
             "totalStores": 22,
-            "appliedStores": 21,
-            "configRate": 95.5,
+            "appliedStores": 22,
+            "configRate": 100.0,
             "audits": {
-                "mfg": 7.0,
-                "prod": 20.7,
-                "lt": 12.0,
-                "cake": 5.4
+                "mfg": 4.0,
+                "prod": 19.5,
+                "lt": 10.7,
+                "cake": 4.1
             },
-            "avgLtItems": 34.5,
+            "avgLtItems": 33.9,
             "avgCakeItems": 19.0,
             "avgConsItems": 24.9
         },
@@ -660,10 +660,10 @@
             "appliedStores": 17,
             "configRate": 77.3,
             "audits": {
-                "mfg": 9.3,
-                "prod": 24.7,
-                "lt": 12.7,
-                "cake": 5.0
+                "mfg": 12.3,
+                "prod": 25.5,
+                "lt": 12.0,
+                "cake": 5.9
             },
             "avgLtItems": 41.0,
             "avgCakeItems": 11.5,
@@ -677,10 +677,10 @@
             "appliedStores": 20,
             "configRate": 95.2,
             "audits": {
-                "mfg": 3.2,
-                "prod": 24.3,
-                "lt": 13.1,
-                "cake": 3.3
+                "mfg": 5.8,
+                "prod": 23.7,
+                "lt": 13.9,
+                "cake": 3.2
             },
             "avgLtItems": 31.9,
             "avgCakeItems": 0.0,
@@ -694,10 +694,10 @@
             "appliedStores": 21,
             "configRate": 91.3,
             "audits": {
-                "mfg": 9.1,
-                "prod": 22.2,
-                "lt": 13.7,
-                "cake": 3.7
+                "mfg": 6.4,
+                "prod": 20.0,
+                "lt": 12.2,
+                "cake": 3.5
             },
             "avgLtItems": 30.3,
             "avgCakeItems": 16.0,
@@ -707,16 +707,16 @@
             "division": "1사업부",
             "team": "서울서부팀",
             "manager": "김덕수",
-            "totalStores": 16,
+            "totalStores": 17,
             "appliedStores": 16,
-            "configRate": 100.0,
+            "configRate": 94.1,
             "audits": {
-                "mfg": 1.1,
-                "prod": 21.9,
-                "lt": 13.0,
-                "cake": 2.6
+                "mfg": 1.9,
+                "prod": 28.6,
+                "lt": 16.0,
+                "cake": 3.7
             },
-            "avgLtItems": 44.4,
+            "avgLtItems": 44.2,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.2
         },
@@ -728,14 +728,14 @@
             "appliedStores": 18,
             "configRate": 78.3,
             "audits": {
-                "mfg": 2.5,
-                "prod": 26.6,
-                "lt": 11.0,
-                "cake": 4.9
+                "mfg": 1.8,
+                "prod": 28.3,
+                "lt": 11.3,
+                "cake": 3.9
             },
             "avgLtItems": 21.8,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.1
+            "avgConsItems": 1.0
         },
         {
             "division": "1사업부",
@@ -746,11 +746,11 @@
             "configRate": 86.4,
             "audits": {
                 "mfg": 1.8,
-                "prod": 18.9,
-                "lt": 6.0,
-                "cake": 2.2
+                "prod": 24.2,
+                "lt": 8.4,
+                "cake": 2.3
             },
-            "avgLtItems": 34.9,
+            "avgLtItems": 34.8,
             "avgCakeItems": 0.0,
             "avgConsItems": 2.0
         },
@@ -762,10 +762,10 @@
             "appliedStores": 22,
             "configRate": 88.0,
             "audits": {
-                "mfg": 6.5,
-                "prod": 19.3,
-                "lt": 7.3,
-                "cake": 3.4
+                "mfg": 5.7,
+                "prod": 24.5,
+                "lt": 8.3,
+                "cake": 3.7
             },
             "avgLtItems": 35.0,
             "avgCakeItems": 11.0,
@@ -779,10 +779,10 @@
             "appliedStores": 19,
             "configRate": 79.2,
             "audits": {
-                "mfg": 8.1,
-                "prod": 26.5,
-                "lt": 19.5,
-                "cake": 4.0
+                "mfg": 8.2,
+                "prod": 26.2,
+                "lt": 18.2,
+                "cake": 4.5
             },
             "avgLtItems": 21.1,
             "avgCakeItems": 0.0,
@@ -796,12 +796,12 @@
             "appliedStores": 23,
             "configRate": 95.8,
             "audits": {
-                "mfg": 3.4,
-                "prod": 24.2,
-                "lt": 10.8,
-                "cake": 2.7
+                "mfg": 4.0,
+                "prod": 23.8,
+                "lt": 12.0,
+                "cake": 2.3
             },
-            "avgLtItems": 33.9,
+            "avgLtItems": 33.8,
             "avgCakeItems": 15.0,
             "avgConsItems": 4.6
         },
@@ -813,12 +813,12 @@
             "appliedStores": 20,
             "configRate": 83.3,
             "audits": {
-                "mfg": 7.9,
-                "prod": 21.6,
-                "lt": 9.3,
-                "cake": 4.7
+                "mfg": 5.6,
+                "prod": 21.7,
+                "lt": 10.9,
+                "cake": 4.0
             },
-            "avgLtItems": 34.3,
+            "avgLtItems": 34.2,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.3
         },
@@ -830,12 +830,12 @@
             "appliedStores": 21,
             "configRate": 87.5,
             "audits": {
-                "mfg": 6.4,
-                "prod": 20.3,
-                "lt": 7.1,
-                "cake": 3.7
+                "mfg": 5.8,
+                "prod": 19.5,
+                "lt": 9.2,
+                "cake": 4.2
             },
-            "avgLtItems": 29.8,
+            "avgLtItems": 29.7,
             "avgCakeItems": 27.0,
             "avgConsItems": 1.0
         },
@@ -847,12 +847,12 @@
             "appliedStores": 16,
             "configRate": 100.0,
             "audits": {
-                "mfg": 5.7,
-                "prod": 25.6,
-                "lt": 12.7,
-                "cake": 4.1
+                "mfg": 5.6,
+                "prod": 24.9,
+                "lt": 9.5,
+                "cake": 4.2
             },
-            "avgLtItems": 40.6,
+            "avgLtItems": 40.4,
             "avgCakeItems": 16.0,
             "avgConsItems": 1.5
         },
@@ -864,12 +864,12 @@
             "appliedStores": 22,
             "configRate": 95.7,
             "audits": {
-                "mfg": 4.5,
+                "mfg": 4.4,
                 "prod": 26.4,
-                "lt": 11.4,
-                "cake": 1.9
+                "lt": 8.7,
+                "cake": 1.8
             },
-            "avgLtItems": 29.5,
+            "avgLtItems": 29.4,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.1
         },
@@ -881,12 +881,12 @@
             "appliedStores": 21,
             "configRate": 87.5,
             "audits": {
-                "mfg": 6.9,
-                "prod": 22.2,
-                "lt": 8.5,
-                "cake": 3.0
+                "mfg": 7.1,
+                "prod": 23.0,
+                "lt": 9.2,
+                "cake": 3.2
             },
-            "avgLtItems": 38.0,
+            "avgLtItems": 37.9,
             "avgCakeItems": 13.5,
             "avgConsItems": 1.5
         },
@@ -898,12 +898,12 @@
             "appliedStores": 22,
             "configRate": 100.0,
             "audits": {
-                "mfg": 12.1,
-                "prod": 19.5,
-                "lt": 10.3,
-                "cake": 5.4
+                "mfg": 9.9,
+                "prod": 21.8,
+                "lt": 9.4,
+                "cake": 5.1
             },
-            "avgLtItems": 30.3,
+            "avgLtItems": 30.1,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -915,12 +915,12 @@
             "appliedStores": 17,
             "configRate": 73.9,
             "audits": {
-                "mfg": 4.9,
-                "prod": 20.0,
-                "lt": 7.0,
-                "cake": 2.6
+                "mfg": 4.7,
+                "prod": 20.3,
+                "lt": 7.9,
+                "cake": 3.2
             },
-            "avgLtItems": 47.0,
+            "avgLtItems": 46.9,
             "avgCakeItems": 0.0,
             "avgConsItems": 2.2
         },
@@ -932,12 +932,12 @@
             "appliedStores": 14,
             "configRate": 87.5,
             "audits": {
-                "mfg": 11.2,
-                "prod": 28.8,
-                "lt": 12.6,
-                "cake": 5.9
+                "mfg": 10.9,
+                "prod": 28.2,
+                "lt": 14.1,
+                "cake": 5.7
             },
-            "avgLtItems": 47.5,
+            "avgLtItems": 47.4,
             "avgCakeItems": 18.5,
             "avgConsItems": 2.5
         },
@@ -949,14 +949,14 @@
             "appliedStores": 23,
             "configRate": 95.8,
             "audits": {
-                "mfg": 1.6,
-                "prod": 22.3,
-                "lt": 10.9,
-                "cake": 2.8
+                "mfg": 2.2,
+                "prod": 23.1,
+                "lt": 12.3,
+                "cake": 2.7
             },
-            "avgLtItems": 28.9,
+            "avgLtItems": 28.8,
             "avgCakeItems": 12.0,
-            "avgConsItems": 1.0
+            "avgConsItems": 1.3
         },
         {
             "division": "1사업부",
@@ -966,10 +966,10 @@
             "appliedStores": 16,
             "configRate": 72.7,
             "audits": {
-                "mfg": 4.0,
-                "prod": 23.3,
-                "lt": 9.5,
-                "cake": 2.8
+                "mfg": 5.4,
+                "prod": 23.2,
+                "lt": 8.5,
+                "cake": 1.9
             },
             "avgLtItems": 29.0,
             "avgCakeItems": 6.0,
@@ -983,10 +983,10 @@
             "appliedStores": 18,
             "configRate": 81.8,
             "audits": {
-                "mfg": 2.5,
-                "prod": 16.5,
-                "lt": 5.0,
-                "cake": 3.4
+                "mfg": 3.0,
+                "prod": 16.3,
+                "lt": 4.4,
+                "cake": 3.3
             },
             "avgLtItems": 30.6,
             "avgCakeItems": 0.0,
@@ -1000,10 +1000,10 @@
             "appliedStores": 19,
             "configRate": 82.6,
             "audits": {
-                "mfg": 2.7,
-                "prod": 16.6,
-                "lt": 5.7,
-                "cake": 1.7
+                "mfg": 3.2,
+                "prod": 18.3,
+                "lt": 9.8,
+                "cake": 2.9
             },
             "avgLtItems": 28.1,
             "avgCakeItems": 10.0,
@@ -1017,10 +1017,10 @@
             "appliedStores": 16,
             "configRate": 84.2,
             "audits": {
-                "mfg": 12.1,
-                "prod": 23.2,
-                "lt": 9.0,
-                "cake": 4.7
+                "mfg": 12.2,
+                "prod": 22.4,
+                "lt": 9.9,
+                "cake": 4.5
             },
             "avgLtItems": 47.6,
             "avgCakeItems": 20.0,
@@ -1034,12 +1034,12 @@
             "appliedStores": 15,
             "configRate": 93.8,
             "audits": {
-                "mfg": 5.1,
-                "prod": 27.2,
-                "lt": 10.1,
-                "cake": 3.4
+                "mfg": 6.6,
+                "prod": 29.4,
+                "lt": 10.4,
+                "cake": 3.8
             },
-            "avgLtItems": 55.1,
+            "avgLtItems": 55.0,
             "avgCakeItems": 21.5,
             "avgConsItems": 6.3
         },
@@ -1051,10 +1051,10 @@
             "appliedStores": 17,
             "configRate": 85.0,
             "audits": {
-                "mfg": 4.0,
-                "prod": 18.1,
-                "lt": 6.3,
-                "cake": 5.2
+                "mfg": 6.2,
+                "prod": 16.4,
+                "lt": 5.7,
+                "cake": 4.2
             },
             "avgLtItems": 25.9,
             "avgCakeItems": 14.0,
@@ -1068,10 +1068,10 @@
             "appliedStores": 17,
             "configRate": 85.0,
             "audits": {
-                "mfg": 1.6,
-                "prod": 27.9,
-                "lt": 11.6,
-                "cake": 2.8
+                "mfg": 4.5,
+                "prod": 26.4,
+                "lt": 11.3,
+                "cake": 3.9
             },
             "avgLtItems": 23.5,
             "avgCakeItems": 0.0,
@@ -1085,10 +1085,10 @@
             "appliedStores": 15,
             "configRate": 75.0,
             "audits": {
-                "mfg": 2.5,
-                "prod": 22.7,
-                "lt": 9.1,
-                "cake": 3.0
+                "mfg": 3.1,
+                "prod": 25.9,
+                "lt": 8.7,
+                "cake": 3.5
             },
             "avgLtItems": 37.7,
             "avgCakeItems": 4.5,
@@ -1102,10 +1102,10 @@
             "appliedStores": 16,
             "configRate": 80.0,
             "audits": {
-                "mfg": 2.9,
-                "prod": 23.4,
-                "lt": 10.6,
-                "cake": 3.0
+                "mfg": 2.4,
+                "prod": 24.4,
+                "lt": 10.8,
+                "cake": 3.5
             },
             "avgLtItems": 20.2,
             "avgCakeItems": 1.0,
@@ -1119,10 +1119,10 @@
             "appliedStores": 18,
             "configRate": 85.7,
             "audits": {
-                "mfg": 7.4,
-                "prod": 24.0,
-                "lt": 13.7,
-                "cake": 3.0
+                "mfg": 4.8,
+                "prod": 23.6,
+                "lt": 10.9,
+                "cake": 3.4
             },
             "avgLtItems": 25.1,
             "avgCakeItems": 4.0,
@@ -1136,10 +1136,10 @@
             "appliedStores": 21,
             "configRate": 84.0,
             "audits": {
-                "mfg": 3.8,
-                "prod": 23.0,
-                "lt": 8.0,
-                "cake": 3.7
+                "mfg": 2.1,
+                "prod": 22.4,
+                "lt": 7.8,
+                "cake": 4.4
             },
             "avgLtItems": 32.0,
             "avgCakeItems": 5.0,
@@ -1153,12 +1153,12 @@
             "appliedStores": 20,
             "configRate": 90.9,
             "audits": {
-                "mfg": 6.2,
-                "prod": 23.8,
-                "lt": 10.5,
-                "cake": 4.7
+                "mfg": 5.2,
+                "prod": 20.7,
+                "lt": 8.3,
+                "cake": 2.7
             },
-            "avgLtItems": 29.2,
+            "avgLtItems": 29.1,
             "avgCakeItems": 18.0,
             "avgConsItems": 1.0
         },
@@ -1170,12 +1170,12 @@
             "appliedStores": 14,
             "configRate": 87.5,
             "audits": {
-                "mfg": 3.1,
-                "prod": 27.1,
-                "lt": 9.7,
-                "cake": 2.5
+                "mfg": 3.4,
+                "prod": 22.8,
+                "lt": 9.6,
+                "cake": 3.0
             },
-            "avgLtItems": 37.2,
+            "avgLtItems": 37.1,
             "avgCakeItems": 6.0,
             "avgConsItems": 1.0
         },
@@ -1187,12 +1187,12 @@
             "appliedStores": 22,
             "configRate": 84.6,
             "audits": {
-                "mfg": 2.8,
-                "prod": 23.8,
-                "lt": 8.7,
+                "mfg": 3.2,
+                "prod": 24.2,
+                "lt": 7.5,
                 "cake": 3.7
             },
-            "avgLtItems": 29.2,
+            "avgLtItems": 28.3,
             "avgCakeItems": 44.0,
             "avgConsItems": 1.4
         },
@@ -1204,12 +1204,12 @@
             "appliedStores": 21,
             "configRate": 87.5,
             "audits": {
-                "mfg": 1.8,
-                "prod": 22.6,
-                "lt": 9.6,
-                "cake": 3.3
+                "mfg": 1.0,
+                "prod": 25.5,
+                "lt": 10.4,
+                "cake": 2.6
             },
-            "avgLtItems": 29.6,
+            "avgLtItems": 29.5,
             "avgCakeItems": 0.0,
             "avgConsItems": 3.1
         },
@@ -1221,12 +1221,12 @@
             "appliedStores": 21,
             "configRate": 87.5,
             "audits": {
-                "mfg": 4.6,
-                "prod": 18.4,
-                "lt": 8.8,
-                "cake": 3.0
+                "mfg": 2.9,
+                "prod": 21.0,
+                "lt": 12.2,
+                "cake": 3.8
             },
-            "avgLtItems": 28.8,
+            "avgLtItems": 28.7,
             "avgCakeItems": 8.5,
             "avgConsItems": 1.0
         },
@@ -1238,14 +1238,14 @@
             "appliedStores": 18,
             "configRate": 69.2,
             "audits": {
-                "mfg": 4.5,
-                "prod": 18.5,
-                "lt": 9.0,
-                "cake": 2.5
+                "mfg": 4.7,
+                "prod": 19.2,
+                "lt": 7.1,
+                "cake": 3.3
             },
             "avgLtItems": 29.9,
             "avgCakeItems": 8.7,
-            "avgConsItems": 4.2
+            "avgConsItems": 4.6
         },
         {
             "division": "2사업부",
@@ -1255,12 +1255,12 @@
             "appliedStores": 19,
             "configRate": 86.4,
             "audits": {
-                "mfg": 6.6,
-                "prod": 30.2,
-                "lt": 11.5,
-                "cake": 5.1
+                "mfg": 4.0,
+                "prod": 27.7,
+                "lt": 9.8,
+                "cake": 4.8
             },
-            "avgLtItems": 24.9,
+            "avgLtItems": 24.7,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -1272,10 +1272,10 @@
             "appliedStores": 20,
             "configRate": 87.0,
             "audits": {
-                "mfg": 12.0,
-                "prod": 28.5,
-                "lt": 9.4,
-                "cake": 4.4
+                "mfg": 11.1,
+                "prod": 27.3,
+                "lt": 8.6,
+                "cake": 4.3
             },
             "avgLtItems": 25.8,
             "avgCakeItems": 19.0,
@@ -1289,10 +1289,10 @@
             "appliedStores": 22,
             "configRate": 88.0,
             "audits": {
-                "mfg": 4.3,
-                "prod": 21.3,
-                "lt": 7.9,
-                "cake": 4.6
+                "mfg": 10.2,
+                "prod": 18.5,
+                "lt": 7.4,
+                "cake": 3.6
             },
             "avgLtItems": 33.5,
             "avgCakeItems": 25.0,
@@ -1306,12 +1306,12 @@
             "appliedStores": 23,
             "configRate": 92.0,
             "audits": {
-                "mfg": 1.7,
-                "prod": 22.3,
-                "lt": 7.1,
-                "cake": 2.1
+                "mfg": 2.2,
+                "prod": 24.8,
+                "lt": 7.7,
+                "cake": 2.2
             },
-            "avgLtItems": 36.7,
+            "avgLtItems": 36.5,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -1323,10 +1323,10 @@
             "appliedStores": 17,
             "configRate": 77.3,
             "audits": {
-                "mfg": 6.0,
-                "prod": 19.6,
-                "lt": 8.1,
-                "cake": 4.5
+                "mfg": 3.1,
+                "prod": 17.7,
+                "lt": 10.4,
+                "cake": 3.6
             },
             "avgLtItems": 42.5,
             "avgCakeItems": 19.7,
@@ -1340,10 +1340,10 @@
             "appliedStores": 22,
             "configRate": 91.7,
             "audits": {
-                "mfg": 3.5,
-                "prod": 19.8,
-                "lt": 6.7,
-                "cake": 2.5
+                "mfg": 3.3,
+                "prod": 20.6,
+                "lt": 7.5,
+                "cake": 2.2
             },
             "avgLtItems": 26.1,
             "avgCakeItems": 0.0,
@@ -1357,10 +1357,10 @@
             "appliedStores": 16,
             "configRate": 100.0,
             "audits": {
-                "mfg": 3.6,
-                "prod": 22.0,
-                "lt": 15.8,
-                "cake": 4.2
+                "mfg": 4.8,
+                "prod": 25.9,
+                "lt": 18.0,
+                "cake": 5.3
             },
             "avgLtItems": 38.2,
             "avgCakeItems": 10.0,
@@ -1374,12 +1374,12 @@
             "appliedStores": 21,
             "configRate": 91.3,
             "audits": {
-                "mfg": 3.4,
-                "prod": 24.8,
-                "lt": 11.6,
-                "cake": 3.6
+                "mfg": 4.6,
+                "prod": 25.0,
+                "lt": 13.9,
+                "cake": 3.0
             },
-            "avgLtItems": 26.7,
+            "avgLtItems": 26.6,
             "avgCakeItems": 11.2,
             "avgConsItems": 28.3
         },
@@ -1391,10 +1391,10 @@
             "appliedStores": 18,
             "configRate": 85.7,
             "audits": {
-                "mfg": 1.7,
+                "mfg": 1.9,
                 "prod": 24.6,
-                "lt": 13.0,
-                "cake": 3.5
+                "lt": 10.7,
+                "cake": 2.7
             },
             "avgLtItems": 25.3,
             "avgCakeItems": 6.5,
@@ -1408,12 +1408,12 @@
             "appliedStores": 18,
             "configRate": 81.8,
             "audits": {
-                "mfg": 9.4,
-                "prod": 23.0,
-                "lt": 14.6,
-                "cake": 4.4
+                "mfg": 9.0,
+                "prod": 21.4,
+                "lt": 12.7,
+                "cake": 3.7
             },
-            "avgLtItems": 34.3,
+            "avgLtItems": 32.7,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -1422,15 +1422,15 @@
             "team": "서울일산팀",
             "manager": "박세현",
             "totalStores": 22,
-            "appliedStores": 19,
-            "configRate": 86.4,
+            "appliedStores": 18,
+            "configRate": 81.8,
             "audits": {
-                "mfg": 2.8,
-                "prod": 22.0,
-                "lt": 11.5,
+                "mfg": 2.1,
+                "prod": 24.3,
+                "lt": 12.5,
                 "cake": 3.0
             },
-            "avgLtItems": 37.1,
+            "avgLtItems": 38.4,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -1442,14 +1442,14 @@
             "appliedStores": 16,
             "configRate": 100.0,
             "audits": {
-                "mfg": 8.7,
-                "prod": 25.8,
-                "lt": 12.1,
-                "cake": 3.5
+                "mfg": 8.3,
+                "prod": 23.5,
+                "lt": 11.4,
+                "cake": 2.6
             },
             "avgLtItems": 36.6,
             "avgCakeItems": 0.0,
-            "avgConsItems": 1.1
+            "avgConsItems": 1.2
         },
         {
             "division": "2사업부",
@@ -1459,10 +1459,10 @@
             "appliedStores": 18,
             "configRate": 85.7,
             "audits": {
-                "mfg": 5.5,
-                "prod": 22.5,
-                "lt": 10.0,
-                "cake": 2.8
+                "mfg": 6.8,
+                "prod": 21.5,
+                "lt": 8.7,
+                "cake": 2.0
             },
             "avgLtItems": 28.5,
             "avgCakeItems": 0.0,
@@ -1476,10 +1476,10 @@
             "appliedStores": 20,
             "configRate": 90.9,
             "audits": {
-                "mfg": 3.9,
-                "prod": 22.9,
-                "lt": 13.7,
-                "cake": 2.2
+                "mfg": 4.4,
+                "prod": 21.6,
+                "lt": 9.6,
+                "cake": 2.9
             },
             "avgLtItems": 36.3,
             "avgCakeItems": 3.0,
@@ -1493,14 +1493,14 @@
             "appliedStores": 17,
             "configRate": 77.3,
             "audits": {
-                "mfg": 11.6,
-                "prod": 22.1,
-                "lt": 10.4,
-                "cake": 3.8
+                "mfg": 11.3,
+                "prod": 20.1,
+                "lt": 9.9,
+                "cake": 4.5
             },
-            "avgLtItems": 32.9,
+            "avgLtItems": 32.8,
             "avgCakeItems": 0.0,
-            "avgConsItems": 4.6
+            "avgConsItems": 5.3
         },
         {
             "division": "2사업부",
@@ -1510,14 +1510,14 @@
             "appliedStores": 23,
             "configRate": 88.5,
             "audits": {
-                "mfg": 12.8,
-                "prod": 18.6,
-                "lt": 7.1,
-                "cake": 3.3
+                "mfg": 8.5,
+                "prod": 17.4,
+                "lt": 8.2,
+                "cake": 3.7
             },
-            "avgLtItems": 23.8,
+            "avgLtItems": 24.4,
             "avgCakeItems": 0.0,
-            "avgConsItems": 22.8
+            "avgConsItems": 4.9
         },
         {
             "division": "2사업부",
@@ -1527,12 +1527,12 @@
             "appliedStores": 22,
             "configRate": 91.7,
             "audits": {
-                "mfg": 4.7,
-                "prod": 17.7,
-                "lt": 6.0,
-                "cake": 2.5
+                "mfg": 3.8,
+                "prod": 16.2,
+                "lt": 5.0,
+                "cake": 2.9
             },
-            "avgLtItems": 26.4,
+            "avgLtItems": 26.3,
             "avgCakeItems": 22.0,
             "avgConsItems": 10.0
         },
@@ -1541,15 +1541,15 @@
             "team": "서울중부팀",
             "manager": "이홍석",
             "totalStores": 25,
-            "appliedStores": 22,
-            "configRate": 88.0,
+            "appliedStores": 21,
+            "configRate": 84.0,
             "audits": {
-                "mfg": 11.0,
-                "prod": 17.5,
-                "lt": 8.6,
-                "cake": 4.3
+                "mfg": 10.8,
+                "prod": 17.7,
+                "lt": 7.9,
+                "cake": 3.2
             },
-            "avgLtItems": 30.0,
+            "avgLtItems": 31.4,
             "avgCakeItems": 25.0,
             "avgConsItems": 11.3
         },
@@ -1561,13 +1561,13 @@
             "appliedStores": 20,
             "configRate": 83.3,
             "audits": {
-                "mfg": 11.0,
-                "prod": 25.2,
-                "lt": 10.3,
-                "cake": 3.9
+                "mfg": 8.3,
+                "prod": 24.7,
+                "lt": 8.6,
+                "cake": 5.3
             },
-            "avgLtItems": 28.5,
-            "avgCakeItems": 30.0,
+            "avgLtItems": 28.4,
+            "avgCakeItems": 28.0,
             "avgConsItems": 1.9
         },
         {
@@ -1578,12 +1578,12 @@
             "appliedStores": 19,
             "configRate": 95.0,
             "audits": {
-                "mfg": 11.9,
-                "prod": 27.4,
-                "lt": 14.3,
-                "cake": 3.6
+                "mfg": 4.9,
+                "prod": 23.9,
+                "lt": 12.7,
+                "cake": 4.5
             },
-            "avgLtItems": 47.4,
+            "avgLtItems": 47.3,
             "avgCakeItems": 3.3,
             "avgConsItems": 1.3
         },
@@ -1595,12 +1595,12 @@
             "appliedStores": 20,
             "configRate": 100.0,
             "audits": {
-                "mfg": 5.0,
-                "prod": 29.9,
-                "lt": 12.3,
-                "cake": 3.7
+                "mfg": 6.5,
+                "prod": 30.5,
+                "lt": 14.8,
+                "cake": 4.8
             },
-            "avgLtItems": 35.1,
+            "avgLtItems": 35.0,
             "avgCakeItems": 12.0,
             "avgConsItems": 1.9
         },
@@ -1612,12 +1612,12 @@
             "appliedStores": 24,
             "configRate": 92.3,
             "audits": {
-                "mfg": 6.6,
-                "prod": 29.5,
-                "lt": 16.7,
-                "cake": 4.2
+                "mfg": 6.2,
+                "prod": 29.1,
+                "lt": 17.3,
+                "cake": 4.8
             },
-            "avgLtItems": 38.9,
+            "avgLtItems": 38.8,
             "avgCakeItems": 22.0,
             "avgConsItems": 1.2
         },
@@ -1629,13 +1629,13 @@
             "appliedStores": 20,
             "configRate": 87.0,
             "audits": {
-                "mfg": 3.2,
-                "prod": 20.6,
-                "lt": 8.8,
-                "cake": 2.3
+                "mfg": 1.1,
+                "prod": 21.5,
+                "lt": 10.5,
+                "cake": 2.8
             },
-            "avgLtItems": 26.2,
-            "avgCakeItems": 28.5,
+            "avgLtItems": 25.6,
+            "avgCakeItems": 26.5,
             "avgConsItems": 1.0
         },
         {
@@ -1646,10 +1646,10 @@
             "appliedStores": 21,
             "configRate": 84.0,
             "audits": {
-                "mfg": 4.8,
-                "prod": 22.7,
-                "lt": 12.0,
-                "cake": 2.6
+                "mfg": 9.7,
+                "prod": 25.0,
+                "lt": 16.6,
+                "cake": 3.8
             },
             "avgLtItems": 28.5,
             "avgCakeItems": 1.0,
@@ -1663,12 +1663,12 @@
             "appliedStores": 21,
             "configRate": 87.5,
             "audits": {
-                "mfg": 3.2,
-                "prod": 20.2,
-                "lt": 7.0,
-                "cake": 2.8
+                "mfg": 3.7,
+                "prod": 23.1,
+                "lt": 7.6,
+                "cake": 2.7
             },
-            "avgLtItems": 25.4,
+            "avgLtItems": 25.3,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -1680,12 +1680,12 @@
             "appliedStores": 22,
             "configRate": 88.0,
             "audits": {
-                "mfg": 4.0,
-                "prod": 21.0,
-                "lt": 12.4,
-                "cake": 4.4
+                "mfg": 4.3,
+                "prod": 18.6,
+                "lt": 8.8,
+                "cake": 3.0
             },
-            "avgLtItems": 32.1,
+            "avgLtItems": 32.0,
             "avgCakeItems": 31.5,
             "avgConsItems": 3.4
         },
@@ -1697,10 +1697,10 @@
             "appliedStores": 13,
             "configRate": 76.5,
             "audits": {
-                "mfg": 1.5,
-                "prod": 29.1,
-                "lt": 13.2,
-                "cake": 3.1
+                "mfg": 4.1,
+                "prod": 29.4,
+                "lt": 13.5,
+                "cake": 3.6
             },
             "avgLtItems": 24.7,
             "avgCakeItems": 0.0,
@@ -1714,14 +1714,14 @@
             "appliedStores": 15,
             "configRate": 88.2,
             "audits": {
-                "mfg": 6.5,
-                "prod": 25.4,
-                "lt": 11.6,
-                "cake": 4.4
+                "mfg": 9.1,
+                "prod": 25.5,
+                "lt": 12.3,
+                "cake": 3.8
             },
-            "avgLtItems": 34.7,
+            "avgLtItems": 34.4,
             "avgCakeItems": 30.5,
-            "avgConsItems": 4.0
+            "avgConsItems": 1.0
         },
         {
             "division": "3사업부",
@@ -1731,12 +1731,12 @@
             "appliedStores": 16,
             "configRate": 66.7,
             "audits": {
-                "mfg": 1.6,
-                "prod": 25.9,
-                "lt": 10.5,
-                "cake": 2.5
+                "mfg": 3.6,
+                "prod": 26.5,
+                "lt": 10.7,
+                "cake": 2.4
             },
-            "avgLtItems": 19.5,
+            "avgLtItems": 19.4,
             "avgCakeItems": 0.0,
             "avgConsItems": 0.0
         },
@@ -1748,14 +1748,14 @@
             "appliedStores": 21,
             "configRate": 87.5,
             "audits": {
-                "mfg": 1.5,
-                "prod": 23.1,
-                "lt": 9.9,
-                "cake": 2.3
+                "mfg": 0.8,
+                "prod": 21.8,
+                "lt": 11.5,
+                "cake": 2.1
             },
             "avgLtItems": 22.6,
             "avgCakeItems": 0.0,
-            "avgConsItems": 2.0
+            "avgConsItems": 3.0
         },
         {
             "division": "3사업부",
@@ -1765,12 +1765,12 @@
             "appliedStores": 20,
             "configRate": 80.0,
             "audits": {
-                "mfg": 8.8,
-                "prod": 20.1,
-                "lt": 5.2,
-                "cake": 3.3
+                "mfg": 8.6,
+                "prod": 20.2,
+                "lt": 7.4,
+                "cake": 3.6
             },
-            "avgLtItems": 18.4,
+            "avgLtItems": 18.3,
             "avgCakeItems": 0.0,
             "avgConsItems": 2.0
         },
@@ -1782,12 +1782,12 @@
             "appliedStores": 12,
             "configRate": 70.6,
             "audits": {
-                "mfg": 7.5,
-                "prod": 20.9,
-                "lt": 7.1,
-                "cake": 2.9
+                "mfg": 4.8,
+                "prod": 19.3,
+                "lt": 6.4,
+                "cake": 3.5
             },
-            "avgLtItems": 36.2,
+            "avgLtItems": 36.0,
             "avgCakeItems": 0.0,
             "avgConsItems": 10.0
         },
@@ -1799,12 +1799,12 @@
             "appliedStores": 21,
             "configRate": 87.5,
             "audits": {
-                "mfg": 3.8,
-                "prod": 28.8,
-                "lt": 10.0,
-                "cake": 2.7
+                "mfg": 3.9,
+                "prod": 24.9,
+                "lt": 10.8,
+                "cake": 2.6
             },
-            "avgLtItems": 22.4,
+            "avgLtItems": 22.3,
             "avgCakeItems": 0.0,
             "avgConsItems": 10.0
         },
@@ -1816,12 +1816,12 @@
             "appliedStores": 11,
             "configRate": 68.8,
             "audits": {
-                "mfg": 2.2,
-                "prod": 24.0,
-                "lt": 11.6,
-                "cake": 2.4
+                "mfg": 4.4,
+                "prod": 22.9,
+                "lt": 12.4,
+                "cake": 2.5
             },
-            "avgLtItems": 31.3,
+            "avgLtItems": 31.1,
             "avgCakeItems": 0.0,
             "avgConsItems": 0.0
         },
@@ -1833,12 +1833,12 @@
             "appliedStores": 16,
             "configRate": 84.2,
             "audits": {
-                "mfg": 3.4,
-                "prod": 29.9,
-                "lt": 12.9,
-                "cake": 3.3
+                "mfg": 2.7,
+                "prod": 29.2,
+                "lt": 12.4,
+                "cake": 2.4
             },
-            "avgLtItems": 30.4,
+            "avgLtItems": 30.2,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -1847,15 +1847,15 @@
             "team": "광주호남팀",
             "manager": "김진욱",
             "totalStores": 29,
-            "appliedStores": 24,
-            "configRate": 82.8,
+            "appliedStores": 23,
+            "configRate": 79.3,
             "audits": {
-                "mfg": 4.0,
-                "prod": 21.4,
-                "lt": 8.4,
-                "cake": 3.4
+                "mfg": 4.3,
+                "prod": 22.1,
+                "lt": 10.0,
+                "cake": 3.9
             },
-            "avgLtItems": 28.9,
+            "avgLtItems": 29.2,
             "avgCakeItems": 10.0,
             "avgConsItems": 7.0
         },
@@ -1867,14 +1867,14 @@
             "appliedStores": 24,
             "configRate": 88.9,
             "audits": {
-                "mfg": 3.8,
-                "prod": 22.4,
-                "lt": 8.1,
+                "mfg": 7.3,
+                "prod": 22.9,
+                "lt": 7.3,
                 "cake": 2.4
             },
-            "avgLtItems": 21.7,
+            "avgLtItems": 20.8,
             "avgCakeItems": 11.0,
-            "avgConsItems": 7.6
+            "avgConsItems": 8.7
         },
         {
             "division": "3사업부",
@@ -1884,10 +1884,10 @@
             "appliedStores": 23,
             "configRate": 82.1,
             "audits": {
-                "mfg": 3.1,
-                "prod": 25.1,
-                "lt": 8.3,
-                "cake": 2.1
+                "mfg": 2.8,
+                "prod": 25.6,
+                "lt": 8.7,
+                "cake": 3.0
             },
             "avgLtItems": 22.8,
             "avgCakeItems": 0.0,
@@ -1901,12 +1901,12 @@
             "appliedStores": 23,
             "configRate": 82.1,
             "audits": {
-                "mfg": 3.2,
-                "prod": 21.7,
-                "lt": 6.9,
-                "cake": 2.0
+                "mfg": 2.4,
+                "prod": 22.8,
+                "lt": 6.6,
+                "cake": 2.4
             },
-            "avgLtItems": 23.3,
+            "avgLtItems": 23.2,
             "avgCakeItems": 9.7,
             "avgConsItems": 2.0
         },
@@ -1918,12 +1918,12 @@
             "appliedStores": 26,
             "configRate": 89.7,
             "audits": {
-                "mfg": 6.1,
-                "prod": 21.8,
-                "lt": 7.0,
-                "cake": 2.3
+                "mfg": 5.9,
+                "prod": 19.8,
+                "lt": 8.7,
+                "cake": 1.9
             },
-            "avgLtItems": 25.3,
+            "avgLtItems": 25.0,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -1932,13 +1932,13 @@
             "team": "대전전북팀",
             "manager": "박수균",
             "totalStores": 25,
-            "appliedStores": 21,
-            "configRate": 84.0,
+            "appliedStores": 20,
+            "configRate": 80.0,
             "audits": {
-                "mfg": 1.8,
-                "prod": 21.6,
-                "lt": 10.0,
-                "cake": 2.0
+                "mfg": 3.4,
+                "prod": 20.4,
+                "lt": 8.9,
+                "cake": 1.6
             },
             "avgLtItems": 29.9,
             "avgCakeItems": 10.5,
@@ -1952,10 +1952,10 @@
             "appliedStores": 18,
             "configRate": 78.3,
             "audits": {
-                "mfg": 4.4,
-                "prod": 23.0,
-                "lt": 10.5,
-                "cake": 3.1
+                "mfg": 6.3,
+                "prod": 22.7,
+                "lt": 9.8,
+                "cake": 3.9
             },
             "avgLtItems": 30.6,
             "avgCakeItems": 1.5,
@@ -1969,12 +1969,12 @@
             "appliedStores": 23,
             "configRate": 85.2,
             "audits": {
-                "mfg": 12.3,
-                "prod": 23.3,
-                "lt": 11.5,
-                "cake": 3.3
+                "mfg": 8.7,
+                "prod": 23.6,
+                "lt": 8.7,
+                "cake": 3.6
             },
-            "avgLtItems": 28.1,
+            "avgLtItems": 28.0,
             "avgCakeItems": 4.0,
             "avgConsItems": 1.0
         },
@@ -1986,10 +1986,10 @@
             "appliedStores": 20,
             "configRate": 80.0,
             "audits": {
-                "mfg": 2.8,
-                "prod": 22.3,
-                "lt": 7.9,
-                "cake": 1.7
+                "mfg": 0.7,
+                "prod": 23.0,
+                "lt": 9.4,
+                "cake": 2.0
             },
             "avgLtItems": 39.1,
             "avgCakeItems": 6.0,
@@ -2003,12 +2003,12 @@
             "appliedStores": 15,
             "configRate": 93.8,
             "audits": {
-                "mfg": 6.1,
-                "prod": 34.0,
-                "lt": 16.0,
-                "cake": 4.7
+                "mfg": 5.6,
+                "prod": 32.3,
+                "lt": 15.6,
+                "cake": 4.1
             },
-            "avgLtItems": 36.2,
+            "avgLtItems": 36.1,
             "avgCakeItems": 13.0,
             "avgConsItems": 1.5
         },
@@ -2020,10 +2020,10 @@
             "appliedStores": 17,
             "configRate": 73.9,
             "audits": {
-                "mfg": 1.3,
-                "prod": 15.4,
-                "lt": 7.3,
-                "cake": 0.9
+                "mfg": 0.9,
+                "prod": 15.3,
+                "lt": 6.5,
+                "cake": 1.4
             },
             "avgLtItems": 23.4,
             "avgCakeItems": 0.0,
@@ -2037,10 +2037,10 @@
             "appliedStores": 24,
             "configRate": 75.0,
             "audits": {
-                "mfg": 6.8,
-                "prod": 24.5,
-                "lt": 12.1,
-                "cake": 4.5
+                "mfg": 5.9,
+                "prod": 23.0,
+                "lt": 13.3,
+                "cake": 2.5
             },
             "avgLtItems": 21.2,
             "avgCakeItems": 0.0,
@@ -2054,12 +2054,12 @@
             "appliedStores": 22,
             "configRate": 75.9,
             "audits": {
-                "mfg": 2.6,
-                "prod": 20.6,
-                "lt": 7.1,
-                "cake": 2.5
+                "mfg": 2.0,
+                "prod": 19.9,
+                "lt": 9.6,
+                "cake": 2.3
             },
-            "avgLtItems": 19.2,
+            "avgLtItems": 19.0,
             "avgCakeItems": 20.0,
             "avgConsItems": 0.0
         },
@@ -2068,15 +2068,15 @@
             "team": "천안충남팀",
             "manager": "이하희",
             "totalStores": 16,
-            "appliedStores": 16,
-            "configRate": 100.0,
+            "appliedStores": 15,
+            "configRate": 93.8,
             "audits": {
-                "mfg": 5.9,
-                "prod": 27.8,
-                "lt": 21.4,
-                "cake": 5.9
+                "mfg": 6.7,
+                "prod": 31.9,
+                "lt": 21.7,
+                "cake": 5.8
             },
-            "avgLtItems": 27.3,
+            "avgLtItems": 26.8,
             "avgCakeItems": 12.3,
             "avgConsItems": 0.0
         },
@@ -2088,12 +2088,12 @@
             "appliedStores": 22,
             "configRate": 71.0,
             "audits": {
-                "mfg": 3.7,
-                "prod": 18.8,
+                "mfg": 2.9,
+                "prod": 19.5,
                 "lt": 7.9,
-                "cake": 2.6
+                "cake": 2.3
             },
-            "avgLtItems": 18.2,
+            "avgLtItems": 18.0,
             "avgCakeItems": 19.0,
             "avgConsItems": 0.0
         },
@@ -2105,9 +2105,9 @@
             "appliedStores": 27,
             "configRate": 90.0,
             "audits": {
-                "mfg": 2.7,
-                "prod": 24.5,
-                "lt": 12.1,
+                "mfg": 5.4,
+                "prod": 25.2,
+                "lt": 12.3,
                 "cake": 3.4
             },
             "avgLtItems": 20.8,
@@ -2122,10 +2122,10 @@
             "appliedStores": 15,
             "configRate": 60.0,
             "audits": {
-                "mfg": 2.4,
-                "prod": 17.3,
-                "lt": 7.4,
-                "cake": 1.8
+                "mfg": 3.4,
+                "prod": 16.8,
+                "lt": 7.0,
+                "cake": 1.9
             },
             "avgLtItems": 16.6,
             "avgCakeItems": 0.0,
@@ -2139,10 +2139,10 @@
             "appliedStores": 19,
             "configRate": 82.6,
             "audits": {
-                "mfg": 4.9,
-                "prod": 22.8,
-                "lt": 10.5,
-                "cake": 3.3
+                "mfg": 4.2,
+                "prod": 22.1,
+                "lt": 9.7,
+                "cake": 3.0
             },
             "avgLtItems": 33.2,
             "avgCakeItems": 8.5,
@@ -2156,10 +2156,10 @@
             "appliedStores": 21,
             "configRate": 87.5,
             "audits": {
-                "mfg": 7.2,
-                "prod": 20.6,
-                "lt": 6.4,
-                "cake": 2.9
+                "mfg": 6.6,
+                "prod": 20.9,
+                "lt": 6.9,
+                "cake": 1.8
             },
             "avgLtItems": 30.6,
             "avgCakeItems": 30.0,
@@ -2173,12 +2173,12 @@
             "appliedStores": 25,
             "configRate": 100.0,
             "audits": {
-                "mfg": 0.1,
-                "prod": 20.5,
-                "lt": 7.6,
-                "cake": 2.3
+                "mfg": 0.0,
+                "prod": 21.1,
+                "lt": 7.8,
+                "cake": 2.5
             },
-            "avgLtItems": 29.7,
+            "avgLtItems": 29.6,
             "avgCakeItems": 1.0,
             "avgConsItems": 3.7
         },
@@ -2190,10 +2190,10 @@
             "appliedStores": 19,
             "configRate": 76.0,
             "audits": {
-                "mfg": 5.1,
-                "prod": 24.0,
-                "lt": 16.4,
-                "cake": 3.8
+                "mfg": 5.4,
+                "prod": 22.7,
+                "lt": 13.6,
+                "cake": 4.3
             },
             "avgLtItems": 18.1,
             "avgCakeItems": 0.0,
@@ -2207,10 +2207,10 @@
             "appliedStores": 15,
             "configRate": 93.8,
             "audits": {
-                "mfg": 3.6,
-                "prod": 29.6,
-                "lt": 9.8,
-                "cake": 2.7
+                "mfg": 2.4,
+                "prod": 27.3,
+                "lt": 8.8,
+                "cake": 3.1
             },
             "avgLtItems": 31.5,
             "avgCakeItems": 5.0,
@@ -2224,10 +2224,10 @@
             "appliedStores": 23,
             "configRate": 92.0,
             "audits": {
-                "mfg": 7.0,
-                "prod": 24.8,
-                "lt": 6.9,
-                "cake": 2.9
+                "mfg": 5.1,
+                "prod": 24.2,
+                "lt": 9.2,
+                "cake": 2.8
             },
             "avgLtItems": 24.3,
             "avgCakeItems": 1.0,
@@ -2241,12 +2241,12 @@
             "appliedStores": 22,
             "configRate": 88.0,
             "audits": {
-                "mfg": 1.8,
-                "prod": 23.0,
-                "lt": 8.4,
-                "cake": 1.9
+                "mfg": 3.1,
+                "prod": 22.8,
+                "lt": 8.8,
+                "cake": 2.4
             },
-            "avgLtItems": 32.4,
+            "avgLtItems": 32.3,
             "avgCakeItems": 3.0,
             "avgConsItems": 1.0
         },
@@ -2258,10 +2258,10 @@
             "appliedStores": 24,
             "configRate": 92.3,
             "audits": {
-                "mfg": 4.9,
-                "prod": 25.0,
-                "lt": 12.2,
-                "cake": 4.2
+                "mfg": 3.6,
+                "prod": 26.3,
+                "lt": 11.0,
+                "cake": 4.6
             },
             "avgLtItems": 23.0,
             "avgCakeItems": 10.0,
@@ -2275,12 +2275,12 @@
             "appliedStores": 16,
             "configRate": 100.0,
             "audits": {
-                "mfg": 2.6,
-                "prod": 35.5,
-                "lt": 12.2,
-                "cake": 2.8
+                "mfg": 2.5,
+                "prod": 33.8,
+                "lt": 10.8,
+                "cake": 2.6
             },
-            "avgLtItems": 23.9,
+            "avgLtItems": 23.7,
             "avgCakeItems": 0.0,
             "avgConsItems": 2.0
         },
@@ -2292,12 +2292,12 @@
             "appliedStores": 21,
             "configRate": 80.8,
             "audits": {
-                "mfg": 4.7,
-                "prod": 22.7,
-                "lt": 9.5,
-                "cake": 3.0
+                "mfg": 4.8,
+                "prod": 22.9,
+                "lt": 9.0,
+                "cake": 3.4
             },
-            "avgLtItems": 37.1,
+            "avgLtItems": 36.8,
             "avgCakeItems": 30.5,
             "avgConsItems": 3.1
         },
@@ -2309,12 +2309,12 @@
             "appliedStores": 19,
             "configRate": 73.1,
             "audits": {
-                "mfg": 3.8,
+                "mfg": 3.5,
                 "prod": 28.2,
-                "lt": 9.3,
-                "cake": 3.2
+                "lt": 8.2,
+                "cake": 2.7
             },
-            "avgLtItems": 42.4,
+            "avgLtItems": 42.3,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.6
         },
@@ -2326,12 +2326,12 @@
             "appliedStores": 22,
             "configRate": 88.0,
             "audits": {
-                "mfg": 6.8,
-                "prod": 19.2,
-                "lt": 8.1,
+                "mfg": 6.0,
+                "prod": 17.8,
+                "lt": 7.7,
                 "cake": 1.6
             },
-            "avgLtItems": 31.4,
+            "avgLtItems": 28.6,
             "avgCakeItems": 19.0,
             "avgConsItems": 1.0
         },
@@ -2340,15 +2340,15 @@
             "team": "대구포항팀",
             "manager": "백상우",
             "totalStores": 25,
-            "appliedStores": 22,
-            "configRate": 88.0,
+            "appliedStores": 21,
+            "configRate": 84.0,
             "audits": {
-                "mfg": 11.2,
-                "prod": 19.2,
-                "lt": 6.7,
-                "cake": 3.6
+                "mfg": 11.6,
+                "prod": 20.2,
+                "lt": 8.0,
+                "cake": 4.0
             },
-            "avgLtItems": 42.1,
+            "avgLtItems": 42.0,
             "avgCakeItems": 10.0,
             "avgConsItems": 2.3
         },
@@ -2360,10 +2360,10 @@
             "appliedStores": 16,
             "configRate": 100.0,
             "audits": {
-                "mfg": 3.2,
-                "prod": 30.0,
-                "lt": 11.8,
-                "cake": 4.6
+                "mfg": 3.6,
+                "prod": 28.4,
+                "lt": 10.8,
+                "cake": 4.1
             },
             "avgLtItems": 41.2,
             "avgCakeItems": 18.0,
@@ -2377,12 +2377,12 @@
             "appliedStores": 19,
             "configRate": 79.2,
             "audits": {
-                "mfg": 4.1,
-                "prod": 25.1,
-                "lt": 12.5,
-                "cake": 2.5
+                "mfg": 1.1,
+                "prod": 23.9,
+                "lt": 11.0,
+                "cake": 2.8
             },
-            "avgLtItems": 33.1,
+            "avgLtItems": 32.9,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -2394,12 +2394,12 @@
             "appliedStores": 22,
             "configRate": 84.6,
             "audits": {
-                "mfg": 9.3,
-                "prod": 25.5,
-                "lt": 10.8,
-                "cake": 3.0
+                "mfg": 9.0,
+                "prod": 22.7,
+                "lt": 11.2,
+                "cake": 2.7
             },
-            "avgLtItems": 31.2,
+            "avgLtItems": 31.0,
             "avgCakeItems": 0.0,
             "avgConsItems": 3.1
         },
@@ -2411,12 +2411,12 @@
             "appliedStores": 20,
             "configRate": 83.3,
             "audits": {
-                "mfg": 1.2,
-                "prod": 22.3,
-                "lt": 7.7,
-                "cake": 1.1
+                "mfg": 2.1,
+                "prod": 20.9,
+                "lt": 8.8,
+                "cake": 1.0
             },
-            "avgLtItems": 33.9,
+            "avgLtItems": 33.7,
             "avgCakeItems": 0.0,
             "avgConsItems": 1.0
         },
@@ -2425,15 +2425,15 @@
             "team": "부산김해팀",
             "manager": "김준혁",
             "totalStores": 16,
-            "appliedStores": 15,
-            "configRate": 93.8,
+            "appliedStores": 14,
+            "configRate": 87.5,
             "audits": {
-                "mfg": 10.6,
-                "prod": 30.9,
-                "lt": 11.2,
-                "cake": 4.1
+                "mfg": 8.3,
+                "prod": 29.8,
+                "lt": 11.8,
+                "cake": 3.6
             },
-            "avgLtItems": 26.3,
+            "avgLtItems": 25.7,
             "avgCakeItems": 4.0,
             "avgConsItems": 0.0
         },
@@ -2442,15 +2442,15 @@
             "team": "부산김해팀",
             "manager": "박은빈",
             "totalStores": 25,
-            "appliedStores": 24,
-            "configRate": 96.0,
+            "appliedStores": 23,
+            "configRate": 92.0,
             "audits": {
-                "mfg": 1.3,
+                "mfg": 0.6,
                 "prod": 20.5,
-                "lt": 7.4,
-                "cake": 1.6
+                "lt": 7.5,
+                "cake": 1.4
             },
-            "avgLtItems": 27.1,
+            "avgLtItems": 26.1,
             "avgCakeItems": 6.0,
             "avgConsItems": 1.0
         },
@@ -2462,10 +2462,10 @@
             "appliedStores": 23,
             "configRate": 85.2,
             "audits": {
-                "mfg": 4.6,
-                "prod": 18.9,
-                "lt": 8.9,
-                "cake": 2.6
+                "mfg": 6.1,
+                "prod": 19.3,
+                "lt": 7.3,
+                "cake": 2.7
             },
             "avgLtItems": 28.3,
             "avgCakeItems": 0.0,
@@ -2479,12 +2479,12 @@
             "appliedStores": 19,
             "configRate": 76.0,
             "audits": {
-                "mfg": 2.0,
-                "prod": 22.2,
-                "lt": 8.0,
-                "cake": 1.8
+                "mfg": 0.6,
+                "prod": 23.2,
+                "lt": 10.2,
+                "cake": 2.5
             },
-            "avgLtItems": 30.7,
+            "avgLtItems": 30.5,
             "avgCakeItems": 1.0,
             "avgConsItems": 1.0
         },
@@ -2496,10 +2496,10 @@
             "appliedStores": 23,
             "configRate": 88.5,
             "audits": {
-                "mfg": 3.3,
-                "prod": 22.9,
-                "lt": 9.8,
-                "cake": 2.8
+                "mfg": 2.1,
+                "prod": 20.0,
+                "lt": 10.2,
+                "cake": 2.9
             },
             "avgLtItems": 35.8,
             "avgCakeItems": 0.0,
@@ -2513,10 +2513,10 @@
             "appliedStores": 20,
             "configRate": 80.0,
             "audits": {
-                "mfg": 4.6,
-                "prod": 19.6,
-                "lt": 9.3,
-                "cake": 2.8
+                "mfg": 5.8,
+                "prod": 18.8,
+                "lt": 8.0,
+                "cake": 3.4
             },
             "avgLtItems": 30.6,
             "avgCakeItems": 0.0,
@@ -2530,10 +2530,10 @@
             "appliedStores": 16,
             "configRate": 100.0,
             "audits": {
-                "mfg": 3.2,
-                "prod": 24.2,
-                "lt": 13.8,
-                "cake": 5.6
+                "mfg": 3.0,
+                "prod": 23.1,
+                "lt": 13.4,
+                "cake": 4.4
             },
             "avgLtItems": 18.3,
             "avgCakeItems": 4.0,
@@ -2547,12 +2547,12 @@
             "appliedStores": 22,
             "configRate": 88.0,
             "audits": {
-                "mfg": 8.8,
-                "prod": 23.2,
-                "lt": 8.4,
-                "cake": 4.3
+                "mfg": 7.2,
+                "prod": 22.3,
+                "lt": 10.0,
+                "cake": 3.9
             },
-            "avgLtItems": 19.0,
+            "avgLtItems": 18.9,
             "avgCakeItems": 0.0,
             "avgConsItems": 0.0
         },
@@ -2564,10 +2564,10 @@
             "appliedStores": 20,
             "configRate": 80.0,
             "audits": {
-                "mfg": 7.6,
-                "prod": 23.9,
-                "lt": 11.3,
-                "cake": 2.5
+                "mfg": 6.0,
+                "prod": 26.3,
+                "lt": 13.4,
+                "cake": 3.2
             },
             "avgLtItems": 20.1,
             "avgCakeItems": 0.0,
@@ -2581,10 +2581,10 @@
             "appliedStores": 20,
             "configRate": 76.9,
             "audits": {
-                "mfg": 6.2,
-                "prod": 22.8,
-                "lt": 9.5,
-                "cake": 3.3
+                "mfg": 6.3,
+                "prod": 23.8,
+                "lt": 10.4,
+                "cake": 3.5
             },
             "avgLtItems": 17.6,
             "avgCakeItems": 0.0,
@@ -2598,10 +2598,10 @@
             "appliedStores": 20,
             "configRate": 80.0,
             "audits": {
-                "mfg": 4.6,
-                "prod": 26.6,
-                "lt": 10.2,
-                "cake": 2.8
+                "mfg": 7.6,
+                "prod": 24.1,
+                "lt": 8.4,
+                "cake": 2.1
             },
             "avgLtItems": 20.9,
             "avgCakeItems": 11.0,
@@ -2615,10 +2615,10 @@
             "appliedStores": 21,
             "configRate": 84.0,
             "audits": {
-                "mfg": 0.3,
-                "prod": 23.4,
-                "lt": 10.2,
-                "cake": 2.8
+                "mfg": 1.4,
+                "prod": 21.4,
+                "lt": 12.8,
+                "cake": 2.7
             },
             "avgLtItems": 20.4,
             "avgCakeItems": 1.0,
@@ -2632,10 +2632,10 @@
             "appliedStores": 21,
             "configRate": 87.5,
             "audits": {
-                "mfg": 2.5,
-                "prod": 23.1,
-                "lt": 10.5,
-                "cake": 2.8
+                "mfg": 3.7,
+                "prod": 22.9,
+                "lt": 9.2,
+                "cake": 3.3
             },
             "avgLtItems": 34.4,
             "avgCakeItems": 2.0,
@@ -2649,12 +2649,12 @@
             "appliedStores": 18,
             "configRate": 72.0,
             "audits": {
-                "mfg": 3.0,
-                "prod": 22.3,
-                "lt": 8.5,
-                "cake": 2.6
+                "mfg": 7.4,
+                "prod": 24.6,
+                "lt": 14.2,
+                "cake": 4.5
             },
-            "avgLtItems": 33.1,
+            "avgLtItems": 33.0,
             "avgCakeItems": 8.2,
             "avgConsItems": 3.6
         },
@@ -2666,12 +2666,12 @@
             "appliedStores": 16,
             "configRate": 100.0,
             "audits": {
-                "mfg": 3.9,
-                "prod": 27.3,
-                "lt": 10.5,
-                "cake": 4.2
+                "mfg": 5.1,
+                "prod": 25.2,
+                "lt": 10.4,
+                "cake": 4.1
             },
-            "avgLtItems": 39.7,
+            "avgLtItems": 39.8,
             "avgCakeItems": 4.0,
             "avgConsItems": 1.0
         },
@@ -2683,10 +2683,10 @@
             "appliedStores": 18,
             "configRate": 81.8,
             "audits": {
-                "mfg": 3.3,
-                "prod": 22.1,
-                "lt": 16.4,
-                "cake": 2.1
+                "mfg": 4.6,
+                "prod": 19.9,
+                "lt": 9.0,
+                "cake": 2.4
             },
             "avgLtItems": 29.7,
             "avgCakeItems": 16.0,
@@ -2700,10 +2700,10 @@
             "appliedStores": 23,
             "configRate": 92.0,
             "audits": {
-                "mfg": 5.1,
-                "prod": 23.3,
-                "lt": 9.7,
-                "cake": 2.2
+                "mfg": 4.3,
+                "prod": 24.1,
+                "lt": 8.7,
+                "cake": 2.7
             },
             "avgLtItems": 38.0,
             "avgCakeItems": 11.5,
@@ -2717,10 +2717,10 @@
             "appliedStores": 22,
             "configRate": 100.0,
             "audits": {
-                "mfg": 1.6,
-                "prod": 27.7,
-                "lt": 10.3,
-                "cake": 3.1
+                "mfg": 1.5,
+                "prod": 23.8,
+                "lt": 9.8,
+                "cake": 2.6
             },
             "avgLtItems": 8.3,
             "avgCakeItems": 4.0,
@@ -2734,10 +2734,10 @@
             "appliedStores": 19,
             "configRate": 79.2,
             "audits": {
-                "mfg": 8.9,
-                "prod": 21.0,
-                "lt": 8.2,
-                "cake": 2.8
+                "mfg": 9.0,
+                "prod": 23.2,
+                "lt": 10.9,
+                "cake": 3.8
             },
             "avgLtItems": 24.1,
             "avgCakeItems": 0.0,
@@ -2748,13 +2748,13 @@
         {
             "region": "경기도",
             "totalStores": 894,
-            "appliedStores": 781,
-            "configRate": 87.4
+            "appliedStores": 780,
+            "configRate": 87.2
         },
         {
             "region": "서울특별시",
-            "totalStores": 607,
-            "appliedStores": 526,
+            "totalStores": 608,
+            "appliedStores": 527,
             "configRate": 86.7
         },
         {
@@ -2766,14 +2766,14 @@
         {
             "region": "부산광역시",
             "totalStores": 184,
-            "appliedStores": 160,
-            "configRate": 87.0
+            "appliedStores": 159,
+            "configRate": 86.4
         },
         {
             "region": "경상남도",
             "totalStores": 183,
-            "appliedStores": 160,
-            "configRate": 87.4
+            "appliedStores": 159,
+            "configRate": 86.9
         },
         {
             "region": "대구광역시",
@@ -2784,20 +2784,20 @@
         {
             "region": "충청남도",
             "totalStores": 141,
-            "appliedStores": 114,
-            "configRate": 80.9
+            "appliedStores": 113,
+            "configRate": 80.1
         },
         {
             "region": "경상북도",
             "totalStores": 140,
-            "appliedStores": 121,
-            "configRate": 86.4
+            "appliedStores": 120,
+            "configRate": 85.7
         },
         {
             "region": "전라남도",
             "totalStores": 112,
-            "appliedStores": 91,
-            "configRate": 81.2
+            "appliedStores": 90,
+            "configRate": 80.4
         },
         {
             "region": "전라북도",
@@ -2826,8 +2826,8 @@
         {
             "region": "대전시",
             "totalStores": 92,
-            "appliedStores": 77,
-            "configRate": 83.7
+            "appliedStores": 76,
+            "configRate": 82.6
         },
         {
             "region": "울산광역시",
