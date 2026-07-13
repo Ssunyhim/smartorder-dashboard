@@ -1,46 +1,46 @@
 {
     "summary": {
-        "total_stores": 3280,
-        "configured_stores": 2767,
-        "config_rate": 84.4,
-        "long_term_avg_items": 29.7
+        "total_stores": 3281,
+        "configured_stores": 2764,
+        "config_rate": 84.2,
+        "long_term_avg_items": 29.6
     },
     "department_summary": {
         "PB가맹 평균": {
-            "rate": 84.4
+            "rate": 84.2
         },
         "1사업부": {
-            "rate": 86.3
+            "rate": 86.2
         },
         "2사업부": {
-            "rate": 85.7
+            "rate": 85.6
         },
         "3사업부": {
-            "rate": 80.3
+            "rate": 80.2
         },
         "4사업부": {
-            "rate": 84.3
+            "rate": 84.2
         }
     },
     "long_term_by_department": {
         "PB가맹 평균": {
-            "configured_stores": 2682,
-            "avg_items": 29.7
+            "configured_stores": 2672,
+            "avg_items": 29.6
         },
         "1사업부": {
-            "configured_stores": 779,
-            "avg_items": 31.8
-        },
-        "2사업부": {
-            "configured_stores": 739,
+            "configured_stores": 775,
             "avg_items": 31.7
         },
+        "2사업부": {
+            "configured_stores": 736,
+            "avg_items": 31.5
+        },
         "3사업부": {
-            "configured_stores": 577,
-            "avg_items": 25.6
+            "configured_stores": 575,
+            "avg_items": 25.7
         },
         "4사업부": {
-            "configured_stores": 587,
+            "configured_stores": 586,
             "avg_items": 28.4
         }
     },
@@ -48,8 +48,8 @@
         {
             "region": "경기도",
             "total_stores": 896,
-            "configured_stores": 775,
-            "config_rate": 86.5
+            "configured_stores": 773,
+            "config_rate": 86.3
         },
         {
             "region": "서울특별시",
@@ -72,8 +72,8 @@
         {
             "region": "부산광역시",
             "total_stores": 183,
-            "configured_stores": 158,
-            "config_rate": 86.3
+            "configured_stores": 157,
+            "config_rate": 85.8
         },
         {
             "region": "대구광역시",
@@ -95,9 +95,9 @@
         },
         {
             "region": "전라남도",
-            "total_stores": 112,
+            "total_stores": 113,
             "configured_stores": 88,
-            "config_rate": 78.6
+            "config_rate": 77.9
         },
         {
             "region": "충청북도",
@@ -120,14 +120,14 @@
         {
             "region": "광주광역시",
             "total_stores": 96,
-            "configured_stores": 79,
-            "config_rate": 82.3
+            "configured_stores": 78,
+            "config_rate": 81.2
         },
         {
             "region": "대전시",
             "total_stores": 93,
-            "configured_stores": 74,
-            "config_rate": 79.6
+            "configured_stores": 75,
+            "config_rate": 80.6
         },
         {
             "region": "울산광역시",
@@ -151,19 +151,19 @@
     "team_details": [
         {
             "department": "1사업부",
-            "team": "경기안양팀",
-            "total_stores": 126,
-            "configured_stores": 113,
-            "config_rate": 89.7,
-            "long_term_avg_items": 32.4
-        },
-        {
-            "department": "1사업부",
             "team": "수원안산팀",
             "total_stores": 135,
             "configured_stores": 121,
             "config_rate": 89.6,
             "long_term_avg_items": 33.1
+        },
+        {
+            "department": "1사업부",
+            "team": "경기안양팀",
+            "total_stores": 126,
+            "configured_stores": 112,
+            "config_rate": 88.9,
+            "long_term_avg_items": 32.4
         },
         {
             "department": "1사업부",
@@ -179,7 +179,7 @@
             "total_stores": 128,
             "configured_stores": 109,
             "config_rate": 85.2,
-            "long_term_avg_items": 31.2
+            "long_term_avg_items": 30.4
         },
         {
             "department": "1사업부",
@@ -195,7 +195,7 @@
             "total_stores": 153,
             "configured_stores": 130,
             "config_rate": 85.0,
-            "long_term_avg_items": 33.7
+            "long_term_avg_items": 33.9
         },
         {
             "department": "1사업부",
@@ -207,14 +207,6 @@
         },
         {
             "department": "2사업부",
-            "team": "인천김포팀",
-            "total_stores": 143,
-            "configured_stores": 127,
-            "config_rate": 88.8,
-            "long_term_avg_items": 31.1
-        },
-        {
-            "department": "2사업부",
             "team": "서울북부팀",
             "total_stores": 157,
             "configured_stores": 139,
@@ -223,11 +215,19 @@
         },
         {
             "department": "2사업부",
+            "team": "인천김포팀",
+            "total_stores": 143,
+            "configured_stores": 126,
+            "config_rate": 88.1,
+            "long_term_avg_items": 31.0
+        },
+        {
+            "department": "2사업부",
             "team": "서울일산팀",
             "total_stores": 147,
             "configured_stores": 127,
             "config_rate": 86.4,
-            "long_term_avg_items": 32.1
+            "long_term_avg_items": 31.5
         },
         {
             "department": "2사업부",
@@ -235,7 +235,7 @@
             "total_stores": 141,
             "configured_stores": 119,
             "config_rate": 84.4,
-            "long_term_avg_items": 30.8
+            "long_term_avg_items": 30.9
         },
         {
             "department": "2사업부",
@@ -243,7 +243,7 @@
             "total_stores": 164,
             "configured_stores": 137,
             "config_rate": 83.5,
-            "long_term_avg_items": 31.0
+            "long_term_avg_items": 30.8
         },
         {
             "department": "2사업부",
@@ -251,15 +251,15 @@
             "total_stores": 136,
             "configured_stores": 112,
             "config_rate": 82.4,
-            "long_term_avg_items": 32.9
+            "long_term_avg_items": 32.6
         },
         {
             "department": "3사업부",
             "team": "광주호남팀",
-            "total_stores": 158,
+            "total_stores": 159,
             "configured_stores": 133,
-            "config_rate": 84.2,
-            "long_term_avg_items": 23.0
+            "config_rate": 83.6,
+            "long_term_avg_items": 22.7
         },
         {
             "department": "3사업부",
@@ -267,7 +267,15 @@
             "total_stores": 138,
             "configured_stores": 114,
             "config_rate": 82.6,
-            "long_term_avg_items": 27.3
+            "long_term_avg_items": 27.2
+        },
+        {
+            "department": "3사업부",
+            "team": "대전전북팀",
+            "total_stores": 139,
+            "configured_stores": 110,
+            "config_rate": 79.1,
+            "long_term_avg_items": 32.8
         },
         {
             "department": "3사업부",
@@ -275,30 +283,22 @@
             "total_stores": 138,
             "configured_stores": 109,
             "config_rate": 79.0,
-            "long_term_avg_items": 21.8
-        },
-        {
-            "department": "3사업부",
-            "team": "대전전북팀",
-            "total_stores": 139,
-            "configured_stores": 109,
-            "config_rate": 78.4,
-            "long_term_avg_items": 31.8
+            "long_term_avg_items": 21.9
         },
         {
             "department": "3사업부",
             "team": "광주제주팀",
             "total_stores": 164,
-            "configured_stores": 127,
-            "config_rate": 77.4,
-            "long_term_avg_items": 24.9
+            "configured_stores": 126,
+            "config_rate": 76.8,
+            "long_term_avg_items": 24.5
         },
         {
             "department": "4사업부",
             "team": "부산창원팀",
             "total_stores": 157,
-            "configured_stores": 136,
-            "config_rate": 86.6,
+            "configured_stores": 135,
+            "config_rate": 86.0,
             "long_term_avg_items": 29.6
         },
         {
@@ -315,7 +315,7 @@
             "total_stores": 144,
             "configured_stores": 122,
             "config_rate": 84.7,
-            "long_term_avg_items": 29.3
+            "long_term_avg_items": 29.2
         },
         {
             "department": "4사업부",
@@ -368,7 +368,7 @@
             "configured_stores": 19,
             "config_rate": 86.4,
             "avg_items": {
-                "장기": 31.3,
+                "장기": 31.2,
                 "재료": 1.0
             }
         },
@@ -380,7 +380,7 @@
             "configured_stores": 21,
             "config_rate": 95.5,
             "avg_items": {
-                "장기": 31.3,
+                "장기": 31.2,
                 "케익": 10.5,
                 "재료": 1.2
             }
@@ -403,10 +403,10 @@
             "team": "경기안양팀",
             "sv": "홍순철",
             "managed_stores": 22,
-            "configured_stores": 18,
-            "config_rate": 81.8,
+            "configured_stores": 17,
+            "config_rate": 77.3,
             "avg_items": {
-                "장기": 32.8,
+                "장기": 32.9,
                 "케익": 16.7,
                 "재료": 2.0
             }
@@ -458,7 +458,7 @@
             "configured_stores": 16,
             "config_rate": 100.0,
             "avg_items": {
-                "장기": 41.8,
+                "장기": 41.7,
                 "재료": 27.6
             }
         },
@@ -535,7 +535,7 @@
             "configured_stores": 21,
             "config_rate": 95.5,
             "avg_items": {
-                "장기": 27.3,
+                "장기": 27.2,
                 "케익": 24.5,
                 "재료": 1.0
             }
@@ -548,7 +548,7 @@
             "configured_stores": 16,
             "config_rate": 100.0,
             "avg_items": {
-                "장기": 73.3,
+                "장기": 68.1,
                 "케익": 20.0,
                 "재료": 10.7
             }
@@ -609,7 +609,7 @@
             "configured_stores": 21,
             "config_rate": 95.5,
             "avg_items": {
-                "장기": 33.9,
+                "장기": 33.8,
                 "케익": 18.0,
                 "재료": 21.4
             }
@@ -647,7 +647,7 @@
             "configured_stores": 20,
             "config_rate": 87.0,
             "avg_items": {
-                "장기": 27.5,
+                "장기": 27.4,
                 "케익": 15.5,
                 "재료": 1.0
             }
@@ -673,7 +673,7 @@
             "config_rate": 78.3,
             "avg_items": {
                 "장기": 21.8,
-                "재료": 1.1
+                "재료": 1.0
             }
         },
         {
@@ -684,7 +684,7 @@
             "configured_stores": 19,
             "config_rate": 86.4,
             "avg_items": {
-                "장기": 34.7,
+                "장기": 34.6,
                 "재료": 1.8
             }
         },
@@ -723,7 +723,7 @@
             "avg_items": {
                 "장기": 33.8,
                 "케익": 12.0,
-                "재료": 4.6
+                "재료": 4.7
             }
         },
         {
@@ -772,7 +772,7 @@
             "configured_stores": 21,
             "config_rate": 95.5,
             "avg_items": {
-                "장기": 29.5,
+                "장기": 29.3,
                 "재료": 1.1
             }
         },
@@ -784,7 +784,7 @@
             "configured_stores": 20,
             "config_rate": 87.0,
             "avg_items": {
-                "장기": 33.8,
+                "장기": 34.0,
                 "케익": 13.5,
                 "재료": 1.6
             }
@@ -809,8 +809,8 @@
             "configured_stores": 17,
             "config_rate": 73.9,
             "avg_items": {
-                "장기": 46.8,
-                "재료": 2.2
+                "장기": 46.2,
+                "재료": 3.0
             }
         },
         {
@@ -821,7 +821,7 @@
             "configured_stores": 14,
             "config_rate": 87.5,
             "avg_items": {
-                "장기": 47.3,
+                "장기": 51.5,
                 "케익": 18.2,
                 "재료": 2.5
             }
@@ -872,9 +872,9 @@
             "configured_stores": 20,
             "config_rate": 83.3,
             "avg_items": {
-                "장기": 30.8,
+                "장기": 30.7,
                 "케익": 10.0,
-                "재료": 23.2
+                "재료": 23.3
             }
         },
         {
@@ -898,9 +898,9 @@
             "configured_stores": 15,
             "config_rate": 93.8,
             "avg_items": {
-                "장기": 52.3,
-                "케익": 20.0,
-                "재료": 6.6
+                "장기": 52.5,
+                "케익": 21.0,
+                "재료": 6.2
             }
         },
         {
@@ -937,7 +937,7 @@
             "config_rate": 75.0,
             "avg_items": {
                 "장기": 37.7,
-                "케익": 11.0,
+                "케익": 10.5,
                 "재료": 1.0
             }
         },
@@ -949,7 +949,7 @@
             "configured_stores": 16,
             "config_rate": 80.0,
             "avg_items": {
-                "장기": 20.0,
+                "장기": 17.3,
                 "케익": 1.0,
                 "재료": 1.0
             }
@@ -975,7 +975,7 @@
             "configured_stores": 21,
             "config_rate": 84.0,
             "avg_items": {
-                "장기": 31.7,
+                "장기": 31.6,
                 "케익": 5.0,
                 "재료": 1.0
             }
@@ -1001,7 +1001,7 @@
             "configured_stores": 14,
             "config_rate": 87.5,
             "avg_items": {
-                "장기": 36.8,
+                "장기": 36.7,
                 "케익": 6.0,
                 "재료": 1.0
             }
@@ -1014,7 +1014,7 @@
             "configured_stores": 22,
             "config_rate": 84.6,
             "avg_items": {
-                "장기": 28.1,
+                "장기": 28.0,
                 "케익": 42.0,
                 "재료": 2.0
             }
@@ -1027,7 +1027,7 @@
             "configured_stores": 21,
             "config_rate": 87.5,
             "avg_items": {
-                "장기": 29.8,
+                "장기": 29.3,
                 "재료": 3.1
             }
         },
@@ -1039,7 +1039,7 @@
             "configured_stores": 21,
             "config_rate": 87.5,
             "avg_items": {
-                "장기": 32.0,
+                "장기": 31.3,
                 "케익": 8.5,
                 "재료": 1.2
             }
@@ -1054,7 +1054,7 @@
             "avg_items": {
                 "장기": 29.9,
                 "케익": 8.3,
-                "재료": 4.8
+                "재료": 5.0
             }
         },
         {
@@ -1090,7 +1090,7 @@
             "configured_stores": 22,
             "config_rate": 88.0,
             "avg_items": {
-                "장기": 33.2,
+                "장기": 33.0,
                 "케익": 24.0,
                 "재료": 4.2
             }
@@ -1140,7 +1140,7 @@
             "configured_stores": 16,
             "config_rate": 100.0,
             "avg_items": {
-                "장기": 37.6,
+                "장기": 37.4,
                 "케익": 10.0,
                 "재료": 1.0
             }
@@ -1153,9 +1153,9 @@
             "configured_stores": 21,
             "config_rate": 91.3,
             "avg_items": {
-                "장기": 26.6,
+                "장기": 23.0,
                 "케익": 9.5,
-                "재료": 28.3
+                "재료": 28.0
             }
         },
         {
@@ -1191,7 +1191,7 @@
             "configured_stores": 17,
             "config_rate": 77.3,
             "avg_items": {
-                "장기": 38.7,
+                "장기": 38.4,
                 "재료": 1.0
             }
         },
@@ -1203,7 +1203,7 @@
             "configured_stores": 16,
             "config_rate": 100.0,
             "avg_items": {
-                "장기": 36.5,
+                "장기": 36.4,
                 "재료": 1.2
             }
         },
@@ -1215,7 +1215,7 @@
             "configured_stores": 18,
             "config_rate": 85.7,
             "avg_items": {
-                "장기": 28.5,
+                "장기": 28.3,
                 "재료": 1.0
             }
         },
@@ -1227,7 +1227,7 @@
             "configured_stores": 20,
             "config_rate": 90.9,
             "avg_items": {
-                "장기": 36.2,
+                "장기": 36.1,
                 "케익": 2.0,
                 "재료": 18.9
             }
@@ -1240,7 +1240,7 @@
             "configured_stores": 17,
             "config_rate": 73.9,
             "avg_items": {
-                "장기": 31.4,
+                "장기": 31.3,
                 "재료": 5.3
             }
         },
@@ -1290,9 +1290,9 @@
             "configured_stores": 21,
             "config_rate": 84.0,
             "avg_items": {
-                "장기": 32.0,
+                "장기": 32.9,
                 "케익": 27.0,
-                "재료": 2.5
+                "재료": 3.9
             }
         },
         {
@@ -1329,7 +1329,7 @@
             "configured_stores": 24,
             "config_rate": 92.3,
             "avg_items": {
-                "장기": 38.8,
+                "장기": 38.6,
                 "케익": 20.7,
                 "재료": 1.2
             }
@@ -1368,7 +1368,7 @@
             "configured_stores": 21,
             "config_rate": 87.5,
             "avg_items": {
-                "장기": 25.3,
+                "장기": 25.1,
                 "재료": 1.0
             }
         },
@@ -1377,10 +1377,10 @@
             "team": "인천김포팀",
             "sv": "전혜진",
             "managed_stores": 25,
-            "configured_stores": 22,
-            "config_rate": 88.0,
+            "configured_stores": 21,
+            "config_rate": 84.0,
             "avg_items": {
-                "장기": 31.4,
+                "장기": 31.5,
                 "케익": 30.5,
                 "재료": 3.4
             }
@@ -1428,7 +1428,7 @@
             "configured_stores": 20,
             "config_rate": 83.3,
             "avg_items": {
-                "장기": 21.0,
+                "장기": 20.8,
                 "재료": 3.0
             }
         },
@@ -1440,7 +1440,7 @@
             "configured_stores": 20,
             "config_rate": 80.0,
             "avg_items": {
-                "장기": 18.3,
+                "장기": 17.7,
                 "재료": 2.0
             }
         },
@@ -1461,10 +1461,10 @@
             "team": "광주제주팀",
             "sv": "조현구",
             "managed_stores": 24,
-            "configured_stores": 21,
-            "config_rate": 87.5,
+            "configured_stores": 20,
+            "config_rate": 83.3,
             "avg_items": {
-                "장기": 21.5,
+                "장기": 19.1,
                 "재료": 10.0
             }
         },
@@ -1483,9 +1483,9 @@
             "department": "3사업부",
             "team": "광주호남팀",
             "sv": "강경훈",
-            "managed_stores": 17,
+            "managed_stores": 18,
             "configured_stores": 14,
-            "config_rate": 82.4,
+            "config_rate": 77.8,
             "avg_items": {
                 "장기": 27.4,
                 "재료": 1.0
@@ -1499,7 +1499,7 @@
             "configured_stores": 21,
             "config_rate": 87.5,
             "avg_items": {
-                "장기": 19.8,
+                "장기": 17.7,
                 "케익": 10.0,
                 "재료": 7.0
             }
@@ -1562,7 +1562,7 @@
             "configured_stores": 23,
             "config_rate": 95.8,
             "avg_items": {
-                "장기": 26.4,
+                "장기": 26.5,
                 "재료": 1.0
             }
         },
@@ -1571,12 +1571,12 @@
             "team": "대전전북팀",
             "sv": "박수균",
             "managed_stores": 25,
-            "configured_stores": 20,
-            "config_rate": 80.0,
+            "configured_stores": 21,
+            "config_rate": 84.0,
             "avg_items": {
-                "장기": 34.4,
-                "케익": 18.0,
-                "재료": 2.8
+                "장기": 40.1,
+                "케익": 23.7,
+                "재료": 3.4
             }
         },
         {
@@ -1613,7 +1613,7 @@
             "configured_stores": 18,
             "config_rate": 75.0,
             "avg_items": {
-                "장기": 38.8,
+                "장기": 38.6,
                 "케익": 5.0,
                 "재료": 1.0
             }
@@ -1687,8 +1687,8 @@
             "configured_stores": 22,
             "config_rate": 71.0,
             "avg_items": {
-                "장기": 22.2,
-                "케익": 18.5
+                "장기": 22.6,
+                "케익": 19.0
             }
         },
         {
@@ -1762,7 +1762,7 @@
             "configured_stores": 19,
             "config_rate": 76.0,
             "avg_items": {
-                "장기": 18.2,
+                "장기": 17.9,
                 "재료": 17.0
             }
         },
@@ -1813,7 +1813,7 @@
             "configured_stores": 24,
             "config_rate": 92.3,
             "avg_items": {
-                "장기": 22.7,
+                "장기": 22.8,
                 "케익": 9.7,
                 "재료": 1.8
             }
@@ -1852,6 +1852,7 @@
             "config_rate": 69.2,
             "avg_items": {
                 "장기": 40.7,
+                "케익": 4.0,
                 "재료": 1.6
             }
         },
@@ -1876,7 +1877,7 @@
             "configured_stores": 20,
             "config_rate": 80.0,
             "avg_items": {
-                "장기": 42.9,
+                "장기": 42.8,
                 "케익": 9.5,
                 "재료": 2.4
             }
@@ -1975,7 +1976,7 @@
             "configured_stores": 19,
             "config_rate": 76.0,
             "avg_items": {
-                "장기": 30.5,
+                "장기": 30.4,
                 "케익": 1.0,
                 "재료": 1.0
             }
@@ -2000,7 +2001,7 @@
             "configured_stores": 20,
             "config_rate": 80.0,
             "avg_items": {
-                "장기": 30.6,
+                "장기": 30.4,
                 "재료": 1.0
             }
         },
@@ -2085,7 +2086,7 @@
             "configured_stores": 26,
             "config_rate": 89.7,
             "avg_items": {
-                "장기": 29.2,
+                "장기": 29.3,
                 "케익": 1.0,
                 "재료": 1.6
             }
@@ -2095,10 +2096,10 @@
             "team": "부산창원팀",
             "sv": "구정훈",
             "managed_stores": 28,
-            "configured_stores": 22,
-            "config_rate": 78.6,
+            "configured_stores": 21,
+            "config_rate": 75.0,
             "avg_items": {
-                "장기": 28.1,
+                "장기": 28.0,
                 "케익": 7.8,
                 "재료": 3.1
             }
@@ -2156,5 +2157,5 @@
             }
         }
     ],
-    "last_updated": "2026-07-07 14:24:47"
+    "last_updated": "2026-07-13 11:06:40"
 }
